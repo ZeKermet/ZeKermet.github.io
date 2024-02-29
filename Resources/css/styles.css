@@ -466,7 +466,7 @@ nav ul {
 .featured-recipes-list .recipe-tag {
     padding: 0.4em 0.5em;
     border-radius: 3px;
-    background: var(--neutral-8);
+    background: #d4d4d4;
     color: #353535;
     transition: 0.25s;
     font-weight: 500;
