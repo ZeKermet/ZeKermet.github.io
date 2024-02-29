@@ -235,8 +235,8 @@ nav ul {
 .recipes-list .recipe .date-published {
     margin-left: 0.55em;
 }
-.recipe .recipe-ratings {
-    color: rgb(255, 196, 0)
+.recipe-ratings i {
+    color: rgb(255, 196, 0);
 }
 
 .recipes-list .recipe-content-container {
@@ -423,7 +423,6 @@ nav ul {
     transition: 0.5s;
 }
 .featured-recipes-list .recipe-ratings {
-    color: rgb(255, 255, 45);
     margin-top: 16px;
     margin-bottom: 16px;
 }
