@@ -1,0 +1,5 @@
+For the recipe card styles, refer back to these: 
+- https://freefrontend.com/css-recipe-cards/
+- https://freefrontend.com/css-product-cards/
+
+Backup:
