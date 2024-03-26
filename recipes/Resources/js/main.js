@@ -9,14 +9,13 @@ const featuredRecipesList = document.getElementById('featured-recipes').querySel
 const recipesCategoryOneData = [];
 const recipesCategoryOneList = document.getElementById('recipes-category-1').querySelector('.recipes-list');
 
-
 const recipesCategoryTwoData = [];
 const recipesCategoryTwoList = document.getElementById('recipes-category-2').querySelector('.recipes-list');
 
 const recipesCategoryThreeData = [];
 const recipesCategoryThreeList = document.getElementById('recipes-category-3').querySelector('.recipes-list');
 
-// The "recipesData" folder is already defined in js/data.js
+// The "recipesData" variable is already defined in js/data.js
 setupRecipes(recipesData);
 
 slideLeftButtons.forEach(button => {
@@ -89,31 +88,31 @@ function constructRecipeListElement(list, recipeListElement) {
         let tagsString = "";
         recipe["tags"].forEach(tag => {
             tagsString += `<a class="recipe-tag" href="#">${tag}</a>`
-        })
-
+        });
+        
         recipeListElement.innerHTML += `
         <div class="recipe">
-        <div class="image-container"><div class="image-container-continued"><img src="${recipe["image"]}"></div></div>
-        <div class="recipe-details-container">
-            <div class="recipe-content-container">
-                <h3 class="recipe-title size-h2">${recipe["title"]}</h3>
-                <h6 class="recipe-description size-p">${recipe["description"]}</h6>
-                <div class="recipe-publish-info">
-                    <p class="publisher"><i class="fa-solid fa-user"></i>${recipe["publisher"]}</p>
-                    <p class="date-published"><i class="fa-solid fa-calendar"></i>${recipe["date-published"]}</p>
+            <div class="image-container"><div class="image-container-continued"><img src="${recipe["image"]}"></div></div>
+            <div class="recipe-details-container">
+                <div class="recipe-content-container">
+                    <h3 class="recipe-title size-h2">${recipe["title"]}</h3>
+                    <h6 class="recipe-description size-p">${recipe["description"]}</h6>
+                    <div class="recipe-publish-info">
+                        <p class="publisher"><i class="fa-solid fa-user"></i>${recipe["publisher"]}</p>
+                        <p class="date-published"><i class="fa-solid fa-calendar"></i>${recipe["date-published"]}</p>
+                    </div>
                 </div>
+                <div class="recipe-ratings">
+                    ${ratingString}
+                </div>
+                <div class="recipe-tags-container size-p-small">
+                    ${tagsString}
+                </div>
+                <a href="#" class="button view-recipe">View Recipe</a>
             </div>
-            <div class="recipe-ratings">
-                ${ratingString}
-            </div>
-            <div class="recipe-tags-container size-p-small">
-                ${tagsString}
-            </div>
-            <a href="#" class="button view-recipe">View Recipe</a>
         </div>
-    </div>
-    `;
-    })
+        `;
+    });
 }
 
 // ------------------- USER INPUTS + OTHERS -------------------

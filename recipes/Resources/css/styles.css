@@ -221,6 +221,10 @@ nav ul {
     display: flex;
     border-radius: 8px;
     cursor: default;
+    transition: 0.3s;
+}
+.recipes-list .recipe:hover {
+    box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.5);
 }
 .recipes-list .recipe-details-container {
     width: 43%;
@@ -471,7 +475,7 @@ nav ul {
     transform: translateY(70px);
 }
 .featured-recipes-list .recipe-description {
-    font-weight: 450;
+    font-weight: 400;
     margin-bottom: 1.2em;
 }
 .featured-recipes-list .button.view-recipe {
@@ -630,13 +634,18 @@ nav ul {
     #search .section-container {
         --recipe-width: 465px;
         --recipe-width-number: 465;
+        --recipe-gap: 30px;
+        --recipe-gap-number: 30;
     }
 }
 .search-results.recipes-list {
     flex-wrap: wrap;
     border-top: 1px solid #c0c0c0;
     padding-top: 50px;
-    gap: 22px;
+    gap: var(--recipe-gap);
+    justify-content: flex-start;
+    margin: 0 auto;
+    width: calc(var(--recipe-width)*2 + var(--recipe-gap));
 }
 .search-results.recipes-list .recipe {
     margin-bottom: 20px;
@@ -644,13 +653,12 @@ nav ul {
 }
 
 #search .pages-list {
+    margin: 0 auto;
     margin-top: 60px;
 }
 #search .pages-list ul {
     display: flex;
     margin: 0 auto;
-    width: 220px;
-    justify-content: space-between;
     gap: 10px;
 }
 #search .pages-list li {
