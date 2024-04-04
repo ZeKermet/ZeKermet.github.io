@@ -18,18 +18,22 @@ const recipesCategoryThreeList = document.getElementById('recipes-category-3').q
 // The "recipesData" variable is already defined in js/data.js
 setupRecipes(recipesData);
 
+let isScrolling = false;
 slideLeftButtons.forEach(button => {
     button.addEventListener("click", () => {
         const recipeList = button.parentElement.querySelector(".recipes-list");
-        scrollRecipe("left", recipeList);
-        
+        if (isScrolling === false) {
+            scrollRecipe("left", recipeList);
+        }
     });
 });
 
 slideRightButtons.forEach(button => {
     button.addEventListener("click", () => {
         const recipeList = button.parentElement.querySelector(".recipes-list");
-        scrollRecipe("right", recipeList);
+        if (isScrolling === false) {
+            scrollRecipe("right", recipeList);
+        }
     });
 });
 
@@ -44,7 +48,7 @@ function setupRecipes(recipesData) {
                 featuredRecipe = recipe;
                 greatestRating = featuredRecipe["rating"];
             }
-        })
+        });
         featuredList.push(featuredRecipe);
         index = dataList.indexOf(featuredRecipe);
         dataList.splice(index, 1);
@@ -60,7 +64,7 @@ function setupRecipes(recipesData) {
     constructRecipeListElement(catOneList, recipesCategoryOneList);
 
     const catTwoList = [];
-    for (i = 0; i < 3; i++) {
+    for (i = 0; i < 6; i++) {
         catTwoList.push(dataList[i]);
         index = dataList.indexOf(dataList[i]);
         dataList.splice(index, 1);
@@ -117,6 +121,7 @@ function constructRecipeListElement(list, recipeListElement) {
 
 // ------------------- USER INPUTS + OTHERS -------------------
 function scrollRecipe(direction, recipeList) {
+    isScrolling = true;
     const wrapper = recipeList.parentElement;
     const recipeWidth = parseInt(getComputedStyle(document.querySelector('.recipes-category')).getPropertyValue('--recipe-width-number'));
     const gap = parseInt(getComputedStyle(document.querySelector('.recipes-category')).getPropertyValue('--recipes-gap-number'));
@@ -131,4 +136,5 @@ function scrollRecipe(direction, recipeList) {
         scrollAmount = width * 1;
     };
     wrapper.scrollBy({left: scrollAmount, behavior: "smooth"});
+    setTimeout(() => { isScrolling = false; }, 400);
 }  

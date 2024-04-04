@@ -1,26 +1,49 @@
-// ------------------- SEARCH SETUP -------------------
+// ------------------- URL SETUP -------------------
+const originalURL = window.location.origin + window.location.pathname;
+const searchParameters = new URLSearchParams(window.location.search);
+
+const keywordsParam = searchParameters.get("keywords");
+const categoryParam = searchParameters.get("category");
+const ratingsParam = searchParameters.get("ratings");
+
+// ------------------- DOCUMENT SETUP -------------------
 const searchBar = document.forms['search'];
-
-// ------------------- SEARCH UP QUERY STRINGS FOR THE SEARCH -------------------
-searchBar.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const keywords = searchBar.querySelector('#keywords-search').value.toLowerCase();
-    const category = searchBar.querySelector('#category-search').value.toLowerCase();
-    const ratings = searchBar.querySelector('#ratings-search').value;
-    search(keywords, category, ratings, recipesData);
-})
-
 const searchList = document.getElementById('search').querySelector('.recipes-list');
 const pageNumbers = document.querySelector(".pages-list ul");
 
+searchBar.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const keywordsInput = searchBar.querySelector('#keywords-search').value;
+    const categoryInput = searchBar.querySelector('#category-search').value;
+    const ratingsInput = searchBar.querySelector('#ratings-search').value;
+
+    const searchURLData = {
+        keywords: keywordsInput,
+        category: categoryInput,
+        ratings: ratingsInput
+    }
+
+    const newSearchParams = new URLSearchParams(searchURLData);
+    const newURL = originalURL + `?${newSearchParams}`;
+    window.location.href = newURL;
+})
+
+// For the search results. Starts at page 1
 let currentPage = 1;
 
-setupSearchList(recipesData);
+if (searchParameters.toString() === "") {
+    setupSearchList(recipesData);
+} else {
+    searchBar.querySelector('#keywords-search').value = keywordsParam;
+    searchBar.querySelector('#category-search').value = categoryParam;
+    searchBar.querySelector('#ratings-search').value = ratingsParam;
+    
+    search(keywordsParam.toLowerCase(), categoryParam.toLowerCase(), ratingsParam, recipesData);
+}
 
-
+// ------------------- USER INPUTS -------------------
 function search(keywords, category, ratings, data) {
     let searchDataList = [];
-
     for (i=0; i<data.length; i++) {
         searchDataList[i] = data[i];
     }
@@ -163,7 +186,8 @@ function setupSearchList(list) {
     //  --- << < 2 3 "4" 5 6 > etc.
     //  --- << < 3 4 "5" 6 7 >
 
-    // --------------- WIP ---------------
+    // ------------------------------ WIP ------------------------------
+    
     pageNumbers.innerHTML += `<li class="search-page-changer"><i class="fa-solid fa-chevron-left"></i></li>`;
     for (let i=1; i < pages+1; i++) {
         if (i === currentPage) {
