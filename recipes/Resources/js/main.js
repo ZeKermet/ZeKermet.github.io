@@ -26,6 +26,7 @@ slideLeftButtons.forEach(button => {
             scrollRecipe("left", recipeList);
         }
     });
+    button.style.visibility = "hidden";
 });
 
 slideRightButtons.forEach(button => {
@@ -35,6 +36,13 @@ slideRightButtons.forEach(button => {
             scrollRecipe("right", recipeList);
         }
     });
+});
+
+document.querySelectorAll('.recipes-list').forEach(listElement => {
+    const wrapper = listElement.parentElement;
+    wrapper.addEventListener("scroll", () => {
+        handleScrollArrows(wrapper);
+    })
 });
 
 function setupRecipes(recipesData) {
@@ -123,6 +131,7 @@ function constructRecipeListElement(list, recipeListElement) {
 function scrollRecipe(direction, recipeList) {
     isScrolling = true;
     const wrapper = recipeList.parentElement;
+
     const recipeWidth = parseInt(getComputedStyle(document.querySelector('.recipes-category')).getPropertyValue('--recipe-width-number'));
     const gap = parseInt(getComputedStyle(document.querySelector('.recipes-category')).getPropertyValue('--recipes-gap-number'));
 
@@ -136,5 +145,15 @@ function scrollRecipe(direction, recipeList) {
         scrollAmount = width * 1;
     };
     wrapper.scrollBy({left: scrollAmount, behavior: "smooth"});
+
     setTimeout(() => { isScrolling = false; }, 400);
 }  
+
+function handleScrollArrows(wrapper) {
+    const leftArrow = wrapper.parentElement.querySelector('.recipes-slide-left');
+    const rightArrow = wrapper.parentElement.querySelector('.recipes-slide-right');
+    const maxScrollLeft = wrapper.scrollWidth - wrapper.clientWidth;
+
+    leftArrow.style.visibility = wrapper.scrollLeft <= 0 ? "hidden" : "visible";
+    rightArrow.style.visibility = wrapper.scrollLeft >= maxScrollLeft ? "hidden" : "visible";
+}

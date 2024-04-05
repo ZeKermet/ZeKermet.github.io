@@ -5,33 +5,17 @@ const searchParameters = new URLSearchParams(window.location.search);
 const keywordsParam = searchParameters.get("keywords");
 const categoryParam = searchParameters.get("category");
 const ratingsParam = searchParameters.get("ratings");
+const pageNumParam = searchParameters.get("page");
 
 // ------------------- DOCUMENT SETUP -------------------
 const searchBar = document.forms['search'];
 const searchList = document.getElementById('search').querySelector('.recipes-list');
 const pageNumbers = document.querySelector(".pages-list ul");
 
-searchBar.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const keywordsInput = searchBar.querySelector('#keywords-search').value;
-    const categoryInput = searchBar.querySelector('#category-search').value;
-    const ratingsInput = searchBar.querySelector('#ratings-search').value;
-
-    const searchURLData = {
-        keywords: keywordsInput,
-        category: categoryInput,
-        ratings: ratingsInput
-    }
-
-    const newSearchParams = new URLSearchParams(searchURLData);
-    const newURL = originalURL + `?${newSearchParams}`;
-    window.location.href = newURL;
-})
-
-// For the search results. Starts at page 1
-let currentPage = 1;
+let currentPage = parseInt(pageNumParam);
 
 if (searchParameters.toString() === "") {
+    currentPage = 1;
     setupSearchList(recipesData);
 } else {
     searchBar.querySelector('#keywords-search').value = keywordsParam;
@@ -41,7 +25,26 @@ if (searchParameters.toString() === "") {
     search(keywordsParam.toLowerCase(), categoryParam.toLowerCase(), ratingsParam, recipesData);
 }
 
+
 // ------------------- USER INPUTS -------------------
+searchBar.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const keywordsInput = searchBar.querySelector('#keywords-search').value;
+    const categoryInput = searchBar.querySelector('#category-search').value;
+    const ratingsInput = searchBar.querySelector('#ratings-search').value;
+
+    const searchURLData = {
+        keywords: keywordsInput,
+        category: categoryInput,
+        ratings: ratingsInput,
+        page: currentPage
+    }
+
+    const newSearchParams = new URLSearchParams(searchURLData);
+    const newURL = originalURL + `?${newSearchParams}`;
+    window.location.href = newURL;
+});
+
 function search(keywords, category, ratings, data) {
     let searchDataList = [];
     for (i=0; i<data.length; i++) {
@@ -178,35 +181,97 @@ function setupSearchList(list) {
         listLength = listLength - 6;
     }
 
-    // We'll do this for the buttons:
-    // I want all these situations for the arrows:
-    //  --- "1" 2 3 4 5 >
-    //  --- < 1 "2" 3 4 5 >
-    //  --- < 1 2 "3" 4 5 >
-    //  --- << < 2 3 "4" 5 6 > etc.
-    //  --- << < 3 4 "5" 6 7 >
-
-    // ------------------------------ WIP ------------------------------
-    
-    pageNumbers.innerHTML += `<li class="search-page-changer"><i class="fa-solid fa-chevron-left"></i></li>`;
-    for (let i=1; i < pages+1; i++) {
-        if (i === currentPage) {
-            pageNumbers.innerHTML += `<li class="current-search-page">${i}</li>`;
-        } else {
-            pageNumbers.innerHTML += `<li class="">${i}</li>`;
-        }
+    // ------------------------------ Page buttons Constructor ------------------------------
+    if (currentPage > 3) {
+        pageNumbers.innerHTML += `<li class="search-page-changer"><i class="fa-solid fa-angles-left" onclick="returnFirstPage()"></i></li>`;
     }
-    pageNumbers.innerHTML += `<li class="search-page-changer"><i class="fa-solid fa-chevron-right"></i></li>`;
 
+    if (currentPage > 1) {
+        pageNumbers.innerHTML += `<li class="search-page-changer"><i class="fa-solid fa-chevron-left" onclick="previousPage()"></i></li>`;
+    }
+
+    if (pages <= 5) {
+        pageNumbersElementConstructor(1, pages+1, pageNumbers);
+
+    } else if (pages > 5) {
+
+        if (currentPage < 3) {
+            pageNumbersElementConstructor(1, 6, pageNumbers);
+
+        } else if (currentPage >= 3 && currentPage < pages-2) {
+            pageNumbersElementConstructor(currentPage-2, currentPage+3, pageNumbers);
+
+        } else if (currentPage >= pages-2) {
+            pageNumbersElementConstructor(pages-4, pages+1, pageNumbers);
+
+        }
+
+    }
+
+    if (currentPage < pages) {
+        pageNumbers.innerHTML += `<li class="search-page-changer"><i class="fa-solid fa-chevron-right" onclick="nextPage()"></i></li>`;
+    }
+
+    // ------------------------------ Loading recipes per each page ------------------------------
 
     let index = (6*currentPage)-6;
     for (let i = index; i < index + 6; i++) {
-        if ((searchData[i]) == null) {
+        if ((searchData[i]) === undefined) {
             break;
         } else {
             displaySearch(searchData[i]);
         } 
     }     
+}
+
+function pageNumbersElementConstructor(lowerBound, upperBound, pageNumbers) {
+    for (let i=lowerBound; i < upperBound; i++) {
+        if (i === currentPage) {
+            pageNumbers.innerHTML += `<li class="current-search-page">${i}</li>`;
+        } else {
+            pageNumbers.innerHTML += `<li class="" onclick="goToPage(${i})">${i}</li>`;
+        }
+    }
+}
+
+function goToPage(number) {
+    currentPage = number;
+    createNewUrlFromPageNum();
+}
+
+function previousPage() {
+    currentPage--;
+    createNewUrlFromPageNum();
+}
+
+function nextPage() {
+    currentPage++;
+    createNewUrlFromPageNum();
+}
+
+function returnFirstPage() {
+    currentPage = 1;
+    createNewUrlFromPageNum();
+}
+
+function createNewUrlFromPageNum() {
+    const searchURLData = {
+        keywords: keywordsParam,
+        category: categoryParam,
+        ratings: ratingsParam,
+        page: currentPage
+    }
+
+    if (searchParameters.toString() === "") {
+        Object.keys(searchURLData).forEach(key => {
+            searchURLData[key] = "";
+        });
+        searchURLData.page = currentPage;
+    }
+
+    const newSearchParams = new URLSearchParams(searchURLData);
+    const newURL = originalURL + `?${newSearchParams}`;
+    window.location.href = newURL;
 }
 
 function displaySearch(recipe) {

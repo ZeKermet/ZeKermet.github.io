@@ -654,10 +654,11 @@ nav ul {
 
 #search .pages-list {
     margin: 0 auto;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 #search .pages-list ul {
     display: flex;
+    justify-content: center;
     margin: 0 auto;
     gap: 10px;
 }
