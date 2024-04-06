@@ -183,11 +183,11 @@ function setupSearchList(list) {
 
     // ------------------------------ Page buttons Constructor ------------------------------
     if (currentPage > 3) {
-        pageNumbers.innerHTML += `<li class="search-page-changer"><i class="fa-solid fa-angles-left" onclick="returnFirstPage()"></i></li>`;
+        pageNumbers.innerHTML += `<li class="search-page-changer first-page" onclick="returnFirstPage()"><i class="fa-solid fa-angles-left"></i></li>`;
     }
 
     if (currentPage > 1) {
-        pageNumbers.innerHTML += `<li class="search-page-changer"><i class="fa-solid fa-chevron-left" onclick="previousPage()"></i></li>`;
+        pageNumbers.innerHTML += `<li class="search-page-changer" onclick="previousPage()"><i class="fa-solid fa-chevron-left"></i></li>`;
     }
 
     if (pages <= 5) {
@@ -209,7 +209,7 @@ function setupSearchList(list) {
     }
 
     if (currentPage < pages) {
-        pageNumbers.innerHTML += `<li class="search-page-changer"><i class="fa-solid fa-chevron-right" onclick="nextPage()"></i></li>`;
+        pageNumbers.innerHTML += `<li class="search-page-changer" onclick="nextPage()"><i class="fa-solid fa-chevron-right"></i></li>`;
     }
 
     // ------------------------------ Loading recipes per each page ------------------------------

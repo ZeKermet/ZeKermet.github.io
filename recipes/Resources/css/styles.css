@@ -665,8 +665,8 @@ nav ul {
 #search .pages-list li {
     cursor: pointer;
     background: #dadada;
-    padding: 0.5em 0.7em;
-    border-radius: 1em;
+    padding: 0.5em 0.85em;
+    border-radius: 50%;
     font-size: 18px;
     transition: 0.2s;
 }
@@ -677,9 +677,9 @@ nav ul {
 #search .pages-list .current-search-page:hover {
     background: var(--primary-color-6);
 }
-.search-page-changer {
-    padding-left: 0.8em !important;
-    padding-right: 0.8em !important;
+.search-page-changer.first-page {
+    padding-left: 0.63em !important;
+    padding-right: 0.63em !important;
     border-radius: 50% !important;
 }
 
