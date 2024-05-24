@@ -2,11 +2,11 @@
     /* Values are used in hsl format. Fill in hues, and colors will be generated automatically */
     /* hsl example: hsl(210deg, 50%, 30%) */
     /* format: hue(color), saturation(0 lacks color *grey*, 100 is full of color), lightness(0 is black, 100 is white) */ 
-    --primary-hue: 240;
+    --primary-hue: 40;
     --secondary-hue: 20;
     --accent1-hue: 140;
     --accent2-hue: 0;
-    --accent3-hue: 40;
+    --accent3-hue: 240;
     --neutral-color: var(--primary-hue), 2%;
 
     /* Shades from 1 (darkest) to 9 (lightest). Shade 5 is the normal color */
