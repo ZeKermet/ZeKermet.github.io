@@ -158,7 +158,7 @@ header {
     width: 100%;
     height: 100%;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), 
-        rgba(0, 0, 0, 0.8)), url(/resources/images/news-web-background.png);
+        rgba(0, 0, 0, 0.8)), url(./resources/images/news-web-background.png);
     background-position: center;
     background-size: cover;
     z-index: -999;
