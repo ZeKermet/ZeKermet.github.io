@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../resources/css/color-pallete.css" />
+    <link rel="stylesheet" href="../resources/css/fonts.css" />
+    <link rel="stylesheet" href="../resources/css/main-styles.css" />
+
+    <!-- External Imports -->
+    <script src="https://kit.fontawesome.com/e337849d60.js" crossorigin="anonymous"></script>
+    
+    <title>CKINTS Blogs - Discover</title>
+</head>
+
+
+<body>
+
+    <header id="page-header">
+        <div class="header-container">
+
+            <h1 id="logo">CKINTS</h1>
+
+            <nav id="navbar">
+                <i id="closeNavbarButton" class="fa-solid fa-arrow-right-to-bracket"></i>
+                <h4 class="mobile-nav-header">Pages</h4>
+                <ul>
+                    <a href="index.html" class="navlink"><li>Home</li></a>
+                    <a href="search.html" class="navlink current-page"><li>Discover</li></a>
+                    <a href="contact.html" class="navlink"><li>Contact</li></a>
+
+                    <div class="mobile-nav-acc-container">
+                        <!-- Container displayed if not logged in -->
+                        <div class="header-guest-container-mobile">
+                            <a href="" id="headerLoginButton-mobile" class="button">Log in</a>
+                            <a href="" id="headerCreateAccButton-mobile" class="button">Sign Up</a>
+                        </div>
+
+                        <div class="header-loggedin-info-mobile">        
+                            <div id="user-info-nav-mobile">
+                                <div class="user-profile-img-container">
+                                    <img class="user-profile-img" src="../resources/Images/other-blog-images/ytlogo.jpg" />
+                                </div>
+                                <p>Username</p>
+                            </div>
+
+                            <a href="" id="createBlogButton-mobile" class="button">Create <i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </div>
+                </ul>
+            </nav>
+            
+            <div class="rightside-nav">
+                <!-- I want the next two parent elements to be displayed without sandwich icon on mobile -->
+
+                <div class="header-acc-container">
+                    <!-- Container displayed if logged in -->
+                    <div class="header-loggedin-info">
+                        <a href="" id="createBlogButton" class="button">Create <i class="fa-solid fa-plus"></i></a>
+    
+                        <div id="user-info-nav">
+                            <div class="user-profile-img-container">
+                                <img class="user-profile-img" src="../resources/Images/other-blog-images/ytlogo.jpg" />
+                            </div>
+                            <p>Username</p>
+                        </div>
+                    </div>
+    
+                    <!-- Container displayed if not logged in -->
+                    <div class="header-guest-container">
+                        <a href="" id="headerLoginButton" class="button">Log in</a>
+                        <a href="" id="headerCreateAccButton" class="button">Sign Up</a>
+                    </div>
+                </div>
+
+                <i id="openNavbarBtn" class="fa-solid fa-bars"></i>
+
+            </div>
+            
+        </div>
+    </header>
+
+    <main>
+        <section id="blogspage-searchbar">
+            <div class="section-container">
+
+                <header class="section-header">
+                    <h2>Search Results</h2>
+                </header>
+
+                <div class="searchbar">
+                    <div class="searchkeywords-wrapper">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input name="keywords" id="keywords" placeholder="Enter Keywords" />
+                    </div>
+    
+                    <select name="category" id="category">
+                        <option value="">Category</option>
+                        <option value="">Gaming</option>
+                        <option value="">Foods</option>
+                        <option value="">Delicious</option>
+                    </select>
+    
+                    <button id="submitSearchInput">Search</button>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="blogspage-search-results">
+            <div class="section-container">
+
+                <h3 id="noSearchResultsHeader">No results found</h3>
+
+                <div id="search-results-container">
+
+                    <div class="blog">
+                        <div class="blog-image-container">
+                            <div class="blog-image-overlay">
+                                <img class="blog-image" src="../resources/Images/background-images/hero.jpg" />
+                            </div>
+                        </div>
+                        
+                        <div class="blog-content">
+                            <div class="blog-publish-info">
+                                <div class="blog-publisher">
+                                    <div class="blog-publisher-img-container">
+                                        <img class="blog-publisher-img" src="../resources/Images/other-blog-images/ytlogo.jpg" />
+                                    </div>
+                                    <p>CKINTS</p>
+                                </div>
+                                
+                                <p>Jan 17, 2019</p>
+                            </div>
+        
+                            <div class="blog-tags-container">
+                                <a class="blog-tag" href="">Foods</a>
+                                <a class="blog-tag" href="">Gaming</a>
+                                <a class="blog-tag" href="">Delicious</a>
+                            </div>
+        
+                            <div class="blog-text-content">
+                                <h4 class="blog-title">This is the title</h4>
+                                <p class="blog-description">This is the description This is the description This is the description</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="blog">
+                        <div class="blog-image-container">
+                            <div class="blog-image-overlay">
+                                <img class="blog-image" src="../resources/Images/other-blog-images/salad-two.jpg" />
+                            </div>
+                        </div>
+                        
+                        <div class="blog-content">
+                            <div class="blog-publish-info">
+                                <div class="blog-publisher">
+                                    <div class="blog-publisher-img-container">
+                                        <img class="blog-publisher-img" src="../resources/Images/other-blog-images/ytlogo.jpg" />
+                                    </div>
+                                    <p>CKINTS</p>
+                                </div>
+                                
+                                <p>Jan 17, 2019</p>
+                            </div>
+        
+                            <div class="blog-tags-container">
+                                <a class="blog-tag" href="">Foods</a>
+                                <a class="blog-tag" href="">Gaming</a>
+                                <a class="blog-tag" href="">Delicious</a>
+                            </div>
+        
+                            <div class="blog-text-content">
+                                <h4 class="blog-title">This is the title</h4>
+                                <p class="blog-description">This is the description This is the description This is the description</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="blog">
+                        <div class="blog-image-container">
+                            <div class="blog-image-overlay">
+                                <img class="blog-image" src="../resources/Images/other-blog-images/ytlogo.jpg" />
+                            </div>
+                        </div>
+                        
+                        <div class="blog-content">
+                            <div class="blog-publish-info">
+                                <div class="blog-publisher">
+                                    <div class="blog-publisher-img-container">
+                                        <img class="blog-publisher-img" src="../resources/Images/other-blog-images/ytlogo.jpg" />
+                                    </div>
+                                    <p>CKINTS</p>
+                                </div>
+                                
+                                <p>Jan 17, 2019</p>
+                            </div>
+        
+                            <div class="blog-tags-container">
+                                <a class="blog-tag" href="">Foods</a>
+                                <a class="blog-tag" href="">Gaming</a>
+                                <a class="blog-tag" href="">Delicious</a>
+                            </div>
+        
+                            <div class="blog-text-content">
+                                <h4 class="blog-title">This is the title</h4>
+                                <p class="blog-description">This is the description This is the description This is the description</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="blog">
+                        <div class="blog-image-container">
+                            <div class="blog-image-overlay">
+                                <img class="blog-image" src="../resources/Images/other-blog-images/chocolates.jpg" />
+                            </div>
+                        </div>
+                        
+                        <div class="blog-content">
+                            <div class="blog-publish-info">
+                                <div class="blog-publisher">
+                                    <div class="blog-publisher-img-container">
+                                        <img class="blog-publisher-img" src="../resources/Images/other-blog-images/ytlogo.jpg" />
+                                    </div>
+                                    <p>CKINTS</p>
+                                </div>
+                                
+                                <p>Jan 17, 2019</p>
+                            </div>
+        
+                            <div class="blog-tags-container">
+                                <a class="blog-tag" href="">Foods</a>
+                                <a class="blog-tag" href="">Gaming</a>
+                                <a class="blog-tag" href="">Delicious</a>
+                            </div>
+        
+                            <div class="blog-text-content">
+                                <h4 class="blog-title">This is the title</h4>
+                                <p class="blog-description">This is the description This is the description This is the description</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="blog">
+                        <div class="blog-image-container">
+                            <div class="blog-image-overlay">
+                                <img class="blog-image" src="../resources/Images/background-images/hero.jpg" />
+                            </div>
+                        </div>
+                        
+                        <div class="blog-content">
+                            <div class="blog-publish-info">
+                                <div class="blog-publisher">
+                                    <div class="blog-publisher-img-container">
+                                        <img class="blog-publisher-img" src="../resources/Images/other-blog-images/ytlogo.jpg" />
+                                    </div>
+                                    <p>CKINTS</p>
+                                </div>
+                                
+                                <p>Jan 17, 2019</p>
+                            </div>
+        
+                            <div class="blog-tags-container">
+                                <a class="blog-tag" href="">Foods</a>
+                                <a class="blog-tag" href="">Gaming</a>
+                                <a class="blog-tag" href="">Delicious</a>
+                            </div>
+        
+                            <div class="blog-text-content">
+                                <h4 class="blog-title">This is the title</h4>
+                                <p class="blog-description">This is the description This is the description This is the description</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="blog">
+                        <div class="blog-image-container">
+                            <div class="blog-image-overlay">
+                                <img class="blog-image" src="../resources/Images/other-blog-images/salad-two.jpg" />
+                            </div>
+                        </div>
+                        
+                        <div class="blog-content">
+                            <div class="blog-publish-info">
+                                <div class="blog-publisher">
+                                    <div class="blog-publisher-img-container">
+                                        <img class="blog-publisher-img" src="../resources/Images/other-blog-images/ytlogo.jpg" />
+                                    </div>
+                                    <p>CKINTS</p>
+                                </div>
+                                
+                                <p>Jan 17, 2019</p>
+                            </div>
+        
+                            <div class="blog-tags-container">
+                                <a class="blog-tag" href="">Foods</a>
+                                <a class="blog-tag" href="">Gaming</a>
+                                <a class="blog-tag" href="">Delicious</a>
+                            </div>
+        
+                            <div class="blog-text-content">
+                                <h4 class="blog-title">This is the title</h4>
+                                <p class="blog-description">This is the description This is the description This is the description</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="blog">
+                        <div class="blog-image-container">
+                            <div class="blog-image-overlay">
+                                <img class="blog-image" src="../resources/Images/other-blog-images/ytlogo.jpg" />
+                            </div>
+                        </div>
+                        
+                        <div class="blog-content">
+                            <div class="blog-publish-info">
+                                <div class="blog-publisher">
+                                    <div class="blog-publisher-img-container">
+                                        <img class="blog-publisher-img" src="../resources/Images/other-blog-images/ytlogo.jpg" />
+                                    </div>
+                                    <p>CKINTS</p>
+                                </div>
+                                
+                                <p>Jan 17, 2019</p>
+                            </div>
+        
+                            <div class="blog-tags-container">
+                                <a class="blog-tag" href="">Foods</a>
+                                <a class="blog-tag" href="">Gaming</a>
+                                <a class="blog-tag" href="">Delicious</a>
+                            </div>
+        
+                            <div class="blog-text-content">
+                                <h4 class="blog-title">This is the title</h4>
+                                <p class="blog-description">This is the description This is the description This is the description</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="blog">
+                        <div class="blog-image-container">
+                            <div class="blog-image-overlay">
+                                <img class="blog-image" src="../resources/Images/other-blog-images/chocolates.jpg" />
+                            </div>
+                        </div>
+                        
+                        <div class="blog-content">
+                            <div class="blog-publish-info">
+                                <div class="blog-publisher">
+                                    <div class="blog-publisher-img-container">
+                                        <img class="blog-publisher-img" src="../resources/Images/other-blog-images/ytlogo.jpg" />
+                                    </div>
+                                    <p>CKINTS</p>
+                                </div>
+                                
+                                <p>Jan 17, 2019</p>
+                            </div>
+        
+                            <div class="blog-tags-container">
+                                <a class="blog-tag" href="">Foods</a>
+                                <a class="blog-tag" href="">Gaming</a>
+                                <a class="blog-tag" href="">Delicious</a>
+                            </div>
+        
+                            <div class="blog-text-content">
+                                <h4 class="blog-title">This is the title</h4>
+                                <p class="blog-description">This is the description This is the description This is the description</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <!-- There will be __ amount of blogs per each load-->
+                </div>
+
+                <!-- Follow same algorithm as "(5) Recipes Project" -->
+                <div id="searchResultsPages">
+                    <button class="backToFirstPage"><i class="fa-solid fa-angles-left"></i></button>
+                    <button class="previousPage"><i class="fa-solid fa-chevron-left"></i></button>
+
+                    <button class="pageNumber">3</button>
+                    <button class="pageNumber">4</button>
+                    <button class="pageNumber current-pageNum">5</button>
+                    <button class="pageNumber">6</button>
+                    <button class="pageNumber">7</button>
+
+                    <button class="nextPage"><i class="fa-solid fa-chevron-right"></i></button>
+                    <button class="lastPage"><i class="fa-solid fa-angles-right"></i></button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="section-container">
+            <div class="footer-container">
+
+                <div class="footer-col about-company">
+                    <h3>Who are we?</h3>
+                    <p>We are the company that provides a blog website filled with all topics that visitors are interested in. This has always been the focus of CKINTS Blogs</p>
+                </div>
+
+                <div class="footer-col pages">
+                    <h3>Pages</h3>
+                    
+                    <ul class="footer-pages">
+                        <li><i class="fa-solid fa-chevron-right"></i><a href="index.html">Home</a></li>
+                        <li><i class="fa-solid fa-chevron-right"></i><a href="search.html">Discover</a></li>
+                        <li><i class="fa-solid fa-chevron-right"></i><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col contact">
+                    <h3>Contact Us</h3>
+
+                    <div class="contact-details">
+                        <p><i class="fa-solid fa-location-dot"></i>123 Westford, Greater Rockford, VA</p>
+                        <p><i class="fa-solid fa-envelope"></i>CKINTS_Official@email.com</p>
+                        <p><i class="fa-solid fa-phone"></i>+1 123 456 7890</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    
+
+
+    <script src="../resources/js/main.js"></script>
+</body>
+</html>
