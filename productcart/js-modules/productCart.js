@@ -21,10 +21,12 @@ let cartIsOpened = false;
 // ---------------- Event Listeners ----------------
 if (cartSection && openCartBtn && closeCartBtn) {
 
-    cartSection.style.right = `-${getComputedStyle(cartSection).width}`;
+    cartSection.style.left = `100%`;
+    cartSection.style.right = "auto";
 
     openCartBtn.addEventListener('click', () => {
-        if (getComputedStyle(cartSection).right === `-${getComputedStyle(cartSection).width}`) {
+        if (cartSection.style.left === `100%`) {
+            cartSection.style.left = "auto";
             cartSection.style.right = "0px";
 
             cartIsOpened = true;
@@ -37,8 +39,9 @@ if (cartSection && openCartBtn && closeCartBtn) {
     });
 
     closeCartBtn.addEventListener('click', () => {
-        if (getComputedStyle(cartSection).right === "0px") {
-            cartSection.style.right = `-${getComputedStyle(cartSection).width}`;
+        if (cartSection.style.right === "0px") {
+            cartSection.style.right = `auto`;
+            cartSection.style.left = "100%";
             
             cartIsOpened = false;
         }
@@ -82,29 +85,36 @@ if (productListContainer && openCartBtn) {
             alert("Cart Is Empty");
 
         } else {
-            let alertString = "";
+            let productList = [];
 
             for (const cartItemElement of cartItemsList.getElementsByClassName('cart-item')) {
+
                 let productElement = findProductElementFromCartItem(cartItemElement);
 
                 const productName = productElement.getElementsByClassName('product-name')[0].innerHTML;
                 const purchaseQuantity = parseInt(cartItemsList.getElementsByClassName('cart-item-quantity')[0].innerHTML);
 
-                await firebase.purchaseItem(productName, purchaseQuantity)
-                .then((returnString) => {
-                    if (returnString.includes('Product Not Found')) {
-                        returnString += alertString;
-                    }
-                });
+                const product = {
+                    name: productName,
+                    purchaseQuantity,
+                }
+
+                productList.push(product);
             }
 
-            if (alertString === "") {
-                alert("Success");
-            } else {
-                alert(alertString);
-            }
+            await firebase.purchaseItems(productList)
+            .then((confirmationString) => {
+                if (confirmationString === "") {
+                    alert("Success");
+                } else {
+                    alert(confirmationString);
+                }
+    
+                window.location.reload();
+            });
+            
 
-            window.location.reload();
+            
         }
         
 

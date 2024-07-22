@@ -409,19 +409,20 @@ input#search {
 
 /* ---------- Cart Styles ---------- */
 #cart-items {
-    right: -400px;
-
+    left: 100%;
     position: fixed;
     top: 0;
-    min-width: 380px;
-    max-width: 80vw;
+    width: 380px;
     height: 100%;
     z-index: 100;
     background: var(--neutral-2);
     padding: 30px;
     color: white;
     transition: 0.3s;
+    
 }
+
+
 .cart-items-section-container {
     position: relative;
     width: 100%;

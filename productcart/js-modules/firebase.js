@@ -127,7 +127,29 @@ export async function getImageURL(product) {
     
 }
 
-export async function purchaseItem(productName, purchaseQuantity) {
+export async function purchaseItems(productList) {
+    try {
+        let returnString = "";
+
+        for (const product of productList) {
+            await purchaseItem(product.name, product.purchaseQuantity) // Returns Confirmation String
+            .then((tempString) => {
+                if (tempString.includes('Not Found')) {
+                    returnString += tempString;
+                }
+            });
+            
+        }
+
+        return returnString;
+
+    } catch(e) {
+        alert(e);
+    }
+
+}
+
+async function purchaseItem(productName, purchaseQuantity) {
     try {
         let product = null;
         let id = null;
@@ -147,7 +169,7 @@ export async function purchaseItem(productName, purchaseQuantity) {
         } else {
             const newQuantity = product.quantity - purchaseQuantity;
 
-            if (newQuantity === 0) {
+            if (newQuantity <= 0) {
                 await deleteDoc(doc(db, productsCollectionRefName, id));
             } else {
                 await updateDoc(doc(db, productsCollectionRefName, id), {quantity: newQuantity});
