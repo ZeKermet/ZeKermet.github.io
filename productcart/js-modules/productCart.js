@@ -20,9 +20,8 @@ let cartIsOpened = false;
 
 // ---------------- Event Listeners ----------------
 if (cartSection && openCartBtn && closeCartBtn) {
-    
-    cartSection.style.right = `-0`;
-    //cartSection.style.right = `-${getComputedStyle(cartSection).width}`;
+
+    cartSection.style.right = `-${getComputedStyle(cartSection).width}`;
 
     openCartBtn.addEventListener('click', () => {
         if (getComputedStyle(cartSection).right === `-${getComputedStyle(cartSection).width}`) {
