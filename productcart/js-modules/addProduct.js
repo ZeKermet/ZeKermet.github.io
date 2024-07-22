@@ -49,7 +49,7 @@ if (openAddProductPopupBtn && addProductPopup && closeAddProductPopupBtn) {
     submitAddedProductBtn.addEventListener('click', async () => {
         const addProductEntries = [productNameEntry, productPriceCentsEntry, productPriceDollarEntry, productPriceCentsEntry, productQuantityEntry, Array.from(productImageEntry.files)];
 
-        if (allEntriesAreFilled(addProductEntries)) {
+        if (!allEntriesAreFilled(addProductEntries)) {
             alert("Enter all fields");
 
         } else {
