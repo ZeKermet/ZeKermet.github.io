@@ -1,0 +1,84 @@
+:root {
+    /* Values are used in hsl format. Fill in hues, and colors will be generated automatically */
+    /* hsl example: hsl(210deg, 50%, 30%) */
+    /* format: hue(color), saturation(0 lacks color *grey*, 100 is full of color), lightness(0 is black, 100 is white) */ 
+    --primary-hue: 40;
+    --secondary-hue: 20;
+    --accent1-hue: 140;
+    --accent2-hue: 0;
+    --accent3-hue: 240;
+
+    --neutral-color: var(--primary-hue), 2%;
+
+    /* Shades from 1 (darkest) to 9 (lightest). Shade 5 is the normal color */
+    --shade-9: 70%, 92%;
+    --shade-8: 65%, 78%;
+    --shade-7: 65%, 60%;
+    --shade-6: 65%, 48%;
+    --shade-5: 70%, 35%;
+    --shade-4: 80%, 25%;
+    --shade-3: 80%, 17%;
+    --shade-2: 80%, 10%;
+    --shade-1: 90%, 5%;
+
+    /* Defined colors */
+    --primary-color-1: hsl(var(--primary-hue), var(--shade-1));
+    --primary-color-2: hsl(var(--primary-hue), var(--shade-2));
+    --primary-color-3: hsl(var(--primary-hue), var(--shade-3));
+    --primary-color-4: hsl(var(--primary-hue), var(--shade-4));
+    --primary-color-5: hsl(var(--primary-hue), var(--shade-5)); 
+    --primary-color-6: hsl(var(--primary-hue), var(--shade-6));
+    --primary-color-7: hsl(var(--primary-hue), var(--shade-7));
+    --primary-color-8: hsl(var(--primary-hue), var(--shade-8));
+    --primary-color-9: hsl(var(--primary-hue), var(--shade-9));
+
+    --secondary-color-1: hsl(var(--secondary-hue), var(--shade-1));
+    --secondary-color-2: hsl(var(--secondary-hue), var(--shade-2));
+    --secondary-color-3: hsl(var(--secondary-hue), var(--shade-3));
+    --secondary-color-4: hsl(var(--secondary-hue), var(--shade-4));
+    --secondary-color-5: hsl(var(--secondary-hue), var(--shade-5));
+    --secondary-color-6: hsl(var(--secondary-hue), var(--shade-6));
+    --secondary-color-7: hsl(var(--secondary-hue), var(--shade-7));
+    --secondary-color-8: hsl(var(--secondary-hue), var(--shade-8));
+    --secondary-color-9: hsl(var(--secondary-hue), var(--shade-9));
+
+    --neutral-9: hsl(var(--neutral-color), 92%);
+    --neutral-8: hsl(var(--neutral-color), 78%);
+    --neutral-7: hsl(var(--neutral-color), 60%);
+    --neutral-6: hsl(var(--neutral-color), 48%);
+    --neutral-5: hsl(var(--neutral-color), 35%);
+    --neutral-4: hsl(var(--neutral-color), 25%);
+    --neutral-3: hsl(var(--neutral-color), 17%);
+    --neutral-2: hsl(var(--neutral-color), 10%);
+    --neutral-1: hsl(var(--neutral-color), 5%);
+
+    --accent1-color-1: hsl(var(--accent1-hue), var(--shade-1));
+    --accent1-color-2: hsl(var(--accent1-hue), var(--shade-2));
+    --accent1-color-3: hsl(var(--accent1-hue), var(--shade-3));
+    --accent1-color-4: hsl(var(--accent1-hue), var(--shade-4));
+    --accent1-color-5: hsl(var(--accent1-hue), var(--shade-5));
+    --accent1-color-6: hsl(var(--accent1-hue), var(--shade-6));
+    --accent1-color-7: hsl(var(--accent1-hue), var(--shade-7));
+    --accent1-color-8: hsl(var(--accent1-hue), var(--shade-8));
+    --accent1-color-9: hsl(var(--accent1-hue), var(--shade-9));
+
+    --accent2-color-1: hsl(var(--accent2-hue), var(--shade-1));
+    --accent2-color-2: hsl(var(--accent2-hue), var(--shade-2));
+    --accent2-color-3: hsl(var(--accent2-hue), var(--shade-3));
+    --accent2-color-4: hsl(var(--accent2-hue), var(--shade-4));
+    --accent2-color-5: hsl(var(--accent2-hue), var(--shade-5));
+    --accent2-color-6: hsl(var(--accent2-hue), var(--shade-6));
+    --accent2-color-7: hsl(var(--accent2-hue), var(--shade-7));
+    --accent2-color-8: hsl(var(--accent2-hue), var(--shade-8));
+    --accent2-color-9: hsl(var(--accent2-hue), var(--shade-9));
+
+    --accent3-color-1: hsl(var(--accent3-hue), var(--shade-1));
+    --accent3-color-2: hsl(var(--accent3-hue), var(--shade-2));
+    --accent3-color-3: hsl(var(--accent3-hue), var(--shade-3));
+    --accent3-color-4: hsl(var(--accent3-hue), var(--shade-4));
+    --accent3-color-5: hsl(var(--accent3-hue), var(--shade-5));
+    --accent3-color-6: hsl(var(--accent3-hue), var(--shade-6));
+    --accent3-color-7: hsl(var(--accent3-hue), var(--shade-7));
+    --accent3-color-8: hsl(var(--accent3-hue), var(--shade-8));
+    --accent3-color-9: hsl(var(--accent3-hue), var(--shade-9));
+}
