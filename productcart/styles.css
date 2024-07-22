@@ -144,6 +144,9 @@ input#search {
 
 /* ---------- Add Product Window ---------- */
 #add-product-popup {
+    visibility: hidden;
+    opacity: 0;
+
     position: fixed;
     background: white;
     z-index: 999;
@@ -406,6 +409,8 @@ input#search {
 
 /* ---------- Cart Styles ---------- */
 #cart-items {
+    right: -400px;
+
     position: fixed;
     top: 0;
     min-width: 380px;
