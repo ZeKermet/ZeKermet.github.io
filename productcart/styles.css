@@ -409,10 +409,11 @@ input#search {
 
 /* ---------- Cart Styles ---------- */
 #cart-items {
+    --cart-width: 380px;
     left: 100%;
     position: fixed;
     top: 0;
-    width: 380px;
+    width: var(--cart-width);
     height: 100%;
     z-index: 100;
     background: var(--neutral-2);
@@ -420,6 +421,9 @@ input#search {
     color: white;
     transition: 0.3s;
     
+}
+#cart-items.opened {
+    left: calc(100% - var(--cart-width));
 }
 
 
@@ -526,7 +530,7 @@ input#search {
 
     #cart-items {
         min-width: 300px;
-        width: 75vw;
+        --cart-width: 75vw;
     }
 
     #cart-items-list {

@@ -17,19 +17,16 @@ const closeCartBtn = document.getElementById('close-cart-items-btn');
 // Changes whether the cart window is opened or not
 let cartIsOpened = false;
 
-
 // ---------------- Event Listeners ----------------
 if (cartSection && openCartBtn && closeCartBtn) {
 
-    cartSection.style.left = `100%`;
-    cartSection.style.right = "auto";
-
     openCartBtn.addEventListener('click', () => {
-        if (cartSection.style.left === `100%`) {
-            cartSection.style.left = "auto";
-            cartSection.style.right = "0px";
-
+        if (!cartIsOpened) {
             cartIsOpened = true;
+
+            if (!cartSection.classList.contains('opened')) {
+                cartSection.classList.add('opened');
+            }
 
             if (openCartIcon.classList.contains('new-notif')) {
                 openCartIcon.classList.remove('new-notif');
@@ -39,13 +36,13 @@ if (cartSection && openCartBtn && closeCartBtn) {
     });
 
     closeCartBtn.addEventListener('click', () => {
-        if (cartSection.style.right === "0px") {
-            cartSection.style.right = `auto`;
-            cartSection.style.left = "100%";
-            
+        if (cartIsOpened) {            
+            if (cartSection.classList.contains('opened')) {
+                cartSection.classList.remove('opened');
+            }
             cartIsOpened = false;
         }
-    })
+    });
     
 }
 
@@ -85,24 +82,9 @@ if (productListContainer && openCartBtn) {
             alert("Cart Is Empty");
 
         } else {
-            let productList = [];
+            const cartList = getCartList();
 
-            for (const cartItemElement of cartItemsList.getElementsByClassName('cart-item')) {
-
-                let productElement = findProductElementFromCartItem(cartItemElement);
-
-                const productName = productElement.getElementsByClassName('product-name')[0].innerHTML;
-                const purchaseQuantity = parseInt(cartItemsList.getElementsByClassName('cart-item-quantity')[0].innerHTML);
-
-                const product = {
-                    name: productName,
-                    purchaseQuantity,
-                }
-
-                productList.push(product);
-            }
-
-            await firebase.purchaseItems(productList)
+            await firebase.purchaseCart(cartList)
             .then((confirmationString) => {
                 if (confirmationString === "") {
                     alert("Success");
@@ -113,10 +95,7 @@ if (productListContainer && openCartBtn) {
                 window.location.reload();
             });
             
-
-            
         }
-        
 
     });
 
@@ -128,7 +107,7 @@ if (productListContainer && openCartBtn) {
 function refreshCartItemElements() {
     for (const cartItemElement of cartItemsList.getElementsByClassName('cart-item')) {
         
-        // ---------------- Cart Item Elements + Its Respective Product Element ----------------
+        // ---------------- Cart Item's Child Elements + Its Respective Product Element ----------------
         const productElement = findProductElementFromCartItem(cartItemElement);
         const productElementAddToCartBtn = productElement.getElementsByClassName('product-addtocart')[0];
         
@@ -140,7 +119,7 @@ function refreshCartItemElements() {
 
         const moreQuantityBtn = cartItemElement.getElementsByClassName('more-quantity-btn')[0];
         
-        // If there is one of said product left, the "increase quantity" button will not be ative
+        // If there is one of said product remaining, the "increase quantity" button will not be ative
         if (productQuantity === 1) {
             moreQuantityBtn.style.background = "var(--neutral-4)";
             moreQuantityBtn.style.cursor = "default";
@@ -192,16 +171,15 @@ function refreshCartItemElements() {
 }
 
 
-
-
-// ---------------- Functions ----------------
-
 function findProductElementFromCartItem(cartItemElement) {
     let productElement;
 
     // Searches for the respective product element in the product list
     for (const product of productListContainer.getElementsByClassName('product')) {
-        if (product.getElementsByClassName('product-name')[0].innerHTML === cartItemElement.getElementsByClassName('cart-item-name')[0].innerHTML) {
+        const productNameElement = product.getElementsByClassName('product-name')[0];
+        const cartItemNameElement = cartItemElement.getElementsByClassName('cart-item-name')[0];
+        
+        if (productNameElement.innerHTML === cartItemNameElement.innerHTML) {
             productElement = product;
             break;
         }
@@ -221,6 +199,28 @@ function updateTotalCartPrice() {
     }
 
     totalCartPriceNumber.innerHTML = priceFormatter.formatPrice(totalPrice);
+
+}
+
+function getCartList() {
+    const cartList = [];
+
+    for (const cartItemElement of cartItemsList.getElementsByClassName('cart-item')) {
+
+        let productElement = findProductElementFromCartItem(cartItemElement);
+
+        const productName = productElement.getElementsByClassName('product-name')[0].innerHTML;
+        const purchaseQuantity = parseInt(cartItemsList.getElementsByClassName('cart-item-quantity')[0].innerHTML);
+
+        const product = {
+            name: productName,
+            purchaseQuantity,
+        }
+
+        cartList.push(product);
+    }
+
+    return cartList;
 
 }
 

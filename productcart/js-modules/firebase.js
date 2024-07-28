@@ -127,12 +127,12 @@ export async function getImageURL(product) {
     
 }
 
-export async function purchaseItems(productList) {
+export async function purchaseCart(cartList) {
     try {
         let returnString = "";
 
-        for (const product of productList) {
-            await purchaseItem(product.name, product.purchaseQuantity) // Returns Confirmation String
+        for (const product of cartList) {
+            await buyItem(product.name, product.purchaseQuantity) // Returns Confirmation String
             .then((tempString) => {
                 if (tempString.includes('Not Found')) {
                     returnString += tempString;
@@ -149,7 +149,7 @@ export async function purchaseItems(productList) {
 
 }
 
-async function purchaseItem(productName, purchaseQuantity) {
+async function buyItem(productName, purchaseQuantity) {
     try {
         let product = null;
         let id = null;

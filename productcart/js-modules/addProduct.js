@@ -80,6 +80,10 @@ if (openAddProductPopupBtn && addProductPopup && closeAddProductPopupBtn) {
 
 }
 
+
+
+// ---------------- Functions ----------------
+
 function allEntriesAreFilled(entriesList) {
     let allAreFilled = true;
 
