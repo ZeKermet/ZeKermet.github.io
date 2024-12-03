@@ -1,4 +1,4 @@
-const colorsList = ['red', 'orange', 'yellow', 'green', 'purple'];
+const colorsList = ['red', 'orange', '#f2d116', 'green', 'purple'];
 
 const skittle = document.getElementById('circle');
 const button = document.getElementById('select');
