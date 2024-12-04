@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#input {
+    padding-left: 60px;
+    padding-top: 40vh;
+}
+
+#equationInput,
+#submitEquation {
+    font-size: 20px;
+    border-radius: 4px;
+}
+#equationInput {
+    margin-top: 8px;
+    border: 1px solid black;
+    padding: 0.5em 0.5em;
+    max-width: 450px;
+    width: 35vw;
+}
+#submitEquation {
+    padding: 0.5em 0.7em;
+    border: 1px solid #4545ff;
+    background: #4545ff;
+    color: white;
+    cursor: pointer;
+}
+
+#inputWarning {
+    font-size: 12px;
+    color: gray;
+    margin-top: 4px;
+}
+
+
+
+
+#chart {
+    --box-size: 30px;
+    position: absolute;
+    width: calc(var(--box-size) * 16);
+    height: calc(var(--box-size) * 16);
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template: 1fr / repeat(17, 1fr);
+    
+}
+
+.chart-column {
+    position: relative;
+    height: 100%;
+}
+.chart-column:last-of-type .chart-box {
+    border: none;
+}
+
+.chart-box {
+    width: var(--box-size);
+    height: var(--box-size);
+    border: 1px solid black;
+}
+
+.column-marker {
+    --marker-width: 8px;
+    position: absolute;
+    background: red;
+    width: var(--marker-width);
+    height: var(--marker-width);
+    border-radius: 50%;
+    left: calc(var(--marker-width) / -2);
+
+    /* 
+        bottom: calc(4 * (var(--box-size)) + var(--marker-width)/ -2);
+        4 is a placeholder. This will be the position on the box
+    */
+    
+}
