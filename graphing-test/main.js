@@ -77,11 +77,15 @@ function isNotMathOperator(input) {
 
 function displayGraph(equationString) {
     for (let i=0; i < 17; i++) {
+        const output = eval(equationString);
         const marker = document.getElementsByClassName(`chart-column ${i}`)[0].getElementsByClassName('column-marker')[0];
-        marker.style.bottom = `calc(${eval(equationString)} * (var(--box-size)) + var(--marker-width)/ -2)`;
+        marker.style.bottom = `calc(${output} * (var(--box-size)) + var(--marker-width)/ -2)`;
+        console.log(output);
 
-        if (eval(equationString) > 16 || eval(equationString) < 0) {
+        if (output > 16 || output < 0) {
             marker.style.visibility = "hidden";
+        } else {
+            marker.style.visibility = "visible";
         }
     }
 }
