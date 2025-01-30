@@ -16,100 +16,16 @@
 
 <body>
     
-    <header id="page-header">
-        <div class="header-container">
-
-            <h1 id="logo">CKINTS</h1>
-
-            <nav id="navbar">
-                <i id="closeNavbarButton" class="fa-solid fa-arrow-right-to-bracket"></i>
-                <h4 class="mobile-nav-header">Pages</h4>
-                <ul>
-                    <a href="index.html" class="navlink"><li>Home</li></a>
-                    <a href="search.html" class="navlink"><li>Discover</li></a>
-                    <a href="contact.html" class="navlink current-page"><li>Contact</li></a>
-
-                    <div class="mobile-nav-acc-container">
-                        <!-- Container displayed if not logged in -->
-                        <div class="header-guest-container-mobile">
-                            <a href="" id="headerLoginButton-mobile" class="button">Log in</a>
-                            <a href="" id="headerCreateAccButton-mobile" class="button">Sign Up</a>
-                        </div>
-
-                        <div class="header-loggedin-info-mobile">        
-                            <div id="user-info-nav-mobile">
-                                <div class="user-profile-img-container">
-                                    <img class="user-profile-img" src="../resources/Images/other-blog-images/ytlogo.jpg" />
-                                </div>
-                                <p>Username</p>
-                            </div>
-
-                            <a href="" id="createBlogButton-mobile" class="button">Create <i class="fa-solid fa-plus"></i></a>
-                        </div>
-                    </div>
-                </ul>
-            </nav>
-            
-            <div class="rightside-nav">
-                <!-- I want the next two parent elements to be displayed without sandwich icon on mobile -->
-                <i id="openHoverSearchBtn" class="fa-solid fa-magnifying-glass"></i>
-
-                <div class="header-acc-container">
-                    <!-- Container displayed if logged in -->
-                    <div class="header-loggedin-info">
-                        <a href="" id="createBlogButton" class="button">Create <i class="fa-solid fa-plus"></i></a>
-    
-                        <div id="user-info-nav">
-                            <div class="user-profile-img-container">
-                                <img class="user-profile-img" src="../resources/Images/other-blog-images/ytlogo.jpg" />
-                            </div>
-                            <p>Username</p>
-                        </div>
-                    </div>
-    
-                    <!-- Container displayed if not logged in -->
-                    <div class="header-guest-container">
-                        <a href="" id="headerLoginButton" class="button">Log in</a>
-                        <a href="" id="headerCreateAccButton" class="button">Sign Up</a>
-                    </div>
-                </div>
-
-                <i id="openNavbarBtn" class="fa-solid fa-bars"></i>
-
-            </div>
-            
-        </div>
+    <header id="page-header" class="contact-page">
+        
+        <script src="../resources/js/PageElements/pageheader.js"></script>
+        
     </header>
 
     <main>
 
-        <div class="hover-search-background">
-            <div id="hoverSearchBar">
-
-                <i id="closeHoverSearchBtn" class="fa-solid fa-x"></i>
-
-                <h2>Search Blogs</h2>
-
-                <div class="hover-searchbar-content">
-    
-                    <div class="searchbar">
-                        <div class="searchkeywords-wrapper">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                            <input name="keywords" id="keywords" placeholder="Enter Keywords" />
-                        </div>
+        <script src="../resources/js/PageElements/hoversearch.js"></script>
         
-                        <select name="category" id="category">
-                            <option value="">Category</option>
-                            <option value="">Gaming</option>
-                            <option value="">Foods</option>
-                            <option value="">Delicious</option>
-                        </select>
-        
-                        <button id="submitSearchInput">Search</button>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <section id="contact-section">
             <div class="section-container">
@@ -168,42 +84,15 @@
     
 
     <footer>
-        <div class="section-container">
-            <div class="footer-container">
-
-                <div class="footer-col about-company">
-                    <h3>Who are we?</h3>
-                    <p>We are the company that provides a blog website filled with all topics that visitors are interested in. This has always been the focus of CKINTS Blogs</p>
-                </div>
-
-                <div class="footer-col pages">
-                    <h3>Pages</h3>
-                    
-                    <ul class="footer-pages">
-                        <li><i class="fa-solid fa-chevron-right"></i><a href="index.html">Home</a></li>
-                        <li><i class="fa-solid fa-chevron-right"></i><a href="search.html">Discover</a></li>
-                        <li><i class="fa-solid fa-chevron-right"></i><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col contact">
-                    <h3>Contact Us</h3>
-
-                    <div class="contact-details">
-                        <p><i class="fa-solid fa-location-dot"></i>123 Westford, Greater Rockford, VA</p>
-                        <p><i class="fa-solid fa-envelope"></i>CKINTS_Official@email.com</p>
-                        <p><i class="fa-solid fa-phone"></i>+1 123 456 7890</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+        
+        <script src="../resources/js/PageElements/pagefooter.js"></script>
+        
     </footer>
 
 
 
 
-    <script src="../resources/js/main.js"></script>
+    <script src="../resources/js/main-page-funcs.js"></script>
 </body>
 
 </html>

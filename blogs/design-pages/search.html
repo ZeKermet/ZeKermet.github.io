@@ -1,3 +1,5 @@
+<!-- NOT USING THIS PAGE AT THE MOMENT -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,68 +17,10 @@
 </head>
 
 <body>
-    <header id="page-header" class="search-page-header">
-        <div class="header-container">
-
-            <a href="blogs.html"><h1 id="logo">CKINTS</h1></a>
-
-            <nav id="navbar">
-                <i id="closeNavbarButton" class="fa-solid fa-arrow-right-to-bracket"></i>
-                <h4 class="mobile-nav-header">Pages</h4>
-                <ul>
-                    <a href="index.html" class="navlink"><li>Home</li></a>
-                    <a href="search.html" class="navlink current-page"><li>Discover</li></a>
-                    <a href="contact.html" class="navlink"><li>Contact</li></a>
-
-                    <div class="mobile-nav-acc-container">
-                        <!-- Container displayed if not logged in -->
-                        <div class="header-guest-container-mobile">
-                            <a href="" id="headerLoginButton-mobile" class="button">Log in</a>
-                            <a href="" id="headerCreateAccButton-mobile" class="button">Sign Up</a>
-                        </div>
-
-                        <div class="header-loggedin-info-mobile">        
-                            <div id="user-info-nav-mobile">
-                                <div class="user-profile-img-container">
-                                    <img class="user-profile-img" src="../resources/Images/other-blog-images/ytlogo.jpg" />
-                                </div>
-                                <p>Username</p>
-                            </div>
-
-                            <a href="" id="createBlogButton-mobile" class="button">Create <i class="fa-solid fa-plus"></i></a>
-                        </div>
-                    </div>
-                </ul>
-            </nav>
-            
-            <div class="rightside-nav">
-                <!-- I want the next two parent elements to be displayed without sandwich icon on mobile -->
-
-                <div class="header-acc-container">
-                    <!-- Container displayed if logged in -->
-                    <div class="header-loggedin-info">
-                        <a href="" id="createBlogButton" class="button">Create <i class="fa-solid fa-plus"></i></a>
-    
-                        <div id="user-info-nav">
-                            <div class="user-profile-img-container">
-                                <img class="user-profile-img" src="../resources/Images/other-blog-images/ytlogo.jpg" />
-                            </div>
-                            <p>Username</p>
-                        </div>
-                    </div>
-    
-                    <!-- Container displayed if not logged in -->
-                    <div class="header-guest-container">
-                        <a href="" id="headerLoginButton" class="button">Log in</a>
-                        <a href="" id="headerCreateAccButton" class="button">Sign Up</a>
-                    </div>
-                </div>
-
-                <i id="openNavbarBtn" class="fa-solid fa-bars searchpage"></i>
-
-            </div>
-            
-        </div>
+    <header id="page-header" class="search-page-header searchbar-page">
+        
+        <script src="../resources/js/PageElements/pageheader.js"></script>
+        
     </header>
 
     <main>
@@ -101,7 +45,7 @@
                             <option value="">Delicious</option>
                         </select>
         
-                        <button id="submitSearchInput">Search</button>
+                        <button id="submitSearchInput"><a href="blogs.html">Search</a></button>
                     </div>
 
                 </div>
@@ -113,7 +57,7 @@
     </main>
     
 
-    <script src="../resources/js/main.js"></script>
+    <script src="../resources/js/main-page-funcs.js"></script>
 </body>
 
 </html>
