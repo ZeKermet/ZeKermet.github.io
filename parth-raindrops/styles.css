@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+.raindrops-container {
+  background: rgb(240, 240, 240);
+  width: 75vw;
+  height: 90vh;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.raindrop {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  top: -20%;
+  border: none;
+  background: blue;
+  animation: drop 0.5s ease-in;
+}
+
+@keyframes drop {
+  0% {
+    top: -20%;
+  } 100% {
+    top: 100%;
+  }
+}
