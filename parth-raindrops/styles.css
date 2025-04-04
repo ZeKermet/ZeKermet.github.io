@@ -1,32 +1,95 @@
 * {
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield; /* Firefox */
+}
+
+body {
+    position: relative;
 }
 
 .raindrops-container {
-  background: rgb(240, 240, 240);
-  width: 75vw;
-  height: 700px;
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
-
+    background: rgb(240, 240, 240);
+    width: 75vw;
+    height: 700px;
+    max-height: 60vh;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
 }
 
 .raindrop {
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  top: -20%;
-  border: none;
-  background: blue;
-  animation: drop 0.5s ease-in;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    top: -20%;
+    border: none;
+    background: blue;
+    animation: drop 0.5s ease-in;
 }
 
 @keyframes drop {
-  0% {
-    top: -20%;
-  } 100% {
-    top: 120%;
-  }
+    0% {
+        top: -20%;
+    } 100% {
+        top: 120%;
+    }
 }
+
+
+.input-container {
+    margin: 32px 0;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+
+#counterInput {
+    display: block;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #b9b9b9;
+    border-radius: 4px;
+}
+
+#submitInput {
+    display: block;
+    padding: 8px 12px;
+    font-size: 16px;
+    background: #0a8bc7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 16px;
+}
+
+
+@media screen and (max-width: 436px) {
+    h1 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    h1 {
+        font-size: 24px;
+    }
+}
+
