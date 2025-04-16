@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+img {
+    background: black;
+    position: absolute;
+}
+
+h1 {
+    position: absolute;
+}
+
+.shootingStar {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    border-radius: 25%;
+    border: none;
+    background: yellow;
+    animation: shootingStarMove linear 10s, spin linear infinite 3s;
+    z-index: 999;
+    transform: rotate(330deg);
+    left: 30%;
+}
+
+@keyframes shootingStarMove {
+    0% {
+        top: -20%;
+    } 100% {
+        top: 120%;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    } 100% {
+        transform: rotate(360deg);
+    }
+}
