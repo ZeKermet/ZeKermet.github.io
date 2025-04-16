@@ -74,7 +74,7 @@ function floodImages() {
         if (Math.random() < 0.2) {
             createShootingStar();
         }
-        body.style.background = colorsArray[Math.floor(Math.random() * colorsArray.length)];
+        //body.style.background = colorsArray[Math.floor(Math.random() * colorsArray.length)];
         floodImages();
     }, 100);
 }
