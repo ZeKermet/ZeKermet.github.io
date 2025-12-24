@@ -16,10 +16,22 @@ body {
     width: 100vw;
     background: var(--page-background);
     overflow-x: hidden;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
 }
 
 section:last-of-type .section-container {
     padding-bottom: calc(var(--page-section-gap) * 3);
+}
+
+.bold {
+    font-weight: 700;
+}
+.italic {
+    font-style: oblique;
 }
 
 .section-container {
@@ -287,40 +299,45 @@ footer {
     font-weight: 400;
     color: var(--neutral-gray);
 }
+.footer-logo p {
+    font-size: var(--font-size-p-super-small);
+    margin-bottom: -4px;
+    color: var(--neutral-gray-light);
+}
 
-footer .footer-pages {
+#page-footer .footer-pages {
     display: flex;
     justify-content: space-between;
 }
 
-footer #navlinks-footer {
+#page-footer #navlinks-footer {
     margin: 0 auto;
 }
 
-footer #navlinks-footer ul {
+#page-footer #navlinks-footer ul {
     display: flex;
     align-items: center;
     gap: 48px;
 }
 
-footer #navlinks-footer ul a {
+#page-footer #navlinks-footer ul a {
     text-decoration: none;
 }
 
-footer #navlinks-footer .navlink {
+#page-footer #navlinks-footer .navlink {
     list-style: none;
     color: var(--neutral-gray);
     cursor: pointer;
 }
 
 
-footer .socials-buttons {
+#page-footer .socials-buttons {
     display: flex;
     justify-content: end;
     align-items: center;
 }
 
-footer .social-button {
+#page-footer .social-button {
     display: flex;
     align-items: center;
     padding: 12px;
@@ -328,10 +345,10 @@ footer .social-button {
     fill: var(--neutral-gray);
     transition: 0.25s;
 }
-footer .social-button:hover {
+#page-footer .social-button:hover {
     fill: var(--neutral-gray-dark);
 }
-footer .social-button.youtube {
+#page-footer .social-button.youtube {
     margin-top: 4px;
 }
 
@@ -373,18 +390,24 @@ footer .social-button.youtube {
         align-items: center;
     }
 
-    footer #navlinks-footer ul {
+    #page-footer #navlinks-footer ul {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 24px;
+    }
+    .footer-logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
     }
 }
 
 @media screen and (max-width: 500px) {
     #page-header #navlinks {
         position: absolute;
-        top: 100%;
+        top: calc(100% - 4px);
         left: 0;
         background: var(--page-background);
         width: 100%;
@@ -392,6 +415,7 @@ footer .social-button.youtube {
         animation: 0.25s;
         height: 0;
         visibility: hidden;
+        border-bottom: none;
     }
     #page-header #navlinks ul {
         margin: 0 auto;
