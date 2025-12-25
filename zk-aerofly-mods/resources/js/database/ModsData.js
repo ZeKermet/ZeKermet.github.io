@@ -151,16 +151,16 @@ function ModsData() {
         },
         {
             id: 1225252,
-            title: "A350-1000 Mod (Sound, Front) | Android Only",
+            title: "A350-1000 Mod (LiveryVulk, Sound, Front) | Android Only",
             author: "ZK Aviation",
             datePublished: "December 25, 2025",
             lastUpdated: "December 25, 2025",
-            tags: ["A350-1000", "Sounds", "Camera", "Cabin"],
+            tags: ["A350-1000", "Sounds", "Camera", "Cabin", "Livery"],
             articleImage: "a350_1000_sounds_front_cabin_4.png",
             content: [
                 {
                     type: "subheader",
-                    value: "Features"
+                    value: "Features (Sounds, Front) | OpenGL & Vulkan"
                 },
                 {
                     type: "ul",
@@ -191,6 +191,35 @@ function ModsData() {
                 },
                 {
                     type: "subheader",
+                    value: "Liveries (LiveryVulk) | VULKAN REQUIRED"
+                },
+                {
+                    type: "paragraph",
+                    value: "Liveries Added:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Delta 100",
+                        "Freighter",
+                        "Japan Airlines 1000",
+                        "Philippines",
+                        "Qantas Airbus (house)"
+                    ]
+                },
+                {
+                    type: "paragraph",
+                    value: `<span class="italic">Credits to Yolo.9 for creating all these liveries</span>`
+                },
+                {
+                    type: "small-images",
+                    srcList: [
+                        "a350_1000_liveryvulk_sounds_front_liv1.png",
+                        "a350_1000_liveryvulk_sounds_front_liv2.png",
+                    ]
+                },
+                {
+                    type: "subheader",
                     value: "Sound Clips"
                 },
                 {
@@ -207,6 +236,10 @@ function ModsData() {
                         {
                             name: "ZK_a350_1000_mod_(Sounds_Front).tme",
                             src: "https://drive.google.com/file/d/1qT4WdrXTXPUXl6lmaWW0dfL8MgVlsDSR/view?usp=drivesdk"
+                        },
+                        {
+                            name: "ZK_a350_1000_mod_(LiveryVulk_Sounds_Front).tme",
+                            src: "https://drive.google.com/file/d/1ADqIdQEkeVkzwwwcY_-CEXrPRjnsF_vm/view?usp=drive_link"
                         },
                     ]
                 }
@@ -278,6 +311,64 @@ function ModsData() {
                         {
                             name: "ZK_a321_mod_(Sounds_Front).tme",
                             src: "https://drive.google.com/file/d/1EkCAOz5x7chAsOP_E-QzVeiK1Y606xzd/view?usp=drivesdk"
+                        },
+                    ]
+                }
+            ]
+        },
+        {
+            id: 1225254,
+            title: "B787-9/-10 (Cameras) | Android Only",
+            author: "ZK Aviation",
+            datePublished: "December 25, 2025",
+            lastUpdated: "December 25, 2025",
+            tags: ["b787", "b787-10", "b787-9", "Camera", "Cabin"],
+            articleImage: "b787_mod_pilot.png",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Features"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Lowered cockpit view height (nice!)",
+                        "Passenger views moved inside cabin",
+                    ]
+                },
+                {
+                    type: "image",
+                    src: "b787_mod_pilot.png"
+                },
+                {
+                    type: "small-images",
+                    srcList: [
+                        "b787_mod_cabin_2.png",
+                        "b787_mod_cabin_1.png",
+                        "b787_mod_cabin_4.png",
+                        "b787_mod_cabin_3.png",
+                        "b787_mod_cabin_6.png",
+                        "b787_mod_cabin_5.png",
+                    ]
+                },
+                {
+                    type: "paragraph",
+                    value: "Note: Because of the lowered view, the hud will not display properly."
+                },
+                {
+                    type: "image",
+                    src: "b787_mod_cockpit_hud_issue.png"
+                },
+                {
+                    type: "download-links",
+                    downloadsList: [
+                        {
+                            name: "ZK_b787_9_mod_(Camera).tme",
+                            src: "https://drive.google.com/file/d/1xMGJJJ6Tg7p3C9UsJvkCy_UPg7D5ZECU/view?usp=drive_link"
+                        },
+                        {
+                            name: "ZK_b787_10_mod_(Camera).tme",
+                            src: "https://drive.google.com/file/d/1WMk2rM2iqIMaUFtSNfQiu5h-QyBaeHcJ/view?usp=drive_link"
                         },
                     ]
                 }

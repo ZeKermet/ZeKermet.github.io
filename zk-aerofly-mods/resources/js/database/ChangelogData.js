@@ -1,6 +1,21 @@
 function ChangelogData() {
     return [
         {
+            modID: 1225254,
+            updateSummary: "Mod Officially Published",
+            updateDate: "December 25, 2025",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "paragraph",
+                    value: "New Boeing 787 cameras mod has been published to this site"
+                },
+            ]
+        },
+        {
             modID: 1225253,
             updateSummary: "Mod Officially Published",
             updateDate: "December 25, 2025",
