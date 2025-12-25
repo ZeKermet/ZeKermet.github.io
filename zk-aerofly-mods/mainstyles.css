@@ -167,6 +167,7 @@ button.show-more-list:hover {
     background-image: var(--banner-gradient), url('');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     width: 100vw;
     height: 500px;
     max-height: 50vh;
