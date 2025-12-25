@@ -11,7 +11,7 @@ pageFooter.innerHTML += `
                 <nav id="navlinks-footer">
                     <ul>
                         <a href="index.html"><li class="navlink">Files</li></a>
-                        <a href="#"><li class="navlink">Changelog</li></a>
+                        <a href="changelog.html"><li class="navlink">Changelog</li></a>
                     </ul>
                 </nav>
             </div>

@@ -1,0 +1,189 @@
+.page-banner {
+    background-image: var(--banner-gradient), url('../../../images/pageEssentials/747landingcopenhagen.jpg');
+}
+
+#changelog-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--section-container-gap);
+}
+
+#changelog-list-container #changelog-search {
+    position: relative;
+    width: max-content;
+    height: max-content;
+} 
+#changelog-list-container #changelog-search i {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    font-size: var(--font-size-h6);
+    color: var(--neutral-gray-dark);
+}
+#changelog-list-container #changelog-search #searchUpdate {
+    padding: 4px 12px;
+    padding-left: 32px;
+    width: 320px;
+    font-size: var(--font-size-h6);
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+}
+
+#changelog-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+#changelog-list .update {
+    --border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
+    border-radius: var(--border-radius);
+    max-width: 750px;
+}
+#changelog-list .update .update-top {
+    display: flex;
+    gap: 16px;
+}
+
+#changelog-list .update .mod-image {
+    width: 152px;
+    height: 152px;
+    min-width: 152px;
+}
+#changelog-list .update .mod-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#changelog-list .update .update-top-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+#changelog-list .update .update-summary {
+    margin-top: -4px;
+    margin-bottom: 12px;
+}
+#changelog-list .update .publish-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+#changelog-list .update .show-more-update {
+    margin: 0 auto;
+    margin-top: 16px;
+    cursor: pointer;
+    width: max-content;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+#changelog-list .update .show-more-update,
+#changelog-list .update .show-more-update * {
+    color: var(--neutral-gray);
+}
+#changelog-list .update.opened .show-more-update i {
+    transform: rotate(180deg);
+}
+
+
+#changelog-list .update .update-details {
+    height: 0;
+    display: none;
+    margin-top: 0;
+}
+#changelog-list .update.opened .update-details {
+    display: block;
+    height: auto;
+    margin-top: 24px;
+    border-top: 1px solid var(--white-dark);
+}
+#changelog-list .update.opened .update-details .subheader {
+    margin-top: 32px
+}
+#changelog-list .update.opened .update-details .paragraph {
+    margin-top: 16px;
+    line-height: 1.6;
+}
+#changelog-list .update.opened .update-details .list {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+button.show-more-list {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 540px) {
+    #changelog-list .update {
+        padding: 0;
+    }
+    #changelog-list .update .update-top-content,
+    #changelog-list .update.opened .update-details,
+    #changelog-list .update .show-more-update {
+        padding: 16px;
+    }
+
+    #changelog-list .update.opened .update-details {
+        margin-top: 0;
+    }
+    #changelog-list .update.opened .update-details > *:first-child {
+        margin-top: 0;
+    }
+
+    #changelog-list .update .update-top {
+        flex-direction: column;
+        gap: 16px;
+    }
+    #changelog-list .update .mod-image {
+        aspect-ratio: calc(5/3);
+        width: 100%;
+        height: auto;
+        border-radius: var(--border-radius) var(--border-radius) 0 0;
+    }
+    #changelog-list .update .mod-image img {
+        border-radius: inherit;
+    }
+}
+
+@media screen and (max-width: 484px) {
+    #changelog-list-container #changelog-search {
+        width: 100%;
+    } 
+    #changelog-list-container #changelog-search i {
+        font-size: var(--font-size-p);
+    }
+    #changelog-list-container #changelog-search #searchUpdate {
+        width: 100%;
+        max-width: 320px;
+        font-size: var(--font-size-p);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #changelog-list .mod-title {
+        font-size: var(--font-size-h6);
+    }
+    #changelog-list .mod-tags .tag p,
+    #changelog-list .update .publish-info > *,
+    #changelog-list .update .mod-update-date-container p,
+    #changelog-list .update .mod-update-date-container p span,
+    #changelog-list .update .update-details .paragraph,
+    #changelog-list .update .update-details .list li {
+        font-size: var(--font-size-p-small);
+    }
+}

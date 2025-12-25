@@ -1,0 +1,18 @@
+#hero {
+    background-image: var(--banner-gradient), url('../../../images/pageEssentials/a350sunsetlanding.jpg');
+    max-height: 70vh;
+}
+
+button.show-more-list {
+    display: none;
+}
+
+
+@media screen and (max-width: 420px) {
+    #hero {
+        max-height: 50vh;
+    }
+}
+
+
+
