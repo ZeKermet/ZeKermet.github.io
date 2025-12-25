@@ -1,8 +1,53 @@
 function ChangelogData() {
     return [
         {
-            modID: 122525,
-            updateSummary: "Just a test update IG",
+            modID: 1225253,
+            updateSummary: "Mod Officially Published",
+            updateDate: "December 25, 2025",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "paragraph",
+                    value: "New A320 family mod has been published to this site"
+                },
+            ]
+        },
+        {
+            modID: 1225252,
+            updateSummary: "Mod Officially Published",
+            updateDate: "December 25, 2025",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "paragraph",
+                    value: "New A350 mod has been published to this site"
+                },
+            ]
+        },
+        {
+            modID: 1225251,
+            updateSummary: "Mod Officially Published",
+            updateDate: "December 25, 2025",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "paragraph",
+                    value: "New Boeing 737 family mod has been published to this site"
+                },
+            ]
+        },
+        {
+            modID: 1225250,
+            updateSummary: "Mod Officially Published",
             updateDate: "December 25, 2025",
             content: [
                 {

@@ -1,11 +1,10 @@
 const databaseImagesPath = "./resources/js/database/images/";
 
-
 function ModsData() {
     return [
         {
-            id: 122525,
-            title: "A380 Mod (OldEmir_Sounds_Front) | Android Only",
+            id: 1225250,
+            title: "A380 Mod (OldEmir, Sounds, Front) | Android Only",
             author: "ZK Aviation",
             datePublished: "December 25, 2025",
             lastUpdated: "December 25, 2025",
@@ -42,10 +41,244 @@ function ModsData() {
                     type: "download-links",
                     downloadsList: [
                         {
-                            name: "ZK_A380_mod_(OldEmir, Sounds, Front)",
+                            name: "ZK_a380_mod_(OldEmir_Sounds_Front).tme",
                             src: "https://drive.google.com/file/d/1yWy6h8B-EiZWf67tfImQN-ReKVWeXvqR/view?usp=drivesdk"
                         },
                         
+                    ]
+                }
+            ]
+        },
+        {
+            id: 1225251,
+            title: "737-800/-900/Max-9 (Sounds, Winglets, Front, Livery) | Android Only",
+            author: "ZK Aviation",
+            datePublished: "December 25, 2025",
+            lastUpdated: "December 25, 2025",
+            tags: ["b737-800", "b737-900", "b737 Max-9", "Sounds", "Camera", "Wingtips", "Livery"],
+            articleImage: "b738_sound_front_wingtips_fiji_2.png",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Boeing 737-800/-900 Features"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Modified cockpit and cabin views",
+                        "Jumpseat view brought towards the front for a better view (images below)",
+                        "Scimitar and Blended (regular) wingtips options added to some liveries",
+                        "Cabin + Cockpit shake and touchdown sounds added",
+                    ]
+                },
+                {
+                    type: "subheader",
+                    value: "B737-800/-900 Images"
+                },
+                {
+                    type: "image",
+                    src: "b738_sound_front_wingtips_jumpseat.png",
+                },
+                {
+                    type: "small-images",
+                    srcList: [
+                        "b738_sound_front_wingtips_fiji_1.png",
+                        "b738_sound_front_wingtips_fiji_2.png",
+                        "b738_sound_front_wingtips_delta_1.png",
+                        "b738_sound_front_wingtips_delta_2.png"
+                    ]
+                },
+                {
+                    type: "subheader",
+                    value: "Boeing 737 Max-9 Features"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Same views and sounds as the ones above",
+                        "The Max-9 has a Ryanair livery that you can use (Works only with vulkan)",
+                        `<span class="italic">Credits to Yolo.9 for making the Ryanair livery, you can find him on the Aerofly Forum</span>`
+                    ]
+                },
+                {
+                    type: "small-images",
+                    srcList: [
+                        "b737max9_ryanvulk_front_sounds_1.png",
+                        "b737max9_ryanvulk_front_sounds_2.png"
+                    ]
+                },
+                {
+                    type: "paragraph",
+                    value: "And without Vulkan, you get this weird livery you can use I guess XD"
+                },
+                {
+                    type: "small-images",
+                    srcList: [
+                        "b737max9_ryanvulk_front_sounds_broken_1.png",
+                        "b737max9_ryanvulk_front_sounds_broken_2.png"
+                    ]
+                },
+                {
+                    type: "subheader",
+                    value: "Sound Clips"
+                },
+                {
+                    type: "youtube-embed",
+                    src: "https://www.youtube.com/embed/UanjSFIs0zQ?si=Zd-RZbs1x143VxIT"
+                },
+                {
+                    type: "youtube-embed",
+                    src: "https://www.youtube.com/embed/bGRZbaa81N8?si=LcP1u0rvxo6294cp"
+                },
+                {
+                    type: "download-links",
+                    downloadsList: [
+                        {
+                            name: "ZK_b737_800_mod_(Sounds_Winglets_Front).tme",
+                            src: "https://drive.google.com/file/d/1AjX-9q5cm88Y95aQMjDsSdwTsHmKx68c/view?usp=drive_link"
+                        },
+                        {
+                            name: "ZK_b737_900_mod_(Sounds_Winglets_Front).tme",
+                            src: "https://drive.google.com/file/d/1Brjocx0qq82chytrO8cO8_5XJ602yM2Q/view?usp=drive_link"
+                        },
+                        {
+                            name: "ZK_b737_Max9_mod_(RyanVulk_Sounds_Front).tme",
+                            src: "https://drive.google.com/file/d/1MnMi2rfeOQEjt2_pY-KAFDAI_etSRIVB/view?usp=drive_link"
+                        },
+                    ]
+                }
+            ]
+        },
+        {
+            id: 1225252,
+            title: "A350-1000 Mod (Sound, Front) | Android Only",
+            author: "ZK Aviation",
+            datePublished: "December 25, 2025",
+            lastUpdated: "December 25, 2025",
+            tags: ["A350-1000", "Sounds", "Camera", "Cabin"],
+            articleImage: "a350_1000_sounds_front_cabin_4.png",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Features"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Modified cockpit and cabin views",
+                        "Jumpseat view brought towards the front for a better view",
+                        "Cabin + Cockpit shake and touchdown sounds added",
+                    ]
+                },
+                {
+                    type: "subheader",
+                    value: "Images"
+                },
+                {
+                    type: "image",
+                    src: "a350_1000_sounds_front_jumpseat.png",
+                },
+                {
+                    type: "small-images",
+                    srcList: [
+                        "a350_1000_sounds_front_cabin_1.png",
+                        "a350_1000_sounds_front_cabin_2.png",
+                        "a350_1000_sounds_front_cabin_3.png",
+                        "a350_1000_sounds_front_cabin_4.png",
+                        "a350_1000_sounds_front_cabin_5.png",
+                        "a350_1000_sounds_front_cabin_6.png",
+                    ]
+                },
+                {
+                    type: "subheader",
+                    value: "Sound Clips"
+                },
+                {
+                    type: "youtube-embed",
+                    src: "https://www.youtube.com/embed/jV0QXnevqTc?si=dqLZYang_pR3RR6I"
+                },
+                {
+                    type: "youtube-embed",
+                    src: "https://www.youtube.com/embed/eToQzAoUx6k?si=h2Xa4wI7lYrPjuSh"
+                },
+                {
+                    type: "download-links",
+                    downloadsList: [
+                        {
+                            name: "ZK_a350_1000_mod_(Sounds_Front).tme",
+                            src: "https://drive.google.com/file/d/1qT4WdrXTXPUXl6lmaWW0dfL8MgVlsDSR/view?usp=drivesdk"
+                        },
+                    ]
+                }
+            ]
+        },
+        {
+            id: 1225253,
+            title: "A319/320neo/321 Mod (Sound, Front) | Android Only",
+            author: "ZK Aviation",
+            datePublished: "December 25, 2025",
+            lastUpdated: "December 25, 2025",
+            tags: ["A320 Family", "A319", "A320neo", "A321", "Sounds", "Camera", "Cabin"],
+            articleImage: "a320family_sounds_front_cabin_1.png",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Features"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Modified cockpit and cabin views",
+                        "Jumpseat view brought towards the front for a better view",
+                        "Cabin + Cockpit shake and touchdown sounds added",
+                    ]
+                },
+                {
+                    type: "subheader",
+                    value: "Images"
+                },
+                {
+                    type: "image",
+                    src: "a320family_sounds_front_jumpseat.png",
+                },
+                {
+                    type: "small-images",
+                    srcList: [
+                        "a320family_sounds_front_cabin_1.png",
+                        "a320family_sounds_front_cabin_2.png",
+                        "a320family_sounds_front_cabin_3.png",
+                        "a320family_sounds_front_cabin_4.png",
+                        "a320family_sounds_front_cabin_5.png",
+                        "a320family_sounds_front_cabin_6.png",
+                    ]
+                },
+                {
+                    type: "subheader",
+                    value: "Sound Clips"
+                },
+                {
+                    type: "youtube-embed",
+                    src: "https://www.youtube.com/embed/qFYC-UQMNJs?si=UyjFt7MfCGhFmHcP"
+                },
+                {
+                    type: "youtube-embed",
+                    src: "https://www.youtube.com/embed/3EDExTUFSTI?si=YQRQnJBmskkpyKRK"
+                },
+                {
+                    type: "download-links",
+                    downloadsList: [
+                        {
+                            name: "ZK_a319_mod_(Sounds_Front).tme",
+                            src: "https://drive.google.com/file/d/1nWfBToIZnRkR3JOuyUiA1Hr6AebCyjU6/view?usp=drivesdk"
+                        },
+                        {
+                            name: "ZK_a320neo_mod_(Sounds_Front).tme",
+                            src: "https://drive.google.com/file/d/1lxO3MbiU1ufmS505jjsxP-wXt17jIgyL/view?usp=drivesdk"
+                        },
+                        {
+                            name: "ZK_a321_mod_(Sounds_Front).tme",
+                            src: "https://drive.google.com/file/d/1EkCAOz5x7chAsOP_E-QzVeiK1Y606xzd/view?usp=drivesdk"
+                        },
                     ]
                 }
             ]
