@@ -48,36 +48,41 @@ function filterMods(query) {
 
 function constructMods(data) {
     for (const mod of data) {
-    let tagsStr = "";
-    for (const listItem of mod.tags) {
-        tagsStr += `<div class="tag"><p>${listItem}</p></div>`;
+        let tagsStr = "";
+        for (const listItem of mod.tags) {
+            tagsStr += `<div class="tag"><p>${listItem}</p></div>`;
+        }
+
+        let title = mod.title;
+        if (title.length > 48) {
+            title = title.substring(0, 43) + "...";
+        }
+
+        modsList.innerHTML += `
+            <div class="mod">
+                <div class="mod-image">
+                    <img src="${databaseImagesPath}${mod.articleImage}" />
+                </div>
+
+                <div class="mod-content">
+                    <a href="modarticle.html?articleid=${mod.id}"><h5 class="mod-title">${title}</h5></a>
+                    <div class="mod-tags">
+                        ${tagsStr}
+                    </div>
+                    <div class="publish-info">
+                        <div class="author"><i class="fa-regular fa-user"></i> ${mod.author}</div>
+                        <div class="separator"></div>
+                        <div class="date-published"><i class="fa-regular fa-calendar"></i> ${mod.datePublished}</div>
+                    </div>
+                </div>
+                <div class="mod-update-date-container">
+                    <div>
+                        <p>Last Updated: <span class="update-date">${mod.lastUpdated}</span></p>
+                    </div>
+                </div>
+            </div>
+        `;
     }
-
-    modsList.innerHTML += `
-        <div class="mod">
-            <div class="mod-image">
-                <img src="${databaseImagesPath}${mod.articleImage}" />
-            </div>
-
-            <div class="mod-content">
-                <a href="modarticle.html?articleid=${mod.id}"><h5 class="mod-title">${mod.title}</h5></a>
-                <div class="mod-tags">
-                    ${tagsStr}
-                </div>
-                <div class="publish-info">
-                    <div class="author"><i class="fa-regular fa-user"></i> ${mod.author}</div>
-                    <div class="separator"></div>
-                    <div class="date-published"><i class="fa-regular fa-calendar"></i> ${mod.datePublished}</div>
-                </div>
-            </div>
-            <div class="mod-update-date-container">
-                <div>
-                    <p>Last Updated: <span class="update-date">${mod.lastUpdated}</span></p>
-                </div>
-            </div>
-        </div>
-    `;
-}
 }
 
 

@@ -133,9 +133,11 @@ button.show-more-list {
         padding: 0;
     }
     #changelog-list .update .update-top-content,
-    #changelog-list .update.opened .update-details,
-    #changelog-list .update .show-more-update {
+    #changelog-list .update.opened .update-details {
         padding: 16px;
+    }
+    #changelog-list .update .show-more-update {
+        padding-bottom: 16px;
     }
 
     #changelog-list .update.opened .update-details {

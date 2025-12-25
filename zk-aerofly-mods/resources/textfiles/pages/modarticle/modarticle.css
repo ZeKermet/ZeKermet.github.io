@@ -92,11 +92,11 @@
 }
 #article-content .small-images {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 }
 #article-content .small-images img {
-    aspect-ratio: 1;
+    aspect-ratio: calc(5/3);
     width: 100%;
     object-fit: cover;
     min-width: 200px;
@@ -161,7 +161,7 @@
         gap: 24px;
     }
     #article-content .small-images img {
-        aspect-ratio: calc(4/3);
+        aspect-ratio: calc(5/3);
     }
 }
 
