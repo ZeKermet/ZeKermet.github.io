@@ -471,6 +471,11 @@ footer {
         visibility: visible;
         border-bottom: 1px solid var(--neutral-gray-light);
     }
+    #page-header.navopened #navlinks ul,
+    #page-header.navopened #navlinks ul a {
+        width: 100%;
+        text-align: center;
+    }
     #page-header.navopened #mobile-page-header-dropdown .dropdown-arrow {
         transform: rotate(180deg);
     }
