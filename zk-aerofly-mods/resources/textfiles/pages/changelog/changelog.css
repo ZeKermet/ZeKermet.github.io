@@ -136,6 +136,9 @@ button.show-more-list {
     #changelog-list .update.opened .update-details {
         padding: 16px;
     }
+    #changelog-list .update .update-top-content {
+        padding-top: 8px;
+    }
     #changelog-list .update .show-more-update {
         padding-bottom: 16px;
     }
@@ -187,5 +190,9 @@ button.show-more-list {
     #changelog-list .update .update-details .paragraph,
     #changelog-list .update .update-details .list li {
         font-size: var(--font-size-p-small);
+    }
+
+    #changelog-list .update .update-top-content {
+        padding-top: 4px;
     }
 }
