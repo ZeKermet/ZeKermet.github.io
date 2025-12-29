@@ -3,6 +3,67 @@ const databaseImagesPath = "./resources/js/database/images/";
 function ModsData() {
     return [
         {
+            id: 1229250,
+            title: "b777-300er/200f (Front) | Android Only",
+            author: "ZK Aviation",
+            datePublished: "December 29, 2025",
+            lastUpdated: "December 29, 2025",
+            tags: ["b777", "b777-300er", "b777-200f", "Camera", "Livery"],
+            articleImage: "b777_mod_old_emirates.png",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Features"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Modified cockpit and passenger views",
+                        "Jumpseat camera moved to the front for a better view",
+                        `Includes old mobile Emirates livery <span class="bold">(Works for OpenGL & Vulkan)</span>`
+                    ]
+                },
+                {
+                    type: "subheader",
+                    value: "Images"
+                },
+                {
+                    type: "image",
+                    src: "b777_mod_jumpseat.png",
+                },
+                {
+                    type: "small-images",
+                    srcList: [
+                        "b777_mod_cabin_1.png",
+                        "b777_mod_cabin_2.png",
+                        "b777_mod_cabin_3.png"
+                    ]
+                },
+                {
+                    type: "paragraph",
+                    value: "For the 777-200f, the views were intentionally placed so you can see the interior"
+                },
+                {
+                    type: "image",
+                    src: "b777_mod_freight_interior.png"
+                },
+                {
+                    type: "download-links",
+                    downloadsList: [
+                        {
+                            name: "ZK_b777_200f_mod_(Front).tme",
+                            src: "https://drive.google.com/file/d/1HNhxpN81dGkNuAx_7cfulpxKtKq-YAYC/view?usp=drive_link"
+                        },
+                        {
+                            name: "ZK_b777_300er_mod_(OldEmir_Front).tme",
+                            src: "https://drive.google.com/file/d/13UO-frU4n_ZlDo8wTJyygRuvFmmQpyQC/view?usp=drive_link"
+                        },
+                        
+                    ]
+                }
+            ]
+        },
+        {
             id: 1225250,
             title: "A380 Mod (OldEmir, Sounds, Front) | Android Only",
             author: "ZK Aviation",
@@ -318,10 +379,10 @@ function ModsData() {
         },
         {
             id: 1225254,
-            title: "B787-9/-10 (Cameras) | Android Only",
+            title: "B787-9/-10 (Front) | Android Only",
             author: "ZK Aviation",
             datePublished: "December 25, 2025",
-            lastUpdated: "December 25, 2025",
+            lastUpdated: "December 29, 2025",
             tags: ["b787", "b787-10", "b787-9", "Camera", "Cabin"],
             articleImage: "b787_mod_pilot.png",
             content: [
@@ -333,12 +394,13 @@ function ModsData() {
                     type: "ul",
                     list: [
                         "Lowered cockpit view height (nice!)",
+                        "Jumpseat view pushed forward",
                         "Passenger views moved inside cabin",
                     ]
                 },
                 {
                     type: "image",
-                    src: "b787_mod_pilot.png"
+                    src: "b787_mod_jumpseat.png"
                 },
                 {
                     type: "small-images",

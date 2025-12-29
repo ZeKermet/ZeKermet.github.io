@@ -2,6 +2,38 @@ function ChangelogData() {
     return [
         {
             modID: 1225254,
+            updateSummary: "Minor View Change",
+            updateDate: "December 29, 2025",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Pushed the jumpseat view to the front"
+                    ]
+                },
+            ]
+        },
+        {
+            modID: 1229250,
+            updateSummary: "Mod Officially Published",
+            updateDate: "December 25, 2025",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "paragraph",
+                    value: "New Boeing 777 mod has been published to this site"
+                },
+            ]
+        },
+        {
+            modID: 1225254,
             updateSummary: "Mod Officially Published",
             updateDate: "December 25, 2025",
             content: [
