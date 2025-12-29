@@ -170,7 +170,7 @@ button.show-more-list:hover {
     background-position: center;
     width: 100vw;
     height: 500px;
-    max-height: 50vh;
+    max-height: 60vh;
     text-align: center;
 }
 .page-banner-text > * {
