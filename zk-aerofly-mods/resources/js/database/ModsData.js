@@ -532,11 +532,11 @@ function ModsData() {
                     type: "download-links",
                     downloadsList: [
                         {
-                            name: "ZK_b787_9_mod_(Camera).tme",
+                            name: "ZK_b787_9_mod_(Front).tme",
                             src: "https://drive.google.com/file/d/1xMGJJJ6Tg7p3C9UsJvkCy_UPg7D5ZECU/view?usp=drive_link"
                         },
                         {
-                            name: "ZK_b787_10_mod_(Camera).tme",
+                            name: "ZK_b787_10_mod_(Front_S).tme",
                             src: "https://drive.google.com/file/d/1WMk2rM2iqIMaUFtSNfQiu5h-QyBaeHcJ/view?usp=drive_link"
                         },
                     ]
@@ -718,3 +718,4 @@ function ModsData() {
     ];
 }
 */
+
