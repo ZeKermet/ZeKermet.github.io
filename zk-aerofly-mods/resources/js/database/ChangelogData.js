@@ -1,6 +1,21 @@
 function ChangelogData() {
     return [
         {
+            modID: 1229251,
+            updateSummary: "Minor View Change",
+            updateDate: "December 29, 2025",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "paragraph",
+                    value: "New Boeing 747 mod has been published to this site"
+                },
+            ]
+        },
+        {
             modID: 1225254,
             updateSummary: "Minor View Change",
             updateDate: "December 29, 2025",

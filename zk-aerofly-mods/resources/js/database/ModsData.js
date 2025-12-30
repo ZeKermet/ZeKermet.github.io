@@ -3,6 +3,113 @@ const databaseImagesPath = "./resources/js/database/images/";
 function ModsData() {
     return [
         {
+            id: 1229251,
+            title: "b747-400 (Livery, Front) | Android Only",
+            author: "ZK Aviation",
+            datePublished: "December 29, 2025",
+            lastUpdated: "December 29, 2025",
+            tags: ["b747-400", "Camera", "Livery"],
+            articleImage: "b747_mod_livery_ryanair.png",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Features"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Modified cockpit and passenger views",
+                        "Jumpseat camera moved to the front for a better view",
+                        `Includes old mobile Lufthansa livery <span class="bold">(Works for OpenGL & Vulkan)</span>`
+                    ]
+                },
+                {
+                    type: "subheader",
+                    value: "Images"
+                },
+                {
+                    type: "image",
+                    src: "b747_mod_jumpseat.png",
+                },
+                {
+                    type: "small-images",
+                    srcList: [
+                        "b747_mod_cabin_1.png",
+                        "b747_mod_cabin_2.png",
+                        "b747_mod_cabin_3.png",
+                        "b747_mod_livery_old_lufthansa.png"
+                    ]
+                },
+                {
+                    type: "subheader",
+                    value: "Liveries Added (LiveryVulk, Front) | VULKAN REQUIRED"
+                },
+                {
+                    type: "paragraph",
+                    value: "Liveries Added:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Aero Argentinas",
+                        "Air Force One",
+                        "Atlas Air",
+                        "BOAC",
+                        "Condor",
+                        "Evergreen",
+                        "Iberia",
+                        "Modern KLM",
+                        "NWA",
+                        "Pan Am",
+                        "Pokemon (lol???)",
+                        "Qantas",
+                        `<span class="bold">Ryanair (?????)</span>`,
+                        "Star Alliance",
+                        "Swiss Air",
+                        "Swiss Old",
+                        "TWA Retro",
+                        "United Airlines (1985)",
+                        "Virgin Atlantic"
+                    ]
+                },
+                {
+                    type: "paragraph",
+                    value: `<span class="italic">All liveries were downloaded from Higgy's former site, http://flight-sim.org/filebase. You can find him on the Aerofly forum</span>`
+                },
+                {
+                    type: "small-images",
+                    srcList: [
+                        "b747_mod_livery_1.png",
+                        "b747_mod_livery_2.png",
+                        "b747_mod_livery_3.png",
+                        "b747_mod_livery_4.png",
+                    ]
+                },
+                {
+                    type: "image",
+                    src: "b747_mod_livery_ryanair.png"
+                },
+                {
+                    type: "paragraph",
+                    value: `<span class="italic">Note: Liveries WILL NOT WORK PROPERLY without Vulkan. For devices not compatible with Vulkan, a separate file "(OldLufth_Front)" is provided. It contains the old lufthansa livery that works for both OpenGL and Vulkan.</span>`
+                },
+                {
+                    type: "download-links",
+                    downloadsList: [
+                        {
+                            name: "ZK_b747_400_mod_(OldLufth_Front).tme",
+                            src: "https://drive.google.com/file/d/1DQTDtE4xjPA1kzzSDjHcnMBKnyGfCtXR/view?usp=sharing"
+                        },
+                        {
+                            name: "ZK_b747_400_mod_(LiveryVulk_Front).tme",
+                            src: "https://drive.google.com/file/d/1baDnK_536kkFncqNb8w-LYQCQr5ZFSMR/view?usp=drive_link"
+                        },
+                        
+                    ]
+                }
+            ]
+        },
+        {
             id: 1229250,
             title: "b777-300er/200f (Front) | Android Only",
             author: "ZK Aviation",
