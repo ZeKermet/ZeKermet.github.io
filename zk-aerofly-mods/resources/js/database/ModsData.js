@@ -344,7 +344,7 @@ function ModsData() {
             title: "A350-1000 Mod (LiveryVulk, Sound, Front) | Android Only",
             author: "ZK Aviation",
             datePublished: "December 25, 2025",
-            lastUpdated: "January 3, 2026",
+            lastUpdated: "January 4, 2026",
             tags: ["A350-1000", "Sounds", "Camera", "Cabin", "Livery"],
             articleImage: "a350_1000_sounds_front_cabin_4.png",
             content: [
@@ -424,12 +424,12 @@ function ModsData() {
                     type: "download-links",
                     downloadsList: [
                         {
-                            name: "ZK_a350_1000_mod_v1.1.0_(Sounds_Front).tme",
-                            src: "https://drive.google.com/file/d/1Guqo23dULpoyoeA2jVlBnAc40dVGacGr/view?usp=sharing"
+                            name: "ZK_a350_1000_mod_v1.1.1_(Sounds_Front).tme",
+                            src: "https://drive.google.com/file/d/1Ws2VWDM_L0O-EXauzxXIuq5poWB1iZtD/view?usp=sharing"
                         },
                         {
-                            name: "ZK_a350_1000_mod_v1.1.0_(LiveryVulk_Sounds_Front).tme",
-                            src: "https://drive.google.com/file/d/1cf2Dt-mnvGeIsfcyQB9nwxzMMQN283Iv/view?usp=sharing"
+                            name: "ZK_a350_1000_mod_v1.1.1_(LiveryVulk_Sounds_Front).tme",
+                            src: "https://drive.google.com/file/d/1Ws2VWDM_L0O-EXauzxXIuq5poWB1iZtD/view?usp=sharing"
                         },
                     ]
                 }

@@ -2,6 +2,23 @@ function ChangelogData() {
     return [
         {
             modID: 1225252,
+            updateSummary: "A350-1000 Mod v1.1.1 | Sounds Update",
+            updateDate: "January 4, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Made the cockpit shake sound louder again",
+                    ]
+                },
+            ]
+        },
+        {
+            modID: 1225252,
             updateSummary: "A350-1000 Mod v1.1.0 | Sounds Update",
             updateDate: "January 3, 2026",
             content: [
