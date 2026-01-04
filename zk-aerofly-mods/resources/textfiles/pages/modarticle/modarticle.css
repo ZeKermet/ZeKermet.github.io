@@ -94,6 +94,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
+    
 }
 #article-content .small-images img {
     aspect-ratio: calc(5/3);
