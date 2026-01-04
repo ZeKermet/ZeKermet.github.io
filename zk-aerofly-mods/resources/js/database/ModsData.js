@@ -7,7 +7,7 @@ function ModsData() {
             title: "b747-400 (Livery, Front) | Android Only",
             author: "ZK Aviation",
             datePublished: "December 29, 2025",
-            lastUpdated: "December 29, 2025",
+            lastUpdated: "January 3, 2026",
             tags: ["b747-400", "Camera", "Livery"],
             articleImage: "b747_mod_livery_ryanair.png",
             content: [
@@ -91,18 +91,18 @@ function ModsData() {
                 },
                 {
                     type: "paragraph",
-                    value: `<span class="italic">Note: Liveries WILL NOT WORK PROPERLY without Vulkan. For devices not compatible with Vulkan, a separate file "(OldLufth_Front)" is provided. It contains the old lufthansa livery that works for both OpenGL and Vulkan.</span>`
+                    value: `<span class="italic">Note: Liveries WILL NOT WORK PROPERLY without Vulkan. For devices not compatible with Vulkan liveries, a separate file "(OldLufth_Front)" is provided. It contains the old lufthansa livery that works for both OpenGL and Vulkan.</span>`
                 },
                 {
                     type: "download-links",
                     downloadsList: [
                         {
-                            name: "ZK_b747_400_mod_(OldLufth_Front).tme",
-                            src: "https://drive.google.com/file/d/1DQTDtE4xjPA1kzzSDjHcnMBKnyGfCtXR/view?usp=sharing"
+                            name: "ZK_b747_400_mod_v1.0.0_(OldLufth_Front).tme",
+                            src: "https://drive.google.com/file/d/1fJnUx50Y4ooNwP1Szsh_UoVTZMprNovw/view?usp=sharing"
                         },
                         {
-                            name: "ZK_b747_400_mod_(LiveryVulk_Front).tme",
-                            src: "https://drive.google.com/file/d/1baDnK_536kkFncqNb8w-LYQCQr5ZFSMR/view?usp=drive_link"
+                            name: "ZK_b747_400_mod_v1.0.0_(LiveryVulk_Front).tme",
+                            src: "https://drive.google.com/file/d/1PvCnulEaZ2c5w37aU2pw0KvSxsTfu8FN/view?usp=sharing"
                         },
                         
                     ]
@@ -114,7 +114,7 @@ function ModsData() {
             title: "b777-300er/200f (Front) | Android Only",
             author: "ZK Aviation",
             datePublished: "December 29, 2025",
-            lastUpdated: "December 29, 2025",
+            lastUpdated: "January 3, 2026",
             tags: ["b777", "b777-300er", "b777-200f", "Camera", "Livery"],
             articleImage: "b777_mod_old_emirates.png",
             content: [
@@ -158,12 +158,12 @@ function ModsData() {
                     type: "download-links",
                     downloadsList: [
                         {
-                            name: "ZK_b777_200f_mod_(Front).tme",
-                            src: "https://drive.google.com/file/d/1HNhxpN81dGkNuAx_7cfulpxKtKq-YAYC/view?usp=drive_link"
+                            name: "ZK_b777_200f_mod_v1.0.0_(Front).tme",
+                            src: "https://drive.google.com/file/d/10weZGJIpaDcfqBkqlOrazHKEjObFI7zx/view?usp=sharing"
                         },
                         {
-                            name: "ZK_b777_300er_mod_(OldEmir_Front).tme",
-                            src: "https://drive.google.com/file/d/13UO-frU4n_ZlDo8wTJyygRuvFmmQpyQC/view?usp=drive_link"
+                            name: "ZK_b777_300er_mod_v1.0.0_(OldEmir_Front).tme",
+                            src: "https://drive.google.com/file/d/1pVDP2X37m9yuRa4UNO99SpV8KP9lc1Bs/view?usp=sharing"
                         },
                         
                     ]
@@ -175,7 +175,7 @@ function ModsData() {
             title: "A380 Mod (OldEmir, Sounds, Front) | Android Only",
             author: "ZK Aviation",
             datePublished: "December 25, 2025",
-            lastUpdated: "December 25, 2025",
+            lastUpdated: "January 3, 2026",
             tags: ["A380", "Camera", "Sounds"],
             articleImage: "a380_oldemir_sounds_front_jumpseat.png",
             content: [
@@ -190,6 +190,7 @@ function ModsData() {
                         "Jumpseat camera moved to the front for a better view (Img Above)",
                         "Cabin + Cockpit shake and touchdown sounds added",
                         "Flaps sound has been changed to be closer to the real one",
+                        "Wind sound changed for better quality and quietness",
                         `Includes old mobile Emirates livery <span class="bold">(Works for OpenGL & Vulkan)</span>`
                     ]
                 },
@@ -199,18 +200,14 @@ function ModsData() {
                 },
                 {
                     type: "youtube-embed",
-                    src: "https://www.youtube.com/embed/NXuurS9MdqM?si=b6V6YHIwXurzv7U4"
-                },
-                {
-                    type: "youtube-embed",
-                    src: "https://www.youtube.com/embed/06ZM2iWn7Ns?si=1vQHSR620EMc5I7j"
+                    src: "https://www.youtube.com/embed/SBiDF2V4dro?si=L5VclmQbwoyZodYU"
                 },
                 {
                     type: "download-links",
                     downloadsList: [
                         {
-                            name: "ZK_a380_mod_(OldEmir_Sounds_Front).tme",
-                            src: "https://drive.google.com/file/d/1yWy6h8B-EiZWf67tfImQN-ReKVWeXvqR/view?usp=drivesdk"
+                            name: "ZK_a380_mod_v1.1.0_(OldEmir_Sounds_Front).tme",
+                            src: "https://drive.google.com/file/d/1IJj17rVbP_FPmP8ygsSAq0YKdvYZQC_3/view?usp=sharing"
                         },
                         
                     ]
@@ -219,11 +216,11 @@ function ModsData() {
         },
         {
             id: 1225251,
-            title: "737-800/-900/Max-9 (Sounds, Winglets, Front, Livery) | Android Only",
+            title: "737ng/-500/max (Sounds, Views, & More) | Android Only",
             author: "ZK Aviation",
             datePublished: "December 25, 2025",
-            lastUpdated: "December 25, 2025",
-            tags: ["b737-800", "b737-900", "b737 Max-9", "Sounds", "Camera", "Wingtips", "Livery"],
+            lastUpdated: "January 3, 2026",
+            tags: ["b737-500", "b737-800", "b737-900", "b737 Max-9", "Sounds", "Camera", "Wingtips", "Livery"],
             articleImage: "b738_sound_front_wingtips_fiji_2.png",
             content: [
                 {
@@ -288,6 +285,27 @@ function ModsData() {
                 },
                 {
                     type: "subheader",
+                    value: "Boeing 737-500 Features"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Modified cockpit views like the others",
+                        "Sounds implemented like the modern 737s",
+                        "Passenger views placed inside the cabin (see images below)",
+                    ]
+                },
+                {
+                    type: "small-images",
+                    srcList: [
+                        "b737_500_cockpit.png",
+                        "b737_500_cabin_1.png",
+                        "b737_500_cabin_2.png",
+                        "b737_500_cabin_3.png",
+                    ]
+                },
+                {
+                    type: "subheader",
                     value: "Sound Clips"
                 },
                 {
@@ -302,16 +320,20 @@ function ModsData() {
                     type: "download-links",
                     downloadsList: [
                         {
-                            name: "ZK_b737_800_mod_(Sounds_Winglets_Front).tme",
-                            src: "https://drive.google.com/file/d/1AjX-9q5cm88Y95aQMjDsSdwTsHmKx68c/view?usp=drive_link"
+                            name: "ZK_b737_500_mod_v1.0.0_(Sounds_Cabin).tme",
+                            src: "https://drive.google.com/file/d/1X0NXsma5leRvZTeo11wpGbVZjCKzDuy8/view?usp=sharing"
                         },
                         {
-                            name: "ZK_b737_900_mod_(Sounds_Winglets_Front).tme",
-                            src: "https://drive.google.com/file/d/1Brjocx0qq82chytrO8cO8_5XJ602yM2Q/view?usp=drive_link"
+                            name: "ZK_b737_800_mod_v1.0.0_(Sounds_Winglets_Front).tme",
+                            src: "https://drive.google.com/file/d/1e7n053dvH9SyhsQN28GX-Uj_upCDMNFZ/view?usp=sharing"
                         },
                         {
-                            name: "ZK_b737_Max9_mod_(RyanVulk_Sounds_Front).tme",
-                            src: "https://drive.google.com/file/d/1MnMi2rfeOQEjt2_pY-KAFDAI_etSRIVB/view?usp=drive_link"
+                            name: "ZK_b737_900_mod_v1.0.0_(Sounds_Winglets_Front).tme",
+                            src: "https://drive.google.com/file/d/1OwWKCd1EI8ZSK2yWfLQ7z9VKRM4KRZqm/view?usp=sharing"
+                        },
+                        {
+                            name: "ZK_b737_Max9_mod_v1.0.0_(RyanVulk_Sounds_Front).tme",
+                            src: "https://drive.google.com/file/d/1GBLB9zJyCU4YPFzhJ-7NfnQzBzXM4z-k/view?usp=sharing"
                         },
                     ]
                 }
@@ -322,7 +344,7 @@ function ModsData() {
             title: "A350-1000 Mod (LiveryVulk, Sound, Front) | Android Only",
             author: "ZK Aviation",
             datePublished: "December 25, 2025",
-            lastUpdated: "December 25, 2025",
+            lastUpdated: "January 3, 2026",
             tags: ["A350-1000", "Sounds", "Camera", "Cabin", "Livery"],
             articleImage: "a350_1000_sounds_front_cabin_4.png",
             content: [
@@ -402,12 +424,12 @@ function ModsData() {
                     type: "download-links",
                     downloadsList: [
                         {
-                            name: "ZK_a350_1000_mod_(Sounds_Front).tme",
-                            src: "https://drive.google.com/file/d/1qT4WdrXTXPUXl6lmaWW0dfL8MgVlsDSR/view?usp=drivesdk"
+                            name: "ZK_a350_1000_mod_v1.1.0_(Sounds_Front).tme",
+                            src: "https://drive.google.com/file/d/1Guqo23dULpoyoeA2jVlBnAc40dVGacGr/view?usp=sharing"
                         },
                         {
-                            name: "ZK_a350_1000_mod_(LiveryVulk_Sounds_Front).tme",
-                            src: "https://drive.google.com/file/d/1ADqIdQEkeVkzwwwcY_-CEXrPRjnsF_vm/view?usp=drive_link"
+                            name: "ZK_a350_1000_mod_v1.1.0_(LiveryVulk_Sounds_Front).tme",
+                            src: "https://drive.google.com/file/d/1cf2Dt-mnvGeIsfcyQB9nwxzMMQN283Iv/view?usp=sharing"
                         },
                     ]
                 }
@@ -418,7 +440,7 @@ function ModsData() {
             title: "A319/320neo/321 Mod (Sound, Front) | Android Only",
             author: "ZK Aviation",
             datePublished: "December 25, 2025",
-            lastUpdated: "December 25, 2025",
+            lastUpdated: "January 3, 2026",
             tags: ["A320 Family", "A319", "A320neo", "A321", "Sounds", "Camera", "Cabin"],
             articleImage: "a320family_sounds_front_cabin_1.png",
             content: [
@@ -469,16 +491,16 @@ function ModsData() {
                     type: "download-links",
                     downloadsList: [
                         {
-                            name: "ZK_a319_mod_(Sounds_Front).tme",
-                            src: "https://drive.google.com/file/d/1nWfBToIZnRkR3JOuyUiA1Hr6AebCyjU6/view?usp=drivesdk"
+                            name: "ZK_a319_mod_v1.0.0_(Sounds_Front).tme",
+                            src: "https://drive.google.com/file/d/1z1ileouk4uRbj-tSyI00PXUEVLtgXyEc/view?usp=sharing"
                         },
                         {
-                            name: "ZK_a320neo_mod_(Sounds_Front).tme",
-                            src: "https://drive.google.com/file/d/1lxO3MbiU1ufmS505jjsxP-wXt17jIgyL/view?usp=drivesdk"
+                            name: "ZK_a320neo_mod_v1.0.0_(Sounds_Front).tme",
+                            src: "https://drive.google.com/file/d/12DimYYcJxV_7iwP-P1Rx5naILHqPR1px/view?usp=sharing"
                         },
                         {
-                            name: "ZK_a321_mod_(Sounds_Front).tme",
-                            src: "https://drive.google.com/file/d/1EkCAOz5x7chAsOP_E-QzVeiK1Y606xzd/view?usp=drivesdk"
+                            name: "ZK_a321_mod_v1.0.0_(Sounds_Front).tme",
+                            src: "https://drive.google.com/file/d/1loSpcDBzUOhB4gaj2idmN7efNcxiSIor/view?usp=sharing"
                         },
                     ]
                 }
@@ -489,7 +511,7 @@ function ModsData() {
             title: "B787-9/-10 (Front) | Android Only",
             author: "ZK Aviation",
             datePublished: "December 25, 2025",
-            lastUpdated: "December 29, 2025",
+            lastUpdated: "January 3, 2025",
             tags: ["b787", "b787-10", "b787-9", "Camera", "Cabin"],
             articleImage: "b787_mod_pilot.png",
             content: [
@@ -532,12 +554,12 @@ function ModsData() {
                     type: "download-links",
                     downloadsList: [
                         {
-                            name: "ZK_b787_9_mod_(Front).tme",
-                            src: "https://drive.google.com/file/d/1xMGJJJ6Tg7p3C9UsJvkCy_UPg7D5ZECU/view?usp=drive_link"
+                            name: "ZK_b787_9_mod_v1.0.0_(Front).tme",
+                            src: "https://drive.google.com/file/d/1wPXA2teAz1NRo1F-7AuSkfRl1IPr8jPD/view?usp=sharing"
                         },
                         {
-                            name: "ZK_b787_10_mod_(Front_S).tme",
-                            src: "https://drive.google.com/file/d/1WMk2rM2iqIMaUFtSNfQiu5h-QyBaeHcJ/view?usp=drive_link"
+                            name: "ZK_b787_10_mod_v1.0.0_(Front_S).tme",
+                            src: "https://drive.google.com/file/d/1pJ-zITPgBWyOvkDzcIBBZvlQc9uuz7n6/view?usp=sharing"
                         },
                     ]
                 }
@@ -557,7 +579,7 @@ function getModArticle(id) {
 function getModArticleIndex(start, end = -1) {
     const data = [];
     const modsDataCopy = ModsData();
-    if (end === -1 || end > modsDataCopy.length) end = modsDataCopy.length;
+    if (end === -1 || end > modsDataCopy.length) end = modsDataCopy.length - 1;
     for (let i=start; i <= end; i++) {
         data[data.length] = modsDataCopy[i];
     }
@@ -718,4 +740,3 @@ function ModsData() {
     ];
 }
 */
-
