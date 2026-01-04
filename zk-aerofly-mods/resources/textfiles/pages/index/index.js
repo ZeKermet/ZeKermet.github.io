@@ -50,6 +50,7 @@ function constructMods(data) {
     for (const mod of data) {
         let tagsStr = "";
         for (const listItem of mod.tags) {
+            if (mod.tags.length > 6 && listItem === mod.tags[6]) break;
             tagsStr += `<div class="tag"><p>${listItem}</p></div>`;
         }
 
