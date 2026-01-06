@@ -50,7 +50,7 @@ function constructUpdate(data) {
                     </div>
 
                     <div class="update-top-content">
-                        <a href="modarticle.html?articleid=${mod.id}"><h5 class="mod-title">${mod.title}</h5></a>
+                        <a href="modarticle.html?articleid=${mod.id}"><h6 class="mod-title">${mod.title}</h6></a>
                         <p class="update-summary no-bold">${update.updateSummary}</p>
                         <div class="publish-info">
                             <div class="author"><i class="fa-regular fa-user"></i> ${mod.author}</div>

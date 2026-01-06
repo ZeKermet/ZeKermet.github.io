@@ -11,6 +11,7 @@ document.getElementsByTagName('title')[0].innerHTML += modData.title;
 
 
 // ---------- ARTICLE ELEMENTS ----------- 
+
 const articleTitle = document.getElementById('article-title');
 const articleTags = document.getElementById('article-tags');
 
@@ -24,6 +25,7 @@ const articleImage = document.getElementById('article-image').getElementsByTagNa
 const articleContent = document.getElementById('article-content');
 
 // ---------- ARTICLE BUILDER ----------- 
+
 articleTitle.innerHTML = modData.title;
 
 for (const tag of modData.tags) {

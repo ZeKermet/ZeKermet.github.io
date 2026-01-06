@@ -45,7 +45,7 @@
     flex-direction: column;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
     border-radius: var(--border-radius);
-    max-width: 750px;
+    max-width: 700px;
 }
 #changelog-list .update .update-top {
     display: flex;
@@ -53,9 +53,9 @@
 }
 
 #changelog-list .update .mod-image {
-    width: 152px;
-    height: 152px;
-    min-width: 152px;
+    width: 144px;
+    height: 144px;
+    min-width: 144px;
 }
 #changelog-list .update .mod-image img {
     width: 100%;
@@ -70,12 +70,19 @@
 }
 #changelog-list .update .update-summary {
     margin-top: -4px;
-    margin-bottom: 12px;
+    margin-bottom: 4px;
+    line-height: 1.5;
+    color: var(--neutral-gray-dark);
+    font-size: var(--font-size-p-small);
 }
 #changelog-list .update .publish-info {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    font-size: var(--font-size-p-small);
+}
+#changelog-list .update .publish-info * {
+    color: var(--neutral-gray-dark);
 }
 #changelog-list .update .show-more-update {
     margin: 0 auto;
