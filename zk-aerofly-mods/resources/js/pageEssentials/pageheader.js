@@ -11,7 +11,7 @@ pageHeader.innerHTML += `
 
             <nav id="navlinks">
                 <ul>
-                    <a href="index.html"><li class="navlink">Files</li></a>
+                    <a href="index.html"><li class="navlink">Mods</li></a>
                     <a href="changelog.html"><li class="navlink">Changelog</li></a>
                 </ul>
             </nav>
