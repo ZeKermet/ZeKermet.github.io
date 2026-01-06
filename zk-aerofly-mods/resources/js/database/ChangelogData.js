@@ -1,6 +1,126 @@
 function ChangelogData() {
     return [
         {
+            modID: 1225254,
+            updateSummary: "Boeing 787 Mod v1.1.0 | Camera Movements",
+            updateDate: "January 6, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Added camera movements on turns and touchdown",
+                    ]
+                },
+            ]
+        },
+        {
+            modID: 1225253,
+            updateSummary: "A320 Mod v1.1.0 | Camera Movements",
+            updateDate: "January 6, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Added camera movements on turns and touchdown",
+                    ]
+                },
+            ]
+        },
+        {
+            modID: 1225252,
+            updateSummary: "A350 Mod v1.2.0 | Camera Movements",
+            updateDate: "January 6, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Added camera movements on turns and touchdown",
+                    ]
+                },
+            ]
+        },
+        {
+            modID: 1225251,
+            updateSummary: "Boeing 737ng/-500/max Mod v1.1.0 | Camera Movements & Minor Sounds Rework",
+            updateDate: "January 6, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Added camera movements on turns and touchdown",
+                        "Minor fix to cabin shake sound"
+                    ]
+                },
+            ]
+        },
+        {
+            modID: 1225250,
+            updateSummary: "A380 Mod v1.2.0 | Camera Movements",
+            updateDate: "January 6, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Added camera movements on turns and touchdown",
+                    ]
+                },
+            ]
+        },
+        {
+            modID: 1229250,
+            updateSummary: "Boeing 777-400 Mod v1.1.0 | Camera Movements",
+            updateDate: "January 6, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Added camera movements on turns and touchdown",
+                    ]
+                },
+            ]
+        },
+        {
+            modID: 1229251,
+            updateSummary: "Boeing 747-400 Mod v1.1.0 | Camera Movements",
+            updateDate: "January 6, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Added camera movements on turns and touchdown",
+                    ]
+                },
+            ]
+        },
+        {
             modID: 1225252,
             updateSummary: "A350-1000 Mod v1.1.1 | Sounds Update",
             updateDate: "January 4, 2026",
