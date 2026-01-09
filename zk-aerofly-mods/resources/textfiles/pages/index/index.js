@@ -56,7 +56,7 @@ function constructMods(data) {
 
         let title = mod.title;
         if (title.length > 45) {
-            title = title.substring(0, 40) + "...";
+            title = title.substring(0, 40) + " ...";
         }
 
         modsList.innerHTML += `
