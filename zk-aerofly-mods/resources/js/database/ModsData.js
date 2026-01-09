@@ -115,7 +115,7 @@ function ModsData() {
             title: "b777-300er/200f (Shake, Front) | Android Only",
             author: "ZK Aviation",
             datePublished: "December 29, 2025",
-            lastUpdated: "January 6, 2026",
+            lastUpdated: "January 8, 2026",
             tags: ["b777", "b777-300er", "b777-200f", "Camera", "Shake", "Livery"],
             articleImage: "b777_mod_old_emirates.png",
             content: [
@@ -164,7 +164,7 @@ function ModsData() {
                             src: "https://drive.google.com/file/d/1VGoISRnP_qelRDcuOicR3dfha14zmvgM/view?usp=sharing"
                         },
                         {
-                            name: "ZK_b777_300er_mod_v1.1.0_(OldEmir_Shake_Front).tme",
+                            name: "ZK_b777_300er_mod_v1.1.1_(OldEmir_Shake_Front).tme",
                             src: "https://drive.google.com/file/d/1NcGJnjFQYkXqOLxW4MWuhOFAwtobeuKt/view?usp=sharing"
                         },
                         
@@ -348,7 +348,7 @@ function ModsData() {
             title: "A350-1000 Mod (LiveryVulk, Shake, Sound, Front) | Android Only",
             author: "ZK Aviation",
             datePublished: "December 25, 2025",
-            lastUpdated: "January 6, 2026",
+            lastUpdated: "January 8, 2026",
             tags: ["A350-1000", "Sounds", "Camera", "Shake", "Cabin", "Livery"],
             articleImage: "a350_1000_sounds_front_cabin_4.png",
             content: [
@@ -429,11 +429,11 @@ function ModsData() {
                     type: "download-links",
                     downloadsList: [
                         {
-                            name: "ZK_a350_1000_mod_v1.2.0_(Shake_Sounds_Front).tme",
+                            name: "ZK_a350_1000_mod_v1.2.1_(Shake_Sounds_Front).tme",
                             src: "https://drive.google.com/file/d/1S5l8aJ9jR0Rp9UDROENDytbhiOQWL8mV/view?usp=sharing"
                         },
                         {
-                            name: "ZK_a350_1000_mod_v1.2.0_(LiveryVulk_Shake_Sounds_Front).tme",
+                            name: "ZK_a350_1000_mod_v1.2.1_(LiveryVulk_Shake_Sounds_Front).tme",
                             src: "https://drive.google.com/file/d/1pMTRmJxs3hOBxkbz4M6xEEyqBDO5gl4W/view?usp=sharing"
                         },
                     ]
@@ -445,7 +445,7 @@ function ModsData() {
             title: "A319/320neo/321 Mod (Sound, Shake, Front) | Android Only",
             author: "ZK Aviation",
             datePublished: "December 25, 2025",
-            lastUpdated: "January 6, 2026",
+            lastUpdated: "January 8, 2026",
             tags: ["A320 Family", "A319", "A320neo", "A321", "Sounds", "Shake", "Camera", "Cabin"],
             articleImage: "a320family_sounds_front_cabin_1.png",
             content: [
@@ -497,15 +497,15 @@ function ModsData() {
                     type: "download-links",
                     downloadsList: [
                         {
-                            name: "ZK_a319_mod_v1.1.0_(Shake_Sounds_Front).tme",
+                            name: "ZK_a319_mod_v1.1.1_(Shake_Sounds_Front).tme",
                             src: "https://drive.google.com/file/d/1PtTHAolND92-PPczfJUYXm67ogE0-_2U/view?usp=sharing"
                         },
                         {
-                            name: "ZK_a320neo_mod_v1.1.0_(Shake_Sounds_Front).tme",
+                            name: "ZK_a320neo_mod_v1.1.1_(Shake_Sounds_Front).tme",
                             src: "https://drive.google.com/file/d/1bCkv68A7q9TVUqa6MPjpXgKvW8QozpxG/view?usp=sharing"
                         },
                         {
-                            name: "ZK_a321_mod_v1.1.0_(Shake_Sounds_Front).tme",
+                            name: "ZK_a321_mod_v1.1.1_(Shake_Sounds_Front).tme",
                             src: "https://drive.google.com/file/d/1QT3GSiACCyxpyrzhYkDWtKfKm0fFMEQr/view?usp=sharing"
                         },
                     ]

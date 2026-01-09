@@ -1,6 +1,59 @@
 function ChangelogData() {
     return [
         {
+            modID: 1225253,
+            updateSummary: "A350-1000 Mod v1.2.1 | Minor Back-end Camera Rework",
+            updateDate: "January 8, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Changed some camera code to ensure it loads properly",
+                        `<span class="italic">If you still have camera movements from v1.2.0, there is no need to download this version</span>`,
+                    ]
+                },
+            ]
+        },
+        {
+            modID: 1225253,
+            updateSummary: "A319/320/321 Mod v1.1.1 | Minor Back-end Camera Rework",
+            updateDate: "January 8, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Changed some camera code to ensure it loads properly",
+                        `<span class="italic">If you still have camera movements from v1.1.0, there is no need to download this version</span>`,
+                    ]
+                },
+            ]
+        },
+        {
+            modID: 1229250,
+            updateSummary: "Boeing 777-300ER v1.1.1 | Minor Camera Fix",
+            updateDate: "January 8, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Corrected some camera views changed by the camera movement update",
+                    ]
+                },
+            ]
+        },
+        {
             modID: 1225254,
             updateSummary: "Boeing 787 Mod v1.1.0 | Camera Movements",
             updateDate: "January 6, 2026",
