@@ -517,7 +517,7 @@ function ModsData() {
             title: "B787-9/-10 (Shake, Front) | Android Only",
             author: "ZK Aviation",
             datePublished: "December 25, 2025",
-            lastUpdated: "January 6, 2025",
+            lastUpdated: "January 6, 2026",
             tags: ["b787", "b787-10", "b787-9", "Camera", "Shake", "Cabin"],
             articleImage: "b787_mod_pilot.png",
             content: [
@@ -747,3 +747,4 @@ function ModsData() {
     ];
 }
 */
+
