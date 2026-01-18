@@ -55,8 +55,8 @@ function constructMods(data) {
         }
 
         let title = mod.title;
-        if (title.length > 45) {
-            title = title.substring(0, 40) + " ...";
+        if (title.length > 55) {
+            title = title.substring(0, 50) + " ...";
         }
 
         modsList.innerHTML += `
@@ -66,7 +66,7 @@ function constructMods(data) {
                 </div>
 
                 <div class="mod-content">
-                    <a href="modarticle.html?articleid=${mod.id}"><h5 class="mod-title">${title}</h5></a>
+                    <a href="modarticle.html?articleid=${mod.id}"><h6 class="mod-title">${title}</h6></a>
                     <div class="mod-tags">
                         ${tagsStr}
                     </div>

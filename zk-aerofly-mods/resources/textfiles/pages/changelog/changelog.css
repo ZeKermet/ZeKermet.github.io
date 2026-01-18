@@ -114,11 +114,13 @@
     border-top: 1px solid var(--white-dark);
 }
 #changelog-list .update.opened .update-details .subheader {
-    margin-top: 32px
+    margin-top: 24px;
+    font-size: var(--font-size-p);
 }
 #changelog-list .update.opened .update-details .paragraph {
-    margin-top: 16px;
+    margin-top: 12px;
     line-height: 1.6;
+    font-size: var(--font-size-p-small);
 }
 #changelog-list .update.opened .update-details .list {
     margin-top: 24px;
@@ -126,7 +128,11 @@
     margin-left: 24px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 12px;
+}
+#changelog-list .update.opened .update-details .list li {
+    font-size: var(--font-size-p-small);
+    line-height: 1.6;
 }
 
 button.show-more-list {
@@ -193,9 +199,7 @@ button.show-more-list {
     #changelog-list .mod-tags .tag p,
     #changelog-list .update .publish-info > *,
     #changelog-list .update .mod-update-date-container p,
-    #changelog-list .update .mod-update-date-container p span,
-    #changelog-list .update .update-details .paragraph,
-    #changelog-list .update .update-details .list li {
+    #changelog-list .update .mod-update-date-container p span {
         font-size: var(--font-size-p-small);
     }
 
