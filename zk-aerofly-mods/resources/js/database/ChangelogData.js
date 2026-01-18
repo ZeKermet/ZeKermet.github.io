@@ -1,6 +1,23 @@
 function ChangelogData() {
     return [
         {
+            modID: 1225251,
+            updateSummary: "Boeing 737-500 Mod v1.1.1 | Minor Camera Adjustment",
+            updateDate: "January 18, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Small increase in the 737-500's pilot and copilot view height",
+                    ]
+                },
+            ]
+        },
+        {
             modID: 1225252,
             updateSummary: "A350-1000 Mod v1.2.1 | Minor Back-end Camera Rework",
             updateDate: "January 8, 2026",
@@ -430,5 +447,4 @@ function ChangelogData() {
         }
     ]
 }
-
 */

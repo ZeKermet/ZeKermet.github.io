@@ -222,7 +222,7 @@ function ModsData() {
             title: "737ng/-500/max (Sounds, Shake, & More) | Android Only",
             author: "ZK Aviation",
             datePublished: "December 25, 2025",
-            lastUpdated: "January 6, 2026",
+            lastUpdated: "January 18, 2026",
             tags: ["b737-500", "b737-800", "b737-900", "b737 Max-9", "Sounds", "Camera", "Shake", "Wingtips", "Livery"],
             articleImage: "b738_sound_front_wingtips_fiji_2.png",
             content: [
@@ -324,7 +324,7 @@ function ModsData() {
                     type: "download-links",
                     downloadsList: [
                         {
-                            name: "ZK_b737_500_mod_v1.1.0_(Sounds_Shake_Cabin).tme",
+                            name: "ZK_b737_500_mod_v1.1.1_(Sounds_Shake_Cabin).tme",
                             src: "https://drive.google.com/file/d/1sDBrp_HOeB6_ZVigDto7clcNotRPT0uV/view?usp=sharing"
                         },
                         {
@@ -747,4 +747,3 @@ function ModsData() {
     ];
 }
 */
-
