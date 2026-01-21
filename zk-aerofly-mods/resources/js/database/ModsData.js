@@ -4,7 +4,7 @@ function ModsData() {
     return [
         {
             id: 1229251,
-            title: "b747-400 (Livery, Shake, Front) | Android Only",
+            title: "B747-400 (Livery, Shake, Front) | Android Only",
             author: "ZK Aviation",
             datePublished: "December 29, 2025",
             lastUpdated: "January 6, 2026",
@@ -112,7 +112,7 @@ function ModsData() {
         },
         {
             id: 1229250,
-            title: "b777-300er/200f (Shake, Front) | Android Only",
+            title: "B777-300er/200f (Shake, Front) | Android Only",
             author: "ZK Aviation",
             datePublished: "December 29, 2025",
             lastUpdated: "January 8, 2026",
@@ -219,7 +219,7 @@ function ModsData() {
         },
         {
             id: 1225251,
-            title: "737ng/-500/max (Sounds, Shake, & More) | Android Only",
+            title: "B737ng/-500/max (Sounds, Shake, & More) | Android Only",
             author: "ZK Aviation",
             datePublished: "December 25, 2025",
             lastUpdated: "January 18, 2026",
