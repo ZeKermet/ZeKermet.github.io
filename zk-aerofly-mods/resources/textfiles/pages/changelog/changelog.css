@@ -128,7 +128,7 @@
     margin-left: 24px;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 8px;
 }
 #changelog-list .update.opened .update-details .list li {
     font-size: var(--font-size-p-small);
