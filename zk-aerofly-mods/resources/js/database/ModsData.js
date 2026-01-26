@@ -4,11 +4,11 @@ function ModsData() {
     return [
         {
             id: 1229251,
-            title: "B747-400 (Livery, Shake, Front) | Android Only",
+            title: "B747-400 (Livery, Shake, Sounds, Front) | Android Only",
             author: "ZK Aviation",
             datePublished: "December 29, 2025",
-            lastUpdated: "January 6, 2026",
-            tags: ["b747-400", "Camera", "Shake", "Livery"],
+            lastUpdated: "January 26, 2026",
+            tags: ["b747-400", "Camera", "Shake", "Sounds", "Livery", "Boeing"],
             articleImage: "b747_mod_livery_ryanair.png",
             content: [
                 {
@@ -21,6 +21,7 @@ function ModsData() {
                         "Modified cockpit and passenger views",
                         "Jumpseat camera moved to the front for a better view",
                         "Camera movements on turns and touchdown",
+                        "Cabin + Cockpit shake and touchdown sounds added",
                         `Includes old mobile Lufthansa livery <span class="bold">(Works for OpenGL & Vulkan)</span>`
                     ]
                 },
@@ -95,14 +96,22 @@ function ModsData() {
                     value: `<span class="italic">Note: Liveries WILL NOT WORK PROPERLY without Vulkan. For devices not compatible with Vulkan liveries, a separate file "(OldLufth_Front)" is provided. It contains the old lufthansa livery that works for both OpenGL and Vulkan.</span>`
                 },
                 {
+                    type: "subheader",
+                    value: "Sound Clip"
+                },
+                {
+                    type: "youtube-embed",
+                    src: "https://www.youtube.com/embed/6-AI5wDc4K0?si=6BgSYFTTKZDSJB7o"
+                },
+                {
                     type: "download-links",
                     downloadsList: [
                         {
-                            name: "ZK_b747_400_mod_v1.1.0_(OldLufth_Shake_Front).tme",
+                            name: "ZK_b747_400_mod_v1.2.0_(OldLufth_Shake_Sounds_Front).tme",
                             src: "https://drive.google.com/file/d/1sKy0xj4VBdc2eXtmgnKgBIVut4dGKb1-/view?usp=sharing"
                         },
                         {
-                            name: "ZK_b747_400_mod_v1.1.0_(LiveryVulk_Shake_Front).tme",
+                            name: "ZK_b747_400_mod_v1.2.0_(LiveryVulk_Shake_Sounds_Front).tme",
                             src: "https://drive.google.com/file/d/1YdTqHZmHeCb-aNL_QdF79NmDHbmWrLSm/view?usp=sharing"
                         },
                         
@@ -112,11 +121,11 @@ function ModsData() {
         },
         {
             id: 1229250,
-            title: "B777-300er/200f (Shake, Front) | Android Only",
+            title: "B777-300ER/-200f (Shake, Sounds, Front) | Android Only",
             author: "ZK Aviation",
             datePublished: "December 29, 2025",
-            lastUpdated: "January 8, 2026",
-            tags: ["b777", "b777-300er", "b777-200f", "Camera", "Shake", "Livery"],
+            lastUpdated: "January 26, 2026",
+            tags: ["b777", "b777-300er", "b777-200f", "Camera", "Shake", "Sounds", "Livery", "Boeing"],
             articleImage: "b777_mod_old_emirates.png",
             content: [
                 {
@@ -129,6 +138,7 @@ function ModsData() {
                         "Modified cockpit and passenger views",
                         "Jumpseat camera moved to the front for a better view",
                         "Camera movements on turns and touchdown",
+                        "Cabin + Cockpit shake and touchdown sounds added",
                         `Includes old mobile Emirates livery <span class="bold">(Works for OpenGL & Vulkan)</span>`
                     ]
                 },
@@ -157,14 +167,22 @@ function ModsData() {
                     src: "b777_mod_freight_interior.png"
                 },
                 {
+                    type: "subheader",
+                    value: "Sound Clip"
+                },
+                {
+                    type: "youtube-embed",
+                    src: "https://www.youtube.com/embed/20hkXFzpFxQ?si=eaLqbYdPuV7PD3dD"
+                },
+                {
                     type: "download-links",
                     downloadsList: [
                         {
-                            name: "ZK_b777_200f_mod_v1.1.0_(Shake_Front).tme",
+                            name: "ZK_b777_200f_mod_v1.2.0_(Shake_Sounds_Front).tme",
                             src: "https://drive.google.com/file/d/1VGoISRnP_qelRDcuOicR3dfha14zmvgM/view?usp=sharing"
                         },
                         {
-                            name: "ZK_b777_300er_mod_v1.1.1_(OldEmir_Shake_Front).tme",
+                            name: "ZK_b777_300er_mod_v1.2.0_(OldEmir_Shake_Sounds_Front).tme",
                             src: "https://drive.google.com/file/d/1NcGJnjFQYkXqOLxW4MWuhOFAwtobeuKt/view?usp=sharing"
                         },
                         
@@ -178,7 +196,7 @@ function ModsData() {
             author: "ZK Aviation",
             datePublished: "December 25, 2025",
             lastUpdated: "January 6, 2026",
-            tags: ["A380", "Camera", "Shake", "Sounds"],
+            tags: ["A380", "Camera", "Shake", "Sounds", "Airbus"],
             articleImage: "a380_oldemir_sounds_front_jumpseat.png",
             content: [
                 {
@@ -199,7 +217,7 @@ function ModsData() {
                 },
                 {
                     type: "subheader",
-                    value: "Sound Clips"
+                    value: "Sound Clip"
                 },
                 {
                     type: "youtube-embed",
@@ -219,11 +237,11 @@ function ModsData() {
         },
         {
             id: 1225251,
-            title: "B737ng/-500/max (Sounds, Shake, & More) | Android Only",
+            title: "B737ng/-500/Max (Sounds, Shake, & More) | Android Only",
             author: "ZK Aviation",
             datePublished: "December 25, 2025",
             lastUpdated: "January 18, 2026",
-            tags: ["b737-500", "b737-800", "b737-900", "b737 Max-9", "Sounds", "Camera", "Shake", "Wingtips", "Livery"],
+            tags: ["b737-500", "b737-800", "b737-900", "b737 Max-9", "Sounds", "Camera", "Shake", "Wingtips", "Livery", "Boeing"],
             articleImage: "b738_sound_front_wingtips_fiji_2.png",
             content: [
                 {
@@ -349,7 +367,7 @@ function ModsData() {
             author: "ZK Aviation",
             datePublished: "December 25, 2025",
             lastUpdated: "January 8, 2026",
-            tags: ["A350-1000", "Sounds", "Camera", "Shake", "Cabin", "Livery"],
+            tags: ["A350-1000", "Sounds", "Camera", "Shake", "Cabin", "Livery", "Airbus"],
             articleImage: "a350_1000_sounds_front_cabin_4.png",
             content: [
                 {
@@ -446,7 +464,7 @@ function ModsData() {
             author: "ZK Aviation",
             datePublished: "December 25, 2025",
             lastUpdated: "January 8, 2026",
-            tags: ["A320 Family", "A319", "A320neo", "A321", "Sounds", "Shake", "Camera", "Cabin"],
+            tags: ["A320 Family", "A319", "A320neo", "A321", "Sounds", "Shake", "Camera", "Cabin", "Airbus"],
             articleImage: "a320family_sounds_front_cabin_1.png",
             content: [
                 {
@@ -514,11 +532,11 @@ function ModsData() {
         },
         {
             id: 1225254,
-            title: "B787-9/-10 (Shake, Front) | Android Only",
+            title: "B787-9/-10 (Shake, Sounds, Front) | Android Only",
             author: "ZK Aviation",
             datePublished: "December 25, 2025",
-            lastUpdated: "January 6, 2026",
-            tags: ["b787", "b787-10", "b787-9", "Camera", "Shake", "Cabin"],
+            lastUpdated: "January 26, 2026",
+            tags: ["b787", "b787-10", "b787-9", "Camera", "Shake", "Sounds", "Cabin", "Boeing"],
             articleImage: "b787_mod_pilot.png",
             content: [
                 {
@@ -530,9 +548,14 @@ function ModsData() {
                     list: [
                         "Lowered cockpit view height (nice!)",
                         "Jumpseat view pushed forward",
+                        "Cockpit + Cabin shake and touchdown sounds added",
                         "Camera movements on turns and touchdown",
                         "Passenger views moved inside cabin",
                     ]
+                },
+                {
+                    type: "subheader",
+                    value: "Images",
                 },
                 {
                     type: "image",
@@ -554,18 +577,26 @@ function ModsData() {
                     value: "Note: Because of the lowered view, the hud will not display properly."
                 },
                 {
-                    type: "image",
-                    src: "b787_mod_cockpit_hud_issue.png"
+                    type: "small-images",
+                    srcList: ["b787_mod_cockpit_hud_issue.png"]
+                },
+                {
+                    type: "subheader",
+                    value: "Sound Clip"
+                },
+                {
+                    type: "youtube-embed",
+                    src: "https://www.youtube.com/embed/gNBEEE3_Gvw?si=Tb0D15gGM2-xV8pZ"
                 },
                 {
                     type: "download-links",
                     downloadsList: [
                         {
-                            name: "ZK_b787_9_mod_v1.1.0_(Shake_Front).tme",
+                            name: "ZK_b787_9_mod_v1.2.0_(Shake_Sounds_Front).tme",
                             src: "https://drive.google.com/file/d/1y-13vhibas0BNKa1pPKk0wkNf2NGK56K/view?usp=sharing"
                         },
                         {
-                            name: "ZK_b787_10_mod_v1.1.0_(Shake_Front_S).tme",
+                            name: "ZK_b787_10_mod_v1.2.0_(Shake_Sounds_Front).tme",
                             src: "https://drive.google.com/file/d/1ujACUG04i1vruSwEwhi2y_yT4LUG6DOY/view?usp=sharing"
                         },
                     ]

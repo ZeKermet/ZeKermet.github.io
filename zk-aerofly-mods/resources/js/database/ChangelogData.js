@@ -1,5 +1,61 @@
+// This entire list is ordered by dates correctly
 function ChangelogData() {
     return [
+        {
+            modID: 1225254,
+            updateSummary: "Boeing 787-9/-10 Mod v1.2.0 | New Sounds",
+            updateDate: "January 26, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Interior shake sounds with loudness based on the aircraft's speed",
+                        "Interior touchdown sound upon landing"
+                    ]
+                },
+            ]
+        },
+        {
+            modID: 1229250,
+            updateSummary: "Boeing 777-300ER/-200f Mod v1.2.0 | New Sounds",
+            updateDate: "January 26, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Interior shake sounds with loudness based on the aircraft's speed",
+                        "Interior touchdown sound upon landing",
+                        "High speed wheel sounds implemented (similar to the default A350-1000)"
+                    ]
+                },
+            ]
+        },
+        {
+            modID: 1229251,
+            updateSummary: "Boeing 747-400 Mod v1.2.0 | New Sounds",
+            updateDate: "January 26, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Interior shake sounds with loudness based on the aircraft's speed",
+                        "Interior touchdown sound upon landing"
+                    ]
+                },
+            ]
+        },
         {
             modID: 1225251,
             updateSummary: "Boeing 737-500 Mod v1.1.1 | Minor Camera Adjustment",
@@ -190,6 +246,25 @@ function ChangelogData() {
                 },
             ]
         },
+    ]
+}
+
+function getUpdatesIndex(start, end = -1) {
+    const data = [];
+    const updatesDataCopy = ChangelogData();
+    if (end === -1 || end > updatesDataCopy.length) end = modsDataCopy.length - 1;
+    for (let i=start; i <= end; i++) {
+        data[data.length] = updatesDataCopy[i];
+    }
+
+    return data;
+}
+
+
+
+// This entire list is ordered by dates correctly
+function previousChangelogData() {
+    return [
         {
             modID: 1225252,
             updateSummary: "A350-1000 Mod v1.1.1 | Sounds Update",
@@ -381,17 +456,6 @@ function ChangelogData() {
             ]
         },
     ]
-}
-
-function getUpdatesIndex(start, end = -1) {
-    const data = [];
-    const updatesDataCopy = ChangelogData();
-    if (end === -1 || end > updatesDataCopy.length) end = modsDataCopy.length - 1;
-    for (let i=start; i <= end; i++) {
-        data[data.length] = updatesDataCopy[i];
-    }
-
-    return data;
 }
 
 
