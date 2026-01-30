@@ -7,7 +7,7 @@ function ModsData() {
             title: "B747-400 (Livery, Shake, Sounds, Front) | Android Only",
             author: "ZK Aviation",
             datePublished: "December 29, 2025",
-            lastUpdated: "January 26, 2026",
+            lastUpdated: "January 30, 2026",
             tags: ["b747-400", "Camera", "Shake", "Sounds", "Livery", "Boeing"],
             articleImage: "b747_mod_livery_ryanair.png",
             content: [
@@ -107,11 +107,11 @@ function ModsData() {
                     type: "download-links",
                     downloadsList: [
                         {
-                            name: "ZK_b747_400_mod_v1.2.0_(OldLufth_Shake_Sounds_Front).tme",
+                            name: "ZK_b747_400_mod_v1.2.1_(OldLufth_Shake_Sounds_Front).tme",
                             src: "https://drive.google.com/file/d/1sKy0xj4VBdc2eXtmgnKgBIVut4dGKb1-/view?usp=sharing"
                         },
                         {
-                            name: "ZK_b747_400_mod_v1.2.0_(LiveryVulk_Shake_Sounds_Front).tme",
+                            name: "ZK_b747_400_mod_v1.2.1_(LiveryVulk_Shake_Sounds_Front).tme",
                             src: "https://drive.google.com/file/d/1YdTqHZmHeCb-aNL_QdF79NmDHbmWrLSm/view?usp=sharing"
                         },
                         
@@ -147,12 +147,9 @@ function ModsData() {
                     value: "Images"
                 },
                 {
-                    type: "image",
-                    src: "b777_mod_jumpseat.png",
-                },
-                {
                     type: "small-images",
                     srcList: [
+                        "b777_mod_jumpseat.png",
                         "b777_mod_cabin_1.png",
                         "b777_mod_cabin_2.png",
                         "b777_mod_cabin_3.png"
@@ -240,7 +237,7 @@ function ModsData() {
             title: "B737ng/-500/Max (Sounds, Shake, & More) | Android Only",
             author: "ZK Aviation",
             datePublished: "December 25, 2025",
-            lastUpdated: "January 18, 2026",
+            lastUpdated: "January 30, 2026",
             tags: ["b737-500", "b737-800", "b737-900", "b737 Max-9", "Sounds", "Camera", "Shake", "Wingtips", "Livery", "Boeing"],
             articleImage: "b738_sound_front_wingtips_fiji_2.png",
             content: [
@@ -256,11 +253,8 @@ function ModsData() {
                         "Camera movements on turns and touchdown",
                         "Scimitar and Blended (regular) wingtips options added to some liveries",
                         "Cabin + Cockpit shake and touchdown sounds added",
+                        "Engine thrust and reverse rumble sounds enhanced"
                     ]
-                },
-                {
-                    type: "subheader",
-                    value: "B737-800/-900 Images"
                 },
                 {
                     type: "image",
@@ -332,29 +326,29 @@ function ModsData() {
                 },
                 {
                     type: "youtube-embed",
-                    src: "https://www.youtube.com/embed/UanjSFIs0zQ?si=Zd-RZbs1x143VxIT"
+                    src: "https://www.youtube.com/embed/tE2uz9-Wves?si=6_hk4y9Jl91QgJoO"
                 },
                 {
                     type: "youtube-embed",
-                    src: "https://www.youtube.com/embed/bGRZbaa81N8?si=LcP1u0rvxo6294cp"
+                    src: "https://www.youtube.com/embed/9phAH9ojtlo?si=TT2IVTaGZ-lvdsJj"
                 },
                 {
                     type: "download-links",
                     downloadsList: [
                         {
-                            name: "ZK_b737_500_mod_v1.1.1_(Sounds_Shake_Cabin).tme",
+                            name: "ZK_b737_500_mod_v1.1.2_(Sounds_Shake_Cabin).tme",
                             src: "https://drive.google.com/file/d/1sDBrp_HOeB6_ZVigDto7clcNotRPT0uV/view?usp=sharing"
                         },
                         {
-                            name: "ZK_b737_800_mod_v1.1.0_(Sounds_Shake_Winglets_Front).tme",
+                            name: "ZK_b737_800_mod_v1.1.1_(Sounds_Shake_Winglets_Front).tme",
                             src: "https://drive.google.com/file/d/1jQs7UsVXAgsEbtOja8Rwr73D9mffrIFz/view?usp=sharing"
                         },
                         {
-                            name: "ZK_b737_900_mod_v1.1.0_(Sounds_Shake_Winglets_Front).tme",
+                            name: "ZK_b737_900_mod_v1.1.1_(Sounds_Shake_Winglets_Front).tme",
                             src: "https://drive.google.com/file/d/1A4Y-o3uBhtIkyoAS4j0rr57J-AH0uAvN/view?usp=sharing"
                         },
                         {
-                            name: "ZK_b737_Max9_mod_v1.1.0_(RyanVulk_Shake_Sounds_Front).tme",
+                            name: "ZK_b737_Max9_mod_v1.1.1_(RyanVulk_Shake_Sounds_Front).tme",
                             src: "https://drive.google.com/file/d/1L1ue7V8R7O5HVmVjwxJ5SlxD-HWAkfSN/view?usp=sharing"
                         },
                     ]
@@ -388,17 +382,11 @@ function ModsData() {
                     value: "Images"
                 },
                 {
-                    type: "image",
-                    src: "a350_1000_sounds_front_jumpseat.png",
-                },
-                {
                     type: "small-images",
                     srcList: [
+                        "a350_1000_sounds_front_jumpseat.png",
                         "a350_1000_sounds_front_cabin_1.png",
-                        "a350_1000_sounds_front_cabin_2.png",
                         "a350_1000_sounds_front_cabin_3.png",
-                        "a350_1000_sounds_front_cabin_4.png",
-                        "a350_1000_sounds_front_cabin_5.png",
                         "a350_1000_sounds_front_cabin_6.png",
                     ]
                 },
@@ -463,7 +451,7 @@ function ModsData() {
             title: "A319/320neo/321 Mod (Sound, Shake, Front) | Android Only",
             author: "ZK Aviation",
             datePublished: "December 25, 2025",
-            lastUpdated: "January 8, 2026",
+            lastUpdated: "January 30, 2026",
             tags: ["A320 Family", "A319", "A320neo", "A321", "Sounds", "Shake", "Camera", "Cabin", "Airbus"],
             articleImage: "a320family_sounds_front_cabin_1.png",
             content: [
@@ -485,17 +473,11 @@ function ModsData() {
                     value: "Images"
                 },
                 {
-                    type: "image",
-                    src: "a320family_sounds_front_jumpseat.png",
-                },
-                {
                     type: "small-images",
                     srcList: [
-                        "a320family_sounds_front_cabin_1.png",
+                        "a320family_sounds_front_jumpseat.png",
                         "a320family_sounds_front_cabin_2.png",
                         "a320family_sounds_front_cabin_3.png",
-                        "a320family_sounds_front_cabin_4.png",
-                        "a320family_sounds_front_cabin_5.png",
                         "a320family_sounds_front_cabin_6.png",
                     ]
                 },
@@ -523,7 +505,7 @@ function ModsData() {
                             src: "https://drive.google.com/file/d/1bCkv68A7q9TVUqa6MPjpXgKvW8QozpxG/view?usp=sharing"
                         },
                         {
-                            name: "ZK_a321_mod_v1.1.1_(Shake_Sounds_Front).tme",
+                            name: "ZK_a321_mod_v1.1.2_(Shake_Sounds_Front).tme",
                             src: "https://drive.google.com/file/d/1QT3GSiACCyxpyrzhYkDWtKfKm0fFMEQr/view?usp=sharing"
                         },
                     ]
@@ -558,17 +540,11 @@ function ModsData() {
                     value: "Images",
                 },
                 {
-                    type: "image",
-                    src: "b787_mod_jumpseat.png"
-                },
-                {
                     type: "small-images",
                     srcList: [
-                        "b787_mod_cabin_2.png",
+                        "b787_mod_jumpseat.png",
                         "b787_mod_cabin_1.png",
                         "b787_mod_cabin_4.png",
-                        "b787_mod_cabin_3.png",
-                        "b787_mod_cabin_6.png",
                         "b787_mod_cabin_5.png",
                     ]
                 },

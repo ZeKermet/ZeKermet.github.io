@@ -2,6 +2,60 @@
 function ChangelogData() {
     return [
         {
+            modID: 1225253,
+            updateSummary: "Airbus A321 Mod v1.1.2 | Minor Sound Fix",
+            updateDate: "January 30, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Normalized cockpit shake volume",
+                    ]
+                },
+            ]
+        },
+        {
+            modID: 1225251,
+            updateSummary: "Boeing 737-500/-800/-900/Max-9 Mod | Engine Rumble Sounds",
+            updateDate: "January 30, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Small increase in the newer 737s pilot and copilot view height",
+                        "Engine thrust and reverse rumble sounds enhanced",
+                        "Changed nose gear touchdown sound"
+                    ]
+                },
+            ]
+        },
+        {
+            modID: 1229251,
+            updateSummary: "Boeing 747-400 Mod v1.2.1 | Minor Update",
+            updateDate: "January 30, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Cockpit shake audio changed",
+                        "Small increase in the pilot and copilot view height",
+                    ]
+                },
+            ]
+        },
+        {
             modID: 1225254,
             updateSummary: "Boeing 787-9/-10 Mod v1.2.0 | New Sounds",
             updateDate: "January 26, 2026",
