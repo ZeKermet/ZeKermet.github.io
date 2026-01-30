@@ -278,7 +278,7 @@ function ModsData() {
                     list: [
                         "Same views and sounds as the ones above",
                         "The Max-9 has a Ryanair livery that you can use (Works only with vulkan)",
-                        `<span class="italic">Credits to Yolo.9 for making the Ryanair livery, you can find him on the Aerofly Forum</span>`
+                        `<span class="italic">Credits to YOLO.af for making the Ryanair livery, you can find him on the Aerofly Forum</span>`
                     ]
                 },
                 {
@@ -410,7 +410,7 @@ function ModsData() {
                 },
                 {
                     type: "paragraph",
-                    value: `<span class="italic">Credits to Yolo.9 for creating all these liveries</span>`
+                    value: `<span class="italic">Credits to YOLO.af for creating all these liveries</span>`
                 },
                 {
                     type: "small-images",
@@ -754,3 +754,4 @@ function ModsData() {
     ];
 }
 */
+
