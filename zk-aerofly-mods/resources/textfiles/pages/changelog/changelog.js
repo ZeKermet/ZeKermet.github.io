@@ -1,7 +1,7 @@
 // ---------- PAGE SETUP ----------- 
 
 const modsData = ModsData();
-const changelogData = ChangelogData();
+const changelogData = getUpdatesIndex(0, 9);
 
 
 // ---------- PAGE ELEMENTS ----------- 
