@@ -411,7 +411,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 616px) {
+@media screen and (max-width: 622px) {
     .section-container.footer {
         padding: calc(var(--page-vertical-padding)) var(--page-horizontal-padding);
         display: flex;
