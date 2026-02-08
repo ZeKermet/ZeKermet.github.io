@@ -3,11 +3,61 @@ const databaseImagesPath = "./resources/js/database/images/";
 function ModsData() {
     return [
         {
+            id: 2208260,
+            title: "CRJ-900 (Shake, Sounds) | Android Only",
+            author: "ZK Aviation",
+            datePublished: "February 8, 2026",
+            lastUpdated: "February 8, 2026",
+            tags: ["crj900", "Camera", "Shake", "Sounds", "Bombardier"],
+            articleImage: "crj_900_cover.jpg",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Features"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Modified cockpit views",
+                        "Camera movements on turns and touchdown",
+                        "Cabin + Cockpit shake and touchdown sounds added",
+                        "Enhanced engine sounds"
+                    ]
+                },
+                {
+                    type: "image",
+                    src: "crj_900_cockpit.jpg"
+                },
+                {
+                    type: "subheader",
+                    value: "Sound Clips"
+                },
+                {
+                    type: "youtube-embed",
+                    src: "https://www.youtube.com/embed/OQu-2cTz3Cs?si=Obt-LtKfLAUjuY_m"
+                },
+                {
+                    type: "youtube-embed",
+                    src: "https://www.youtube.com/embed/YqV5Vfx-bko?si=gbtt1vaM5PywfxUi"
+                },
+                {
+                    type: "download-links",
+                    downloadsList: [
+                        {
+                            name: "ZK_crj900_mod_v1.0.0_(Shake_Sounds).tme",
+                            src: "https://drive.google.com/file/d/1qJKhkkq4PXemoQQqn3HTdgNoiQmjugbl/view?usp=sharing"
+                        },
+                        
+                    ]
+                }
+            ]
+        },
+        {
             id: 1229251,
             title: "B747-400 (Livery, Shake, Sounds, Front) | Android Only",
             author: "ZK Aviation",
             datePublished: "December 29, 2025",
-            lastUpdated: "January 30, 2026",
+            lastUpdated: "February 8, 2026",
             tags: ["b747-400", "Camera", "Shake", "Sounds", "Livery", "Boeing"],
             articleImage: "b747_mod_livery_ryanair.png",
             content: [
@@ -107,11 +157,11 @@ function ModsData() {
                     type: "download-links",
                     downloadsList: [
                         {
-                            name: "ZK_b747_400_mod_v1.2.1_(OldLufth_Shake_Sounds_Front).tme",
+                            name: "ZK_b747_400_mod_v1.2.2_(OldLufth_Shake_Sounds_Front).tme",
                             src: "https://drive.google.com/file/d/1sKy0xj4VBdc2eXtmgnKgBIVut4dGKb1-/view?usp=sharing"
                         },
                         {
-                            name: "ZK_b747_400_mod_v1.2.1_(LiveryVulk_Shake_Sounds_Front).tme",
+                            name: "ZK_b747_400_mod_v1.2.2_(LiveryVulk_Shake_Sounds_Front).tme",
                             src: "https://drive.google.com/file/d/1YdTqHZmHeCb-aNL_QdF79NmDHbmWrLSm/view?usp=sharing"
                         },
                         
@@ -192,7 +242,7 @@ function ModsData() {
             title: "A380 Mod (OldEmir, Shake, Sounds, Front) | Android Only",
             author: "ZK Aviation",
             datePublished: "December 25, 2025",
-            lastUpdated: "January 6, 2026",
+            lastUpdated: "February 8, 2026",
             tags: ["A380", "Camera", "Shake", "Sounds", "Airbus"],
             articleImage: "a380_oldemir_sounds_front_jumpseat.png",
             content: [
@@ -224,7 +274,7 @@ function ModsData() {
                     type: "download-links",
                     downloadsList: [
                         {
-                            name: "ZK_a380_mod_v1.2.0_(OldEmir_Shake_Sounds_Front).tme",
+                            name: "ZK_a380_mod_v1.2.1_(OldEmir_Shake_Sounds_Front).tme",
                             src: "https://drive.google.com/file/d/1Os2dZhGGwnEwALnnAo8_9bY1NAV6U329/view?usp=sharing"
                         },
                         
@@ -237,7 +287,7 @@ function ModsData() {
             title: "B737ng/-500/Max (Sounds, Shake, & More) | Android Only",
             author: "ZK Aviation",
             datePublished: "December 25, 2025",
-            lastUpdated: "January 30, 2026",
+            lastUpdated: "February 8, 2026",
             tags: ["b737-500", "b737-800", "b737-900", "b737 Max-9", "Sounds", "Camera", "Shake", "Wingtips", "Livery", "Boeing"],
             articleImage: "b738_sound_front_wingtips_fiji_2.png",
             content: [
@@ -336,19 +386,19 @@ function ModsData() {
                     type: "download-links",
                     downloadsList: [
                         {
-                            name: "ZK_b737_500_mod_v1.1.2_(Sounds_Shake_Cabin).tme",
+                            name: "ZK_b737_500_mod_v1.1.3_(Sounds_Shake_Cabin).tme",
                             src: "https://drive.google.com/file/d/1sDBrp_HOeB6_ZVigDto7clcNotRPT0uV/view?usp=sharing"
                         },
                         {
-                            name: "ZK_b737_800_mod_v1.1.1_(Sounds_Shake_Winglets_Front).tme",
+                            name: "ZK_b737_800_mod_v1.1.2_(Sounds_Shake_Winglets_Front).tme",
                             src: "https://drive.google.com/file/d/1jQs7UsVXAgsEbtOja8Rwr73D9mffrIFz/view?usp=sharing"
                         },
                         {
-                            name: "ZK_b737_900_mod_v1.1.1_(Sounds_Shake_Winglets_Front).tme",
+                            name: "ZK_b737_900_mod_v1.1.2_(Sounds_Shake_Winglets_Front).tme",
                             src: "https://drive.google.com/file/d/1A4Y-o3uBhtIkyoAS4j0rr57J-AH0uAvN/view?usp=sharing"
                         },
                         {
-                            name: "ZK_b737_Max9_mod_v1.1.1_(RyanVulk_Shake_Sounds_Front).tme",
+                            name: "ZK_b737_Max9_mod_v1.1.2_(RyanVulk_Shake_Sounds_Front).tme",
                             src: "https://drive.google.com/file/d/1L1ue7V8R7O5HVmVjwxJ5SlxD-HWAkfSN/view?usp=sharing"
                         },
                     ]
@@ -360,7 +410,7 @@ function ModsData() {
             title: "A350-1000 Mod (LiveryVulk, Shake, Sound, Front) | Android Only",
             author: "ZK Aviation",
             datePublished: "December 25, 2025",
-            lastUpdated: "January 8, 2026",
+            lastUpdated: "February 8, 2026",
             tags: ["A350-1000", "Sounds", "Camera", "Shake", "Cabin", "Livery", "Airbus"],
             articleImage: "a350_1000_sounds_front_cabin_4.png",
             content: [
@@ -439,8 +489,16 @@ function ModsData() {
                             src: "https://drive.google.com/file/d/1S5l8aJ9jR0Rp9UDROENDytbhiOQWL8mV/view?usp=sharing"
                         },
                         {
+                            name: `ZK_a350_1000_mod_v1.2.1_(xCabin_Shake_Sounds_Front).tme <span class="no-bold italic" style="color: red;">(removed cabin)</span>`,
+                            src: "https://drive.google.com/file/d/1OMLc0F-C5aO76AquIgmOCscD1Q3f8bJA/view?usp=sharing"
+                        },
+                        {
                             name: "ZK_a350_1000_mod_v1.2.1_(LiveryVulk_Shake_Sounds_Front).tme",
                             src: "https://drive.google.com/file/d/1pMTRmJxs3hOBxkbz4M6xEEyqBDO5gl4W/view?usp=sharing"
+                        },
+                        {
+                            name: `ZK_a350_1000_mod_v1.2.1_(xCabin_LiveryVulk_Shake_Sounds_Front).tme <span class="no-bold italic" style="color: red;">(removed cabin)</span>`,
+                            src: "https://drive.google.com/file/d/1M5nDFaUOwCpoyqDzWXGMXqnIxcm_oZD5/view?usp=sharing"
                         },
                     ]
                 }
@@ -451,7 +509,7 @@ function ModsData() {
             title: "A319/320neo/321 Mod (Sound, Shake, Front) | Android Only",
             author: "ZK Aviation",
             datePublished: "December 25, 2025",
-            lastUpdated: "January 30, 2026",
+            lastUpdated: "February 8, 2026",
             tags: ["A320 Family", "A319", "A320neo", "A321", "Sounds", "Shake", "Camera", "Cabin", "Airbus"],
             articleImage: "a320family_sounds_front_cabin_1.png",
             content: [
@@ -466,6 +524,7 @@ function ModsData() {
                         "Jumpseat view brought towards the front for a better view",
                         "Camera movements on turns and touchdown",
                         "Cabin + Cockpit shake and touchdown sounds added",
+                        `Engine rumble sounds <span class="italic">(not included for the neo version yet)</span>`
                     ]
                 },
                 {
@@ -497,7 +556,7 @@ function ModsData() {
                     type: "download-links",
                     downloadsList: [
                         {
-                            name: "ZK_a319_mod_v1.1.1_(Shake_Sounds_Front).tme",
+                            name: "ZK_a319_mod_v1.1.2_(Shake_Sounds_Front).tme",
                             src: "https://drive.google.com/file/d/1PtTHAolND92-PPczfJUYXm67ogE0-_2U/view?usp=sharing"
                         },
                         {
@@ -505,7 +564,7 @@ function ModsData() {
                             src: "https://drive.google.com/file/d/1bCkv68A7q9TVUqa6MPjpXgKvW8QozpxG/view?usp=sharing"
                         },
                         {
-                            name: "ZK_a321_mod_v1.1.2_(Shake_Sounds_Front).tme",
+                            name: "ZK_a321_mod_v1.1.3_(Shake_Sounds_Front).tme",
                             src: "https://drive.google.com/file/d/1QT3GSiACCyxpyrzhYkDWtKfKm0fFMEQr/view?usp=sharing"
                         },
                     ]
@@ -517,7 +576,7 @@ function ModsData() {
             title: "B787-9/-10 (Shake, Sounds, Front) | Android Only",
             author: "ZK Aviation",
             datePublished: "December 25, 2025",
-            lastUpdated: "January 26, 2026",
+            lastUpdated: "February 8, 2026",
             tags: ["b787", "b787-10", "b787-9", "Camera", "Shake", "Sounds", "Cabin", "Boeing"],
             articleImage: "b787_mod_pilot.png",
             content: [
@@ -568,11 +627,11 @@ function ModsData() {
                     type: "download-links",
                     downloadsList: [
                         {
-                            name: "ZK_b787_9_mod_v1.2.0_(Shake_Sounds_Front).tme",
+                            name: "ZK_b787_9_mod_v1.2.1_(Shake_Sounds_Front).tme",
                             src: "https://drive.google.com/file/d/1y-13vhibas0BNKa1pPKk0wkNf2NGK56K/view?usp=sharing"
                         },
                         {
-                            name: "ZK_b787_10_mod_v1.2.0_(Shake_Sounds_Front).tme",
+                            name: "ZK_b787_10_mod_v1.2.1_(Shake_Sounds_Front).tme",
                             src: "https://drive.google.com/file/d/1ujACUG04i1vruSwEwhi2y_yT4LUG6DOY/view?usp=sharing"
                         },
                     ]
@@ -754,4 +813,3 @@ function ModsData() {
     ];
 }
 */
-

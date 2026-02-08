@@ -2,6 +2,124 @@
 function ChangelogData() {
     return [
         {
+            modID: 2208260,
+            updateSummary: "CRJ-900 Mod v1.0.0 | New Release",
+            updateDate: "February 8, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "paragraph",
+                    value: "New CRJ-900 mod has been released"
+                },
+            ]
+        },
+        {
+            modID: 1225251,
+            updateSummary: "Boeing 737 family Mod Update | Engine Enhancement Tweaks",
+            updateDate: "February 8, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Left and Right engine rumble audios balanced",
+                        "Backend rumble sounds rework"
+                    ]
+                },
+            ]
+        },
+        {
+            modID: 1225253,
+            updateSummary: "A319/321 Mod Update | Engine Rumble",
+            updateDate: "February 8, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Added engine rumble sounds (not implemented for the neo yet)",
+                    ]
+                },
+            ]
+        },
+        {
+            modID: 1225252,
+            updateSummary: "A350-1000 Mod Update | No-Cabin options",
+            updateDate: "February 8, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "No-Cabin options for those who prefer better performance and default views",
+                    ]
+                },
+            ]
+        },
+        {
+            modID: 1225250,
+            updateSummary: "A380 Mod v1.2.1 | Minor Sound Update",
+            updateDate: "February 8, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Backend flaps sound rework",
+                    ]
+                },
+            ]
+        },
+        {
+            modID: 1225254,
+            updateSummary: "Boeing 747-400 Mod v1.2.1 | Minor Sound Update",
+            updateDate: "February 8, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Added wheel speed high pitch sound",
+                    ]
+                },
+            ]
+        },
+        {
+            modID: 1229251,
+            updateSummary: "Boeing 747-400 Mod v1.1.2 | Minor Sound Update",
+            updateDate: "February 8, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Added wheel speed high pitch sound",
+                    ]
+                },
+            ]
+        },
+        {
             modID: 1225253,
             updateSummary: "Airbus A321 Mod v1.1.2 | Minor Sound Fix",
             updateDate: "January 30, 2026",
@@ -300,25 +418,6 @@ function ChangelogData() {
                 },
             ]
         },
-    ]
-}
-
-function getUpdatesIndex(start, end = -1) {
-    const data = [];
-    const updatesDataCopy = ChangelogData();
-    if (end === -1 || end > updatesDataCopy.length) end = modsDataCopy.length - 1;
-    for (let i=start; i <= end; i++) {
-        data[data.length] = updatesDataCopy[i];
-    }
-
-    return data;
-}
-
-
-
-// This entire list is ordered by dates correctly
-function previousChangelogData() {
-    return [
         {
             modID: 1225252,
             updateSummary: "A350-1000 Mod v1.1.1 | Sounds Update",
@@ -512,6 +611,16 @@ function previousChangelogData() {
     ]
 }
 
+function getUpdatesIndex(start, end = -1) {
+    const data = [];
+    const updatesDataCopy = ChangelogData();
+    if (end === -1 || end > updatesDataCopy.length) end = modsDataCopy.length - 1;
+    for (let i=start; i <= end; i++) {
+        data[data.length] = updatesDataCopy[i];
+    }
+
+    return data;
+}
 
 
 
