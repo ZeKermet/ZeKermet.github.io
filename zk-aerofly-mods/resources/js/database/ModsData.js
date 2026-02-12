@@ -80,16 +80,13 @@ function ModsData() {
                     value: "Images"
                 },
                 {
-                    type: "image",
-                    src: "b747_mod_jumpseat.png",
-                },
-                {
-                    type: "small-images",
+                    type: "image-list",
                     srcList: [
+                        "b747_mod_jumpseat.png",
                         "b747_mod_cabin_1.png",
                         "b747_mod_cabin_2.png",
                         "b747_mod_cabin_3.png",
-                        "b747_mod_livery_old_lufthansa.png"
+                        "b747_mod_livery_old_lufthansa.png",
                     ]
                 },
                 {
@@ -129,17 +126,14 @@ function ModsData() {
                     value: `<span class="italic">All liveries were downloaded from Higgy's former site, http://flight-sim.org/filebase. You can find him on the Aerofly forum</span>`
                 },
                 {
-                    type: "small-images",
+                    type: "image-list",
                     srcList: [
+                        "b747_mod_livery_ryanair.png",
                         "b747_mod_livery_1.png",
                         "b747_mod_livery_2.png",
                         "b747_mod_livery_3.png",
                         "b747_mod_livery_4.png",
                     ]
-                },
-                {
-                    type: "image",
-                    src: "b747_mod_livery_ryanair.png"
                 },
                 {
                     type: "paragraph",
@@ -197,7 +191,7 @@ function ModsData() {
                     value: "Images"
                 },
                 {
-                    type: "small-images",
+                    type: "image-list",
                     srcList: [
                         "b777_mod_jumpseat.png",
                         "b777_mod_cabin_1.png",
@@ -307,12 +301,9 @@ function ModsData() {
                     ]
                 },
                 {
-                    type: "image",
-                    src: "b738_sound_front_wingtips_jumpseat.png",
-                },
-                {
-                    type: "small-images",
+                    type: "image-list",
                     srcList: [
+                        "b738_sound_front_wingtips_jumpseat.png",
                         "b738_sound_front_wingtips_fiji_1.png",
                         "b738_sound_front_wingtips_fiji_2.png",
                         "b738_sound_front_wingtips_delta_1.png",
@@ -332,7 +323,7 @@ function ModsData() {
                     ]
                 },
                 {
-                    type: "small-images",
+                    type: "image-list",
                     srcList: [
                         "b737max9_ryanvulk_front_sounds_1.png",
                         "b737max9_ryanvulk_front_sounds_2.png"
@@ -343,7 +334,7 @@ function ModsData() {
                     value: "And without Vulkan, you get this weird livery you can use I guess XD"
                 },
                 {
-                    type: "small-images",
+                    type: "image-list",
                     srcList: [
                         "b737max9_ryanvulk_front_sounds_broken_1.png",
                         "b737max9_ryanvulk_front_sounds_broken_2.png"
@@ -362,7 +353,7 @@ function ModsData() {
                     ]
                 },
                 {
-                    type: "small-images",
+                    type: "image-list",
                     srcList: [
                         "b737_500_cockpit.png",
                         "b737_500_cabin_1.png",
@@ -432,7 +423,7 @@ function ModsData() {
                     value: "Images"
                 },
                 {
-                    type: "small-images",
+                    type: "image-list",
                     srcList: [
                         "a350_1000_sounds_front_jumpseat.png",
                         "a350_1000_sounds_front_cabin_1.png",
@@ -463,7 +454,7 @@ function ModsData() {
                     value: `<span class="italic">Credits to YOLO.af for creating all these liveries</span>`
                 },
                 {
-                    type: "small-images",
+                    type: "image-list",
                     srcList: [
                         "a350_1000_liveryvulk_sounds_front_liv1.png",
                         "a350_1000_liveryvulk_sounds_front_liv2.png",
@@ -532,7 +523,7 @@ function ModsData() {
                     value: "Images"
                 },
                 {
-                    type: "small-images",
+                    type: "image-list",
                     srcList: [
                         "a320family_sounds_front_jumpseat.png",
                         "a320family_sounds_front_cabin_2.png",
@@ -599,7 +590,7 @@ function ModsData() {
                     value: "Images",
                 },
                 {
-                    type: "small-images",
+                    type: "image-list",
                     srcList: [
                         "b787_mod_jumpseat.png",
                         "b787_mod_cabin_1.png",
@@ -612,8 +603,8 @@ function ModsData() {
                     value: "Note: Because of the lowered view, the hud will not display properly."
                 },
                 {
-                    type: "small-images",
-                    srcList: ["b787_mod_cockpit_hud_issue.png"]
+                    type: "image",
+                    src: "b787_mod_cockpit_hud_issue.png"
                 },
                 {
                     type: "subheader",
@@ -707,7 +698,7 @@ function ModsData() {
                     src: "a350sunsetlanding.jpg"
                 },
                 {
-                    type: "small-images",
+                    type: "image-list",
                     srcList: [
                         "747landingcopenhagen.jpg",
                         "ytlogo.jpg",
@@ -777,7 +768,7 @@ function ModsData() {
                     src: "a350sunsetlanding.jpg"
                 },
                 {
-                    type: "small-images",
+                    type: "image-list",
                     srcList: [
                         "747landingcopenhagen.jpg",
                         "ytlogo.jpg",
