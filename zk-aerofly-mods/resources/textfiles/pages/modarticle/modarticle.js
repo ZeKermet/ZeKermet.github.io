@@ -9,6 +9,8 @@ const modData = getModArticle(parseInt(articleID));
 
 document.getElementsByTagName('title')[0].innerHTML += modData.title;
 
+const imagesSrcList = [];
+
 
 // ---------- ARTICLE ELEMENTS ----------- 
 
@@ -56,6 +58,10 @@ for (const content of modData.content) {
     if (content.type === "small-images") {
         articleContent.innerHTML += buildSmallImages(content.srcList);
     }
+    if (content.type === "image-list") {
+        articleContent.innerHTML += buildImageList(content.srcList);
+        imagesSrcList.push(content.srcList);
+    }
     if (content.type === "youtube-embed") {
         articleContent.innerHTML += buildYouTubeEmbed(content.src);
     }
@@ -92,6 +98,7 @@ function buildImage(src) {
     return `<img class="image" src="${databaseImagesPath}${src}" />`;
 }
 
+
 function buildSmallImages(srcList) {
     let elemStr = `<div class="small-images">`;
 
@@ -100,6 +107,25 @@ function buildSmallImages(srcList) {
     }
 
     return elemStr += `</div>`;
+}
+
+
+function buildImageList(srcList) {
+    return `
+        <div class="image-list start" ind="0" srcId="${imagesSrcList.length}">
+            <img src="${databaseImagesPath}${srcList[0]}" />
+            <div class="imglist-overlay">
+                <div class="imglist-overlay-buttons">
+                    <button class="img-scroll l-btn"><p class="img-scroll l-btn">&lsaquo;</p></button>
+                    <button class="img-scroll r-btn"><p class="img-scroll r-btn">&rsaquo;</p></button>
+                </div>
+                <div class="imglist-overlay-bottom">
+                    <p class="imglist-overlay-img-num"><span class="img-num-current">1</span> of <span class="img-num-total">${srcList.length}</span></p>
+                    <i class="imglist-overlay-img-expand fas fa-expand"></i>
+                </div>
+            </div>
+        </div>
+    `;
 }
 
 function buildYouTubeEmbed(link) {
@@ -134,3 +160,42 @@ function buildDownloadsList(list) {
     + buildParagraph(`Files go to this directory: <span class="italic wrap">"device/Android/Data/com.aerofly.aeroflyfsg1/files/"</span>`)
     + buildParagraph(`<span class="italic">Note: If you have any other mods for this/these aircraft (including my previous ones), it's recommended to take them out of the aerofly folder if you want to use</span>`);
 }
+
+
+// ---------- EVENT LISTENERS -----------
+
+document.addEventListener('click', (e) => {
+    const elem = e.target;
+
+    // ====== If an image list's scroll buttons is clicked on ======
+    if (elem.classList.contains('img-scroll')) {
+        const imgList = elem.closest('.image-list');
+        let currentImgIndex = parseInt(imgList.getAttribute('ind'));
+        const srcList = imagesSrcList[parseInt(imgList.getAttribute('srcId'))];
+
+        if (elem.classList.contains('l-btn') && currentImgIndex > 0) {
+            currentImgIndex--;
+            imgList.classList.remove("end");
+            if (currentImgIndex === 0) imgList.classList.add('start');
+        }
+        if (elem.classList.contains('r-btn') && currentImgIndex < srcList.length-1) {
+            currentImgIndex++;
+            imgList.classList.remove("start");
+            if (currentImgIndex === srcList.length-1) imgList.classList.add('end');
+        }
+
+        imgList.setAttribute('ind', currentImgIndex);
+        imgList.getElementsByTagName('img')[0].setAttribute('src', databaseImagesPath + srcList[currentImgIndex]);
+        imgList.getElementsByClassName('img-num-current')[0].innerHTML = currentImgIndex + 1;
+    } 
+
+    // ====== If the image list's expand button is clicked on ======
+    if (elem.classList.contains('imglist-overlay-img-expand')) {
+        const imgList = elem.closest('.image-list');
+        let currentImgIndex = parseInt(imgList.getAttribute('ind'));
+        const srcList = imagesSrcList[parseInt(imgList.getAttribute('srcId'))];
+
+        // WIP
+    }
+});
+
