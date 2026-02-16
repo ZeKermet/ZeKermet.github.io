@@ -11,8 +11,9 @@ pageHeader.innerHTML += `
 
             <nav id="navlinks">
                 <ul>
-                    <a href="index.html"><li class="navlink">Mods</li></a>
-                    <a href="changelog.html"><li class="navlink">Changelog</li></a>
+                    <a href="index.html"><li class="navlink ${isCurrent("Mods")}">Mods</li></a>
+                    <a href="articles.html"><li class="navlink ${isCurrent("Articles")}">Articles</li></a>
+                    <a href="changelog.html"><li class="navlink ${isCurrent("Changelog")}">Changelog</li></a>
                 </ul>
             </nav>
 
@@ -23,8 +24,24 @@ pageHeader.innerHTML += `
 `;
 
 
-function switchNavOpened() {
+function isCurrent(navlink) {
+    const modPagesList = ["mods-page", "mod-article-page"];
+    const articlesPagesList = ["articles-page", "article-page"];
+    const changelogPagesList = ["changelog-page"];
 
+    const pgHeaderElemClass = document.getElementById('page-header').classList;
+
+    for (const pageClass of modPagesList) {
+        if (pgHeaderElemClass.contains(pageClass) && navlink === "Mods") return "current";
+    }
+    for (const pageClass of articlesPagesList) {
+        if (pgHeaderElemClass.contains(pageClass) && navlink === "Articles") return "current";
+    }
+    for (const pageClass of changelogPagesList) {
+        if (pgHeaderElemClass.contains(pageClass) && navlink === "Changelog") return "current";
+    }
+
+    return null;
 }
 
 pageHeader.addEventListener('click', (e) => {
