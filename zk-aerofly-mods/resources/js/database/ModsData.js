@@ -1,4 +1,4 @@
-const databaseImagesPath = "./resources/js/database/images/";
+ const databaseImagesPath = "./resources/js/database/images/";
 
 function ModsData() {
     return [
@@ -137,7 +137,7 @@ function ModsData() {
                 },
                 {
                     type: "paragraph",
-                    value: `<span class="italic">Note: Liveries WILL NOT WORK PROPERLY without Vulkan. For devices not compatible with Vulkan liveries, a separate file "(OldLufth_Front)" is provided. It contains the old lufthansa livery that works for both OpenGL and Vulkan.</span>`
+                    value: `<span class="italic">Note: Liveries <span class="bold">WILL NOT WORK PROPERLY without Vulkan</span>, and <span class="bold">IS NOT GUARANTEED</span> to work even with it. For devices not compatible with Vulkan liveries, a separate file "(OldLufth)" is provided. It contains the old lufthansa livery that works for both OpenGL and Vulkan.</span>`
                 },
                 {
                     type: "subheader",
@@ -319,8 +319,11 @@ function ModsData() {
                     list: [
                         "Same views and sounds as the ones above",
                         "The Max-9 has a Ryanair livery that you can use (Works only with vulkan)",
-                        `<span class="italic">Credits to YOLO.af for making the Ryanair livery, you can find him on the Aerofly Forum</span>`
                     ]
+                },
+                {
+                    type: "paragraph",
+                    value: `<span class="italic">Credits to YOLO.af for making the Ryanair livery, you can find him on the Aerofly Forum</span>`
                 },
                 {
                     type: "image-list",
@@ -459,6 +462,10 @@ function ModsData() {
                         "a350_1000_liveryvulk_sounds_front_liv1.png",
                         "a350_1000_liveryvulk_sounds_front_liv2.png",
                     ]
+                },
+                {
+                    type: "paragraph",
+                    value: `<span class="italic">Note: Liveries <span class="bold">WILL NOT WORK PROPERLY without Vulkan</span>, and <span class="bold">IS NOT GUARANTEED</span> to work even with it. For devices not compatible with Vulkan liveries, separate files without "(LiveryVulk)" are provided.</span>`
                 },
                 {
                     type: "subheader",
