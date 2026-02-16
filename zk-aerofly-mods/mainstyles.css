@@ -142,7 +142,7 @@ button.show-more-list:hover {
 #page-header #navlinks ul {
     display: flex;
     align-items: center;
-    gap: 48px;
+    gap: 36px;
 }
 
 #page-header #navlinks ul a {
@@ -152,6 +152,9 @@ button.show-more-list:hover {
 #page-header .navlink {
     list-style: none;
     color: var(--neutral-gray-dark);
+}
+#page-header .navlink.current {
+    color: var(--primary-color-medium);
 }
 
 #page-header #mobile-page-header-dropdown {
@@ -346,7 +349,7 @@ footer {
 #page-footer #navlinks-footer ul {
     display: flex;
     align-items: center;
-    gap: 48px;
+    gap: 36px;
 }
 
 #page-footer #navlinks-footer ul a {
@@ -411,7 +414,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 622px) {
+@media screen and (max-width: 756px) {
     .section-container.footer {
         padding: calc(var(--page-vertical-padding)) var(--page-horizontal-padding);
         display: flex;
@@ -432,7 +435,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 610px) {
     #page-header #navlinks {
         position: absolute;
         top: calc(100% - 4px);
