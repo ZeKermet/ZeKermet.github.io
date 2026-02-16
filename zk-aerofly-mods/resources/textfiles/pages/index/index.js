@@ -66,7 +66,7 @@ function constructMods(data) {
                 </div>
 
                 <div class="mod-content">
-                    <a href="modarticle.html?articleid=${mod.id}"><h6 class="mod-title">${title}</h6></a>
+                    <a href="modarticle.html?modarticleid=${mod.id}"><h6 class="mod-title">${title}</h6></a>
                     <div class="mod-tags">
                         ${tagsStr}
                     </div>

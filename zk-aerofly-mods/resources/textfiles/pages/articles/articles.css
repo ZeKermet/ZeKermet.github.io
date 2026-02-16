@@ -1,0 +1,183 @@
+.page-banner {
+    background-image: var(--banner-gradient), url('../../../images/pageEssentials/cursed737yeti.jpg');
+}
+
+button.show-more-list {
+    display: none;
+}
+
+
+
+#articles-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--section-container-gap);
+}
+#articles-list-container #articles-search {
+    position: relative;
+    width: max-content;
+    height: max-content;
+} 
+#articles-list-container #articles-search i {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    font-size: var(--font-size-h6);
+    color: var(--neutral-gray-dark);
+}
+#articles-list-container #articles-search #searchArticles {
+    padding: 4px 12px;
+    padding-left: 32px;
+    width: 320px;
+    font-size: var(--font-size-h6);
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+}
+
+
+#articles-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+#articles-list .article {
+    --border-radius: 8px;
+    --article-content-gap: 12px;
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    max-width: 750px; /* TRY 625PX LIKE THE ACTUAL ARTICLE STYLES */
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.0015);
+    border-radius: var(--border-radius);
+    background: var(--page-background);
+    cursor: default;
+}
+#articles-list .article-image {
+    border-radius: var(--border-radius);
+    width: 300px;
+    height: 200px;
+}
+#articles-list .article-image img {
+    border-radius: inherit;
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+#articles-list .article-content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--article-content-gap);
+}
+#articles-list .article-title {
+    cursor: pointer;
+}
+#articles-list .article-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+#articles-list .article-tags .tag {
+    background: var(--white-dark);
+    padding: 4px;
+    border-radius: 4px;
+}
+#articles-list .article-tags p {
+    font-size: var(--font-size-p-small);
+    color: var(--neutral-gray-dark);
+}
+#articles-list .article .publish-info {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+#articles-list .article .publish-info > * {
+    font-size: var(--font-size-p-small);
+    color: var(--neutral-gray);
+}
+#articles-list .article .publish-info .separator {
+    width: 1px;
+    height: var(--font-size-p-small);
+    background: var(--neutral-gray);
+}
+#articles-list .article .publish-info i {
+    color: var(--neutral-gray);
+}
+#articles-list .article .article-update-date-container {
+    /* border-top: 1px solid var(--neutral-gray-light); */
+    padding-top: 8px;
+}
+#articles-list .article .article-update-date-container p,
+#articles-list .article .article-update-date-container p span {
+    font-size: var(--font-size-p-small);
+    color: var(--neutral-gray);
+}
+
+
+
+
+
+@media screen and (max-width: 484px) {
+    #articles-list-container #articles-search {
+        width: 100%;
+    } 
+    #articles-list-container #articles-search i {
+        font-size: var(--font-size-p);
+    }
+    #articles-list-container #articles-search #searchArticles {
+        width: 100%;
+        max-width: 320px;
+        font-size: var(--font-size-p);
+    }
+}
+
+
+@media screen and (max-width: 664px) {
+    #articles-list-container {
+        margin: 0 auto;
+        max-width: 400px;
+    }
+    #articles-list {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    #articles-list .article {
+        --border-radius: 12px;
+        flex-direction: column;
+        max-width: 400px;
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
+        gap: 0;
+    }
+    #articles-list .article-image {
+        border-radius: var(--border-radius) var(--border-radius) 0 0;
+        width: 100%;
+        height: 220px;
+    }
+    #articles-list .article-image img {
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+    }
+}
+
+
+@media screen and (max-width: 350px) {
+    #articles-list .article-image {
+        height: 180px;
+    }
+    #articles-list .article-title {
+        font-size: var(--font-size-h6);
+    }
+    #articles-list .article-tags .tag p,
+    #articles-list .article .publish-info > *,
+    #articles-list .article .article-update-date-container p,
+    #articles-list .article .article-update-date-container p span {
+        font-size: var(--font-size-p-super-small);
+    }
+}
