@@ -21,7 +21,7 @@ function ArticlesData() {
                 },
                 {
                     type: "paragraph",
-                    value: "For some context, Aerofly mods are essentially separate TME files (converted archive files) that override content packaged in the original aircraft’s TME file. This means we do not have to touch anything related to the original TME file, and we instead simply insert the mod into the same file location and let it do its job."
+                    value: "For some context, Aerofly mods are essentially separate TME files (converted archive files) that override content packaged in the original aircraft’s TME file. This means we do not have to touch anything related to the original file, and we instead simply insert the mod into the same file location and let it do its job."
                 },
                 {
                     type: "subheader",
@@ -115,4 +115,5 @@ function getArticleIndex(start, end = -1) {
     }
 
     return data;
+
 }
