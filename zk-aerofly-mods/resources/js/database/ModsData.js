@@ -454,7 +454,7 @@ function ModsData() {
                 },
                 {
                     type: "paragraph",
-                    value: `<span class="italic">Credits to YOLO.af for creating all these liveries</span>`
+                    value: `<span class="italic">Credits to YOLO.af for creating all these liveries. You can find him on the Aerofly Forum</span>`
                 },
                 {
                     type: "image-list",
@@ -811,3 +811,4 @@ function ModsData() {
     ];
 }
 */
+
