@@ -14,7 +14,19 @@
         <h1>Enter Equation Here</h1>
         <input id="equationInput" type="text">
         <button id="submitEquation">Graph</button>
-        <p id="inputWarning">Only characters besides math operators are X and π. Anything else will throw an error.</p>
+        <p id="inputWarning">Only characters besides math operators are X, e, and π. Anything else will throw an error.</p>
+
+        <div class="grid-size-setup">
+            <div class="input-w-label">
+                <p class="input-label">Grid Size</p>
+                <input id="gridSizeInput" type="number" />
+            </div>
+
+            <div class="input-w-label">
+                <p class="input-label">Grid Step</p>
+                <input id="gridStepInput" type="number" />
+            </div>
+        </div>
     </div>
 
     <div id="chart">
