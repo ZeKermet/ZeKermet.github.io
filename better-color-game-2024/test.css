@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    position: relative;
+}
+
+section {
+    min-height: 100vh;
+    padding: 20px;
+}
+
+button {
+    cursor: pointer;
+}
+player i {
+    cursor: pointer;
+}
+
+
+
+
+#players-header {
+    text-align: center;
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
+
+
+#players {
+    background: rgb(200, 200, 255);
+}
+#players-container {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+player, .player-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+player {
+    justify-content: space-between;
+    cursor: default;
+}
+
+.player-info {
+    width: 78%;
+}
+
+player .player-color {
+    margin-left: 5px;
+    background: green;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid #b8b8b8;
+    cursor: pointer;
+}
+
+/* display block */
+player .player-name {
+    display: none;
+    margin-left: 4px;
+}
+
+/* display flex */
+player .name-entry-container {
+    display: flex;
+    height: 28px;
+    width: 68%;
+    align-items: center;
+    position: relative;
+}
+
+player .name-entry {
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    padding: 0.5em;
+}
+player .confirm-name-entry {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+player .points {
+    align-self: center;
+    width: 25%;
+}
+
+
+#add-player-btn {
+    width: 100%;
+    font-size: 18px;
+    padding: 0.4em;
+    border-radius: 5px;
+    border: none;
+    background: #4120fd;
+    color: white;
+}
+
+
+#color-game {
+    padding: 20px;
+    position: relative;
+}
+
+/* Display visible when game starts */
+#color-game .turns-container {
+    visibility: hidden;
+    position: absolute;
+    background: #dcdcff;
+    display: inline-block;
+    padding: 1em;
+}
+
+
+#color-game h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 0;
+}
+span#color-target {
+    color: red;
+}
+
+
+
+#color-game .game-container {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#color-game #color-circle {
+    width: 300px;
+    height: 300px;
+    background: blue;
+    border-radius: 50%;
+    margin-bottom: 50px;
+}
+
+#color-game #game-button {
+    background: green;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+}
+
+
+#game-results {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    background: #dfdfdf;
+    border: 1px solid #c7c7c7;
+    width: 30vw;
+    height: 30vw;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2%;
+    padding: 20px;
+}
+
+.game-results-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#game-results h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#game-results-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#game-results .player-ranking {
+    margin-right: 10px;
+}
+
+.player-result {
+    position: relative;
+    width: 100%;
+}
+
+.player-points-result {
+    position: absolute;
+    right: 0;
+    color: #4120fd
+}
+
+#play-again-btn {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    font-size: 20px;
+    padding: 0.4em;
+    border-radius: 5px;
+    border: none;
+    background: blue;
+    color: white;
+}
+
