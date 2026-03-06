@@ -11,8 +11,10 @@ function ChangelogData() {
                     value: "Details:"
                 },
                 {
-                    type: "paragraph",
-                    value: "Added 22 passenger variant liveries (still very much a freighter on the inside lol)"
+                    type: "ul",
+                    list: [
+                        "Added 22 passenger variant liveries (still very much a freighter on the inside lol)"
+                    ]
                 },
             ]
         },
@@ -689,4 +691,5 @@ function ChangelogData() {
         }
     ]
 }
+
 */
