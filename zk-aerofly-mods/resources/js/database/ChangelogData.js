@@ -2,6 +2,21 @@
 function ChangelogData() {
     return [
         {
+            modID: 1229250,
+            updateSummary: "Boeing 777-200f Mod v1.2.1 | -200LR Liveries",
+            updateDate: "March 6, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "paragraph",
+                    value: "Added 22 passenger variant liveries (still very much a freighter on the inside lol)"
+                },
+            ]
+        },
+        {
             modID: 2208260,
             updateSummary: "CRJ-900 Mod v1.0.0 | New Release",
             updateDate: "February 8, 2026",

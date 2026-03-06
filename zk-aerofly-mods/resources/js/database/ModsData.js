@@ -1,7 +1,107 @@
- const databaseImagesPath = "./resources/js/database/images/";
+const databaseImagesPath = "./resources/js/database/images/";
 
 function ModsData() {
     return [
+        {
+            id: 1229250,
+            title: "B777-300ER/-200f (Livery, Shake, Sounds, Front) | Android Only",
+            author: "ZK Aviation",
+            datePublished: "December 29, 2025",
+            lastUpdated: "March 6, 2026",
+            tags: ["b777", "b777-300er", "b777-200f", "Camera", "Shake", "Sounds", "Livery", "Boeing"],
+            articleImage: "b777_mod_old_emirates.png",
+            content: [
+                {
+                    type: "subheader",
+                    value: "General Features"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Modified cockpit and passenger views",
+                        "Jumpseat camera moved to the front for a better view",
+                        "Camera movements on turns and touchdown",
+                        "Cabin + Cockpit shake and touchdown sounds added",
+                        `Includes old mobile Emirates livery <span class="bold">(Works for OpenGL & Vulkan)</span>`
+                    ]
+                },
+                {
+                    type: "subheader",
+                    value: "Images"
+                },
+                {
+                    type: "image-list",
+                    srcList: [
+                        "b777_mod_jumpseat.png",
+                        "b777_mod_cabin_1.png",
+                        "b777_mod_cabin_2.png",
+                        "b777_mod_cabin_3.png"
+                    ]
+                },
+                {
+                    type: "subheader",
+                    value: "Boeing 777-200f Features"
+                },
+                {
+                    type: "paragraph",
+                    value: `777-300 liveries were imported over to make it seem like an "-200LR" variant. <span class="bold">All work for OpenGL & Vulkan</span>. Liveries include:`
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "American Airlines",
+                        "Swiss Airlines",
+                        "Air Canada",
+                        "KLM",
+                        `<span class="italic">...and 18 more</span>`
+                    ]
+                },
+                {
+                    type: "paragraph",
+                    value: `<span class="italic">Liveries were downloaded from http://flight-sim.org/filebase before its closure</span>`
+                },
+                {
+                    type: "image-list",
+                    srcList: [
+                        "b777_lr_liv_3.jpg",
+                        "b777_lr_liv_1.jpg",
+                        "b777_lr_liv_2.jpg",
+                    ]
+                },
+                /*
+                {
+                    type: "paragraph",
+                    value: "For the 777-200f, the views were intentionally placed so you can see the interior"
+                },
+                {
+                    type: "image",
+                    src: "b777_mod_freight_interior.png"
+                },
+                */
+                {
+                    type: "subheader",
+                    value: "Sound Clip"
+                },
+                {
+                    type: "youtube-embed",
+                    src: "https://www.youtube.com/embed/20hkXFzpFxQ?si=eaLqbYdPuV7PD3dD"
+                },
+                {
+                    type: "download-links",
+                    downloadsList: [
+                        {
+                            name: "ZK_b777_200f_mod_v1.2.1_(LrLivery_Shake_Sounds_Front).tme",
+                            src: "https://drive.google.com/file/d/1VGoISRnP_qelRDcuOicR3dfha14zmvgM/view?usp=sharing"
+                        },
+                        {
+                            name: "ZK_b777_300er_mod_v1.2.0_(OldEmir_Shake_Sounds_Front).tme",
+                            src: "https://drive.google.com/file/d/1NcGJnjFQYkXqOLxW4MWuhOFAwtobeuKt/view?usp=sharing"
+                        },
+                        
+                    ]
+                }
+            ]
+        },
         {
             id: 2208260,
             title: "CRJ-900 (Shake, Sounds) | Android Only",
@@ -157,74 +257,6 @@ function ModsData() {
                         {
                             name: "ZK_b747_400_mod_v1.2.2_(LiveryVulk_Shake_Sounds_Front).tme",
                             src: "https://drive.google.com/file/d/1YdTqHZmHeCb-aNL_QdF79NmDHbmWrLSm/view?usp=sharing"
-                        },
-                        
-                    ]
-                }
-            ]
-        },
-        {
-            id: 1229250,
-            title: "B777-300ER/-200f (Shake, Sounds, Front) | Android Only",
-            author: "ZK Aviation",
-            datePublished: "December 29, 2025",
-            lastUpdated: "January 26, 2026",
-            tags: ["b777", "b777-300er", "b777-200f", "Camera", "Shake", "Sounds", "Livery", "Boeing"],
-            articleImage: "b777_mod_old_emirates.png",
-            content: [
-                {
-                    type: "subheader",
-                    value: "Features"
-                },
-                {
-                    type: "ul",
-                    list: [
-                        "Modified cockpit and passenger views",
-                        "Jumpseat camera moved to the front for a better view",
-                        "Camera movements on turns and touchdown",
-                        "Cabin + Cockpit shake and touchdown sounds added",
-                        `Includes old mobile Emirates livery <span class="bold">(Works for OpenGL & Vulkan)</span>`
-                    ]
-                },
-                {
-                    type: "subheader",
-                    value: "Images"
-                },
-                {
-                    type: "image-list",
-                    srcList: [
-                        "b777_mod_jumpseat.png",
-                        "b777_mod_cabin_1.png",
-                        "b777_mod_cabin_2.png",
-                        "b777_mod_cabin_3.png"
-                    ]
-                },
-                {
-                    type: "paragraph",
-                    value: "For the 777-200f, the views were intentionally placed so you can see the interior"
-                },
-                {
-                    type: "image",
-                    src: "b777_mod_freight_interior.png"
-                },
-                {
-                    type: "subheader",
-                    value: "Sound Clip"
-                },
-                {
-                    type: "youtube-embed",
-                    src: "https://www.youtube.com/embed/20hkXFzpFxQ?si=eaLqbYdPuV7PD3dD"
-                },
-                {
-                    type: "download-links",
-                    downloadsList: [
-                        {
-                            name: "ZK_b777_200f_mod_v1.2.0_(Shake_Sounds_Front).tme",
-                            src: "https://drive.google.com/file/d/1VGoISRnP_qelRDcuOicR3dfha14zmvgM/view?usp=sharing"
-                        },
-                        {
-                            name: "ZK_b777_300er_mod_v1.2.0_(OldEmir_Shake_Sounds_Front).tme",
-                            src: "https://drive.google.com/file/d/1NcGJnjFQYkXqOLxW4MWuhOFAwtobeuKt/view?usp=sharing"
                         },
                         
                     ]
@@ -811,4 +843,3 @@ function ModsData() {
     ];
 }
 */
-
