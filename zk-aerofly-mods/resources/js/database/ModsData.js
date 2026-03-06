@@ -57,10 +57,6 @@ function ModsData() {
                     ]
                 },
                 {
-                    type: "paragraph",
-                    value: `<span class="italic">Liveries were downloaded from http://flight-sim.org/filebase before its closure</span>`
-                },
-                {
                     type: "image-list",
                     srcList: [
                         "b777_lr_liv_3.jpg",
@@ -843,3 +839,4 @@ function ModsData() {
     ];
 }
 */
+
