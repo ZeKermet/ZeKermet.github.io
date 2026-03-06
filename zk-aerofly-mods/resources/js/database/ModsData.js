@@ -9,7 +9,7 @@ function ModsData() {
             datePublished: "December 29, 2025",
             lastUpdated: "March 6, 2026",
             tags: ["b777", "b777-300er", "b777-200f", "Camera", "Shake", "Sounds", "Livery", "Boeing"],
-            articleImage: "b777_mod_old_emirates.png",
+            articleImage: "b777_lr_liv_1.png",
             content: [
                 {
                     type: "subheader",
@@ -839,4 +839,5 @@ function ModsData() {
     ];
 }
 */
+
 
