@@ -245,7 +245,7 @@ button.show-more-list:hover {
     display: flex;
     flex-direction: column;
     max-width: 400px;
-    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
     border-radius: var(--border-radius);
     background: var(--page-background);
     cursor: default;
@@ -542,4 +542,5 @@ footer {
     #mods-list .mod .mod-update-date-container p span {
         font-size: var(--font-size-p-super-small);
     }
+
 }
