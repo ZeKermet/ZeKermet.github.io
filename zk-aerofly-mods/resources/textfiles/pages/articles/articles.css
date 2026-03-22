@@ -51,7 +51,7 @@ button.show-more-list {
     gap: 12px;
     width: 100%;
     max-width: 750px; /* TRY 625PX LIKE THE ACTUAL ARTICLE STYLES */
-    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.0015);
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.0015);
     border-radius: var(--border-radius);
     background: var(--page-background);
     cursor: default;
@@ -151,7 +151,7 @@ button.show-more-list {
         --border-radius: 12px;
         flex-direction: column;
         max-width: 400px;
-        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
         gap: 0;
     }
     #articles-list .article-image {

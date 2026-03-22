@@ -113,5 +113,4 @@ function openUpdateDetails(e) {
             showUpdateDetailsElem.closest('.update').classList.toggle('opened');
         }
     }
-
 }

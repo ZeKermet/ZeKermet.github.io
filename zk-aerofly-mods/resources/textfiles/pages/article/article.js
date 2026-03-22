@@ -158,7 +158,7 @@ function buildDownloadsList(list) {
 
     return buildSubheader("Download Links") 
     + elemStr 
-    + buildParagraph(`Files go to this directory: <span class="italic wrap">"device/Android/Data/com.aerofly.aeroflyfsg1/files/"</span>`)
+    + buildParagraph(`Files go to this directory: <span class="italic bold wrap">"device/Android/Data/com.aerofly.aeroflyfsg1/files/"</span>. A detailed download tutorial can be found <a class="extlink" href="./article.html?articleid=90215260">here</a>`)
     + buildParagraph(`<span class="italic">Note: If you have any other mods for this/these aircraft (including my previous ones), it's recommended to take them out of the aerofly folder if you want to use</span>`);
 }
 

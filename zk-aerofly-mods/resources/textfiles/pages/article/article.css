@@ -104,7 +104,10 @@ article.mod-article #article-content .subheader {
     margin-left: 24px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 12px;
+}
+#article-content .list li {
+    line-height: 1.7;
 }
 #article-content .small-images img,
 #article-content .small-vertical-images img,
@@ -266,6 +269,9 @@ article.mod-article #article-content .subheader {
     display: flex;
     flex-direction: column;
     gap: 16px;
+}
+#article-content .downloads-list .paragraph {
+    margin-top: 4px;
 }
 #article-content .download-item {
     display: flex;
