@@ -3,6 +3,114 @@ const databaseImagesPath = "./resources/js/database/images/";
 function ModsData() {
     return [
         {
+            id: 1225251,
+            title: "B737ng/-500/Max (Sounds, Shake, & More) | Android Only",
+            author: "ZK Aviation",
+            datePublished: "December 25, 2025",
+            lastUpdated: "March 22, 2026",
+            tags: ["b737-500", "b737-800", "b737-900", "b737 Max-9", "Sounds", "Camera", "Shake", "Wingtips", "Livery", "Boeing"],
+            articleImage: "b737_tablet_2.jpg",
+            content: [
+                {
+                    type: "subheader",
+                    value: "General Boeing 737 Features"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Modified cockpit and cabin views",
+                        "Jumpseat view brought towards the front for a better view",
+                        "Camera movements on turns and touchdown",
+                        "Cabin + Cockpit shake and touchdown sounds added",
+                        "Engine thrust and reverse rumble sounds enhanced"
+                    ]
+                },
+                {
+                    type: "subheader",
+                    value: "Boeing 737 New Gen features"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Scimitar and Blended (regular) wingtips options added to some 737-800 and -900 liveries",
+                        `EFBs added for the pilot and copilot <span class="italic">(<span style="color: red;">Not yet functional</span>, model downloaded from <a class="extlink" href="https://sketchfab.com/3d-models/tablet-pc-forktab-45d08742d2a44f088c7a5742c879fe15" target="#blank">this page</a>)</span>`,
+                        `Ryanair livery for the Max-9. <span class="bold">Vulkan is required!</span> <span class="italic">(Created by YOLO.af from the Aerofly FS Forum)</span>`,
+                    ]
+                },
+                {
+                    type: "image-list",
+                    srcList: [
+                        "b737_tablet_1.jpg",
+                        "b737_tablet_2.jpg",
+                        "b738_sound_front_wingtips_jumpseat.png",
+                        "b738_sound_front_wingtips_fiji_1.png",
+                        "b738_sound_front_wingtips_fiji_2.png",
+                        "b738_sound_front_wingtips_delta_1.png",
+                        "b738_sound_front_wingtips_delta_2.png"
+                    ]
+                },
+                {
+                    type: "image-list",
+                    srcList: [
+                        "b737max9_ryanvulk_front_sounds_1.png",
+                        "b737max9_ryanvulk_front_sounds_2.png"
+                    ]
+                },
+                {
+                    type: "subheader",
+                    value: "Boeing 737-500 Features"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Passenger views placed inside the cabin (see images below)",
+                    ]
+                },
+                {
+                    type: "image-list",
+                    srcList: [
+                        "b737_500_cockpit.png",
+                        "b737_500_cabin_1.png",
+                        "b737_500_cabin_2.png",
+                        "b737_500_cabin_3.png",
+                    ]
+                },
+                {
+                    type: "subheader",
+                    value: "Sound Clips"
+                },
+                {
+                    type: "youtube-embed",
+                    src: "https://www.youtube.com/embed/tE2uz9-Wves?si=6_hk4y9Jl91QgJoO"
+                },
+                {
+                    type: "youtube-embed",
+                    src: "https://www.youtube.com/embed/9phAH9ojtlo?si=TT2IVTaGZ-lvdsJj"
+                },
+                {
+                    type: "download-links",
+                    downloadsList: [
+                        {
+                            name: "ZK_b737_500_mod_v1.1.3_(Sounds_Shake_Cabin).tme",
+                            src: "https://drive.google.com/file/d/1sDBrp_HOeB6_ZVigDto7clcNotRPT0uV/view?usp=sharing"
+                        },
+                        {
+                            name: "ZK_b737_800_mod_v1.2.0_(Sounds_Shake_Winglets_Front).tme",
+                            src: "https://drive.google.com/file/d/1jQs7UsVXAgsEbtOja8Rwr73D9mffrIFz/view?usp=sharing"
+                        },
+                        {
+                            name: "ZK_b737_900_mod_v1.2.0_(Sounds_Shake_Winglets_Front).tme",
+                            src: "https://drive.google.com/file/d/1A4Y-o3uBhtIkyoAS4j0rr57J-AH0uAvN/view?usp=sharing"
+                        },
+                        {
+                            name: "ZK_b737_Max9_mod_v1.2.0_(RyanVulk_Shake_Sounds_Front).tme",
+                            src: "https://drive.google.com/file/d/1L1ue7V8R7O5HVmVjwxJ5SlxD-HWAkfSN/view?usp=sharing"
+                        },
+                    ]
+                }
+            ]
+        },
+        {
             id: 1229250,
             title: "B777-300ER/-200f (Livery, Shake, Sounds, Front) | Android Only",
             author: "ZK Aviation",
@@ -13,7 +121,7 @@ function ModsData() {
             content: [
                 {
                     type: "subheader",
-                    value: "General Features"
+                    value: "General Boeing 777 Features"
                 },
                 {
                     type: "ul",
@@ -24,10 +132,6 @@ function ModsData() {
                         "Cabin + Cockpit shake and touchdown sounds added",
                         `Includes old mobile Emirates livery <span class="bold">(Works for OpenGL & Vulkan)</span>`
                     ]
-                },
-                {
-                    type: "subheader",
-                    value: "Images"
                 },
                 {
                     type: "image-list",
@@ -109,7 +213,7 @@ function ModsData() {
             content: [
                 {
                     type: "subheader",
-                    value: "Features"
+                    value: "CRJ-900 Features"
                 },
                 {
                     type: "ul",
@@ -159,7 +263,7 @@ function ModsData() {
             content: [
                 {
                     type: "subheader",
-                    value: "Features"
+                    value: "Boeing 747-400 Features"
                 },
                 {
                     type: "ul",
@@ -170,10 +274,6 @@ function ModsData() {
                         "Cabin + Cockpit shake and touchdown sounds added",
                         `Includes old mobile Lufthansa livery <span class="bold">(Works for OpenGL & Vulkan)</span>`
                     ]
-                },
-                {
-                    type: "subheader",
-                    value: "Images"
                 },
                 {
                     type: "image-list",
@@ -270,7 +370,7 @@ function ModsData() {
             content: [
                 {
                     type: "subheader",
-                    value: "Features"
+                    value: "Airbus A380 Features"
                 },
                 {
                     type: "ul",
@@ -305,129 +405,6 @@ function ModsData() {
             ]
         },
         {
-            id: 1225251,
-            title: "B737ng/-500/Max (Sounds, Shake, & More) | Android Only",
-            author: "ZK Aviation",
-            datePublished: "December 25, 2025",
-            lastUpdated: "February 8, 2026",
-            tags: ["b737-500", "b737-800", "b737-900", "b737 Max-9", "Sounds", "Camera", "Shake", "Wingtips", "Livery", "Boeing"],
-            articleImage: "b738_sound_front_wingtips_fiji_2.png",
-            content: [
-                {
-                    type: "subheader",
-                    value: "Boeing 737-800/-900 Features"
-                },
-                {
-                    type: "ul",
-                    list: [
-                        "Modified cockpit and cabin views",
-                        "Jumpseat view brought towards the front for a better view (images below)",
-                        "Camera movements on turns and touchdown",
-                        "Scimitar and Blended (regular) wingtips options added to some liveries",
-                        "Cabin + Cockpit shake and touchdown sounds added",
-                        "Engine thrust and reverse rumble sounds enhanced"
-                    ]
-                },
-                {
-                    type: "image-list",
-                    srcList: [
-                        "b738_sound_front_wingtips_jumpseat.png",
-                        "b738_sound_front_wingtips_fiji_1.png",
-                        "b738_sound_front_wingtips_fiji_2.png",
-                        "b738_sound_front_wingtips_delta_1.png",
-                        "b738_sound_front_wingtips_delta_2.png"
-                    ]
-                },
-                {
-                    type: "subheader",
-                    value: "Boeing 737 Max-9 Features"
-                },
-                {
-                    type: "ul",
-                    list: [
-                        "Same views and sounds as the ones above",
-                        "The Max-9 has a Ryanair livery that you can use (Works only with vulkan)",
-                    ]
-                },
-                {
-                    type: "paragraph",
-                    value: `<span class="italic">Credits to YOLO.af for making the Ryanair livery, you can find him on the Aerofly Forum</span>`
-                },
-                {
-                    type: "image-list",
-                    srcList: [
-                        "b737max9_ryanvulk_front_sounds_1.png",
-                        "b737max9_ryanvulk_front_sounds_2.png"
-                    ]
-                },
-                {
-                    type: "paragraph",
-                    value: "And without Vulkan, you get this weird livery you can use I guess XD"
-                },
-                {
-                    type: "image-list",
-                    srcList: [
-                        "b737max9_ryanvulk_front_sounds_broken_1.png",
-                        "b737max9_ryanvulk_front_sounds_broken_2.png"
-                    ]
-                },
-                {
-                    type: "subheader",
-                    value: "Boeing 737-500 Features"
-                },
-                {
-                    type: "ul",
-                    list: [
-                        "Modified cockpit views like the others",
-                        "Sounds implemented like the modern 737s",
-                        "Passenger views placed inside the cabin (see images below)",
-                    ]
-                },
-                {
-                    type: "image-list",
-                    srcList: [
-                        "b737_500_cockpit.png",
-                        "b737_500_cabin_1.png",
-                        "b737_500_cabin_2.png",
-                        "b737_500_cabin_3.png",
-                    ]
-                },
-                {
-                    type: "subheader",
-                    value: "Sound Clips"
-                },
-                {
-                    type: "youtube-embed",
-                    src: "https://www.youtube.com/embed/tE2uz9-Wves?si=6_hk4y9Jl91QgJoO"
-                },
-                {
-                    type: "youtube-embed",
-                    src: "https://www.youtube.com/embed/9phAH9ojtlo?si=TT2IVTaGZ-lvdsJj"
-                },
-                {
-                    type: "download-links",
-                    downloadsList: [
-                        {
-                            name: "ZK_b737_500_mod_v1.1.3_(Sounds_Shake_Cabin).tme",
-                            src: "https://drive.google.com/file/d/1sDBrp_HOeB6_ZVigDto7clcNotRPT0uV/view?usp=sharing"
-                        },
-                        {
-                            name: "ZK_b737_800_mod_v1.1.2_(Sounds_Shake_Winglets_Front).tme",
-                            src: "https://drive.google.com/file/d/1jQs7UsVXAgsEbtOja8Rwr73D9mffrIFz/view?usp=sharing"
-                        },
-                        {
-                            name: "ZK_b737_900_mod_v1.1.2_(Sounds_Shake_Winglets_Front).tme",
-                            src: "https://drive.google.com/file/d/1A4Y-o3uBhtIkyoAS4j0rr57J-AH0uAvN/view?usp=sharing"
-                        },
-                        {
-                            name: "ZK_b737_Max9_mod_v1.1.2_(RyanVulk_Shake_Sounds_Front).tme",
-                            src: "https://drive.google.com/file/d/1L1ue7V8R7O5HVmVjwxJ5SlxD-HWAkfSN/view?usp=sharing"
-                        },
-                    ]
-                }
-            ]
-        },
-        {
             id: 1225252,
             title: "A350-1000 Mod (LiveryVulk, Shake, Sound, Front) | Android Only",
             author: "ZK Aviation",
@@ -438,7 +415,7 @@ function ModsData() {
             content: [
                 {
                     type: "subheader",
-                    value: "Features (Sounds, Front) | OpenGL & Vulkan"
+                    value: "General Airbus A350 Features"
                 },
                 {
                     type: "ul",
@@ -448,10 +425,6 @@ function ModsData() {
                         "Camera movements on turns and touchdown",
                         "Cabin + Cockpit shake and touchdown sounds added",
                     ]
-                },
-                {
-                    type: "subheader",
-                    value: "Images"
                 },
                 {
                     type: "image-list",
@@ -541,7 +514,7 @@ function ModsData() {
             content: [
                 {
                     type: "subheader",
-                    value: "Features"
+                    value: "General Airbus A32x Features"
                 },
                 {
                     type: "ul",
@@ -552,10 +525,6 @@ function ModsData() {
                         "Cabin + Cockpit shake and touchdown sounds added",
                         `Engine rumble sounds <span class="italic">(not included for the neo version yet)</span>`
                     ]
-                },
-                {
-                    type: "subheader",
-                    value: "Images"
                 },
                 {
                     type: "image-list",
@@ -608,7 +577,7 @@ function ModsData() {
             content: [
                 {
                     type: "subheader",
-                    value: "Features"
+                    value: "General Boeing 787 Features"
                 },
                 {
                     type: "ul",
@@ -621,10 +590,6 @@ function ModsData() {
                     ]
                 },
                 {
-                    type: "subheader",
-                    value: "Images",
-                },
-                {
                     type: "image-list",
                     srcList: [
                         "b787_mod_jumpseat.png",
@@ -635,7 +600,7 @@ function ModsData() {
                 },
                 {
                     type: "paragraph",
-                    value: "Note: Because of the lowered view, the hud will not display properly."
+                    value: "Note: Because of the lowered view, the HUD will not display properly."
                 },
                 {
                     type: "image",
@@ -839,7 +804,3 @@ function ModsData() {
     ];
 }
 */
-
-
-
-

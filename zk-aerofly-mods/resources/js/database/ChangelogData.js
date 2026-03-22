@@ -2,6 +2,23 @@
 function ChangelogData() {
     return [
         {
+            modID: 1225251,
+            updateSummary: "Boeing 737ng/Max Mod v1.2.0 | Tablets",
+            updateDate: "March 22, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Added EFBs to the 737-800, -900, and Max-9 (not yet functional)"
+                    ]
+                },
+            ]
+        },
+        {
             modID: 1229250,
             updateSummary: "Boeing 777-200f Mod v1.2.1 | -200LR Liveries",
             updateDate: "March 6, 2026",
@@ -691,5 +708,4 @@ function ChangelogData() {
         }
     ]
 }
-
 */
