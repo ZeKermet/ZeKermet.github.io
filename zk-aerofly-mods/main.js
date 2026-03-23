@@ -3,6 +3,6 @@ const GeneralLinks = {
         return "https://www.youtube.com/@ZeKermet";
     },
     getAFSCDiscordInvite() {
-        return "https://discord.gg/4Z4Yjk5H";
+        return "https://discord.gg/qbf5CTW48r";
     }
 }
