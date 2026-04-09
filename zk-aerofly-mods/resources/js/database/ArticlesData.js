@@ -21,7 +21,7 @@ function ArticlesData() {
                 },
                 {
                     type: "paragraph",
-                    value: "For some context, Aerofly mods are essentially separate TME files (converted archive files) that override content packaged in the original aircraft’s TME file. This means we do not have to touch anything related to the original file, and we instead simply insert the mod into the same file location and let it do its job."
+                    value: "For some context, Aerofly mods are essentially separate TME files (converted archive files) that override content packaged in the original aircraft’s file. This means we do not have to touch anything related to the original TME file, and we instead simply insert the mod into the same file location and let it do its job."
                 },
                 {
                     type: "subheader",
@@ -41,7 +41,7 @@ function ArticlesData() {
                 },
                 {
                     type: "paragraph",
-                    value: `Last, and most definitely not least (should be first lol), for any bugs that are encountered, <span class="bold">ENSURE IT IS A MOD ISSUE and not an Aerofly Issue</span>. In other words, bring the mod file out of the aerofly folder and test to see if the issue occurs again.`
+                    value: `Last, and most definitely not least, for any bugs that are encountered, <span class="bold">ENSURE IT IS A MOD ISSUE and not an Aerofly Issue</span>. In other words, bring the mod file out of the aerofly folder and test to see if the issue occurs again.`
                 },
                 {
                     type: "subheader",
@@ -115,5 +115,4 @@ function getArticleIndex(start, end = -1) {
     }
 
     return data;
-
 }

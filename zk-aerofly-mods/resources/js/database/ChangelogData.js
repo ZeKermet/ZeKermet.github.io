@@ -2,6 +2,41 @@
 function ChangelogData() {
     return [
         {
+            modID: 1225253,
+            updateSummary: "Airbus A32x Mod v1.2.0 | Tablets",
+            updateDate: "April 9, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Added EFBs to the A319, A320neo, and A321 (not yet functional)",
+                        "Increased cockpit view height"
+                    ]
+                },
+            ]
+        },
+        {
+            modID: 1225252,
+            updateSummary: "Airbus A350-1000 Mod v1.3.0 | Liveries for OpenGL",
+            updateDate: "April 9, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Liveries finally work for both OpenGL & Vulkan! Should work without crashes for all devices"
+                    ]
+                },
+            ]
+        },
+        {
             modID: 1225251,
             updateSummary: "Boeing 737ng/Max Mod v1.2.0 | Tablets",
             updateDate: "March 22, 2026",

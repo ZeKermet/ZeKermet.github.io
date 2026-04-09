@@ -3,12 +3,164 @@ const databaseImagesPath = "./resources/js/database/images/";
 function ModsData() {
     return [
         {
+            id: 1225253,
+            title: "A319/320neo/321 Mod (Sound, Shake, Front) | Android Only",
+            author: "ZK Aviation",
+            datePublished: "December 25, 2025",
+            lastUpdated: "April 9, 2026",
+            tags: ["A320 Family", "A319", "A320neo", "A321", "Sounds", "Shake", "Camera", "Cabin", "EFB", "Airbus"],
+            articleImage: "a320family_tabletimg_1.png",
+            content: [
+                {
+                    type: "subheader",
+                    value: "General Airbus A32x Features"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Modified cockpit and cabin views",
+                        "Jumpseat view brought towards the front for a better view",
+                        "Camera movements on turns and touchdown",
+                        "Cabin + Cockpit shake and touchdown sounds added",
+                        `Engine rumble sounds <span class="italic">(not included for the neo version yet)</span>`,
+                        `EFBs added for the pilot and copilot <span class="italic">(<span style="color: red;">Not yet functional</span>, model downloaded from <a class="extlink" href="https://sketchfab.com/3d-models/tablet-samsung-tab-a8-low-poly-025a44323269426da905c64c4ba2b335" target="#blank">this page</a>)</span>`,
+                    ]
+                },
+                {
+                    type: "image-list",
+                    srcList: [
+                        "a320family_tabletimg_2.jpg",
+                        "a320family_tabletimg_3.png",
+                        "a320family_sounds_front_jumpseat.png",
+                        "a320family_sounds_front_cabin_2.png",
+                        "a320family_sounds_front_cabin_3.png",
+                        "a320family_sounds_front_cabin_6.png",
+                    ]
+                },
+                {
+                    type: "subheader",
+                    value: "Sound Clips"
+                },
+                {
+                    type: "youtube-embed",
+                    src: "https://www.youtube.com/embed/qFYC-UQMNJs?si=UyjFt7MfCGhFmHcP"
+                },
+                {
+                    type: "youtube-embed",
+                    src: "https://www.youtube.com/embed/3EDExTUFSTI?si=YQRQnJBmskkpyKRK"
+                },
+                {
+                    type: "download-links",
+                    downloadsList: [
+                        {
+                            name: "ZK_a319_mod_v1.2.0_(Shake_Sounds_Front).tme",
+                            src: "https://drive.google.com/file/d/1PtTHAolND92-PPczfJUYXm67ogE0-_2U/view?usp=sharing"
+                        },
+                        {
+                            name: "ZK_a320neo_mod_v1.2.0_(Shake_Sounds_Front).tme",
+                            src: "https://drive.google.com/file/d/1bCkv68A7q9TVUqa6MPjpXgKvW8QozpxG/view?usp=sharing"
+                        },
+                        {
+                            name: "ZK_a321_mod_v1.2.0_(Shake_Sounds_Front).tme",
+                            src: "https://drive.google.com/file/d/1QT3GSiACCyxpyrzhYkDWtKfKm0fFMEQr/view?usp=sharing"
+                        },
+                    ]
+                }
+            ]
+        },
+        {
+            id: 1225252,
+            title: "A350-1000 Mod (Livery, Shake, Sound, Front) | Android Only",
+            author: "ZK Aviation",
+            datePublished: "December 25, 2025",
+            lastUpdated: "April 9, 2026",
+            tags: ["A350-1000", "Sounds", "Camera", "Shake", "Cabin", "Livery", "Airbus"],
+            articleImage: "a350_1000_liv1_air.jpg",
+            content: [
+                {
+                    type: "subheader",
+                    value: "General Airbus A350 Features"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Modified cockpit and cabin views",
+                        "Jumpseat view brought towards the front for a better view",
+                        "Camera movements on turns and touchdown",
+                        "Cabin + Cockpit shake and touchdown sounds added",
+                    ]
+                },
+                {
+                    type: "image-list",
+                    srcList: [
+                        "a350_1000_sounds_front_jumpseat.png",
+                        "a350_1000_sounds_front_cabin_1.png",
+                        "a350_1000_sounds_front_cabin_3.png",
+                        "a350_1000_sounds_front_cabin_6.png",
+                    ]
+                },
+                {
+                    type: "subheader",
+                    value: "Liveries (OpenGL & Vulkan)"
+                },
+                {
+                    type: "paragraph",
+                    value: "Liveries Added:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Delta 100",
+                        "Japan Airlines 1000",
+                        "Philippines",
+                        "Qantas Airbus (house)"
+                    ]
+                },
+                {
+                    type: "paragraph",
+                    value: `<span class="italic">Credits to YOLO.af for creating all these liveries. You can find him on the Aerofly Forum</span>`
+                },
+                {
+                    type: "image-list",
+                    srcList: [
+                        "a350_1000_liveryvulk_sounds_front_liv1.png",
+                        "a350_1000_liveryvulk_sounds_front_liv2.png",
+                    ]
+                },
+                {
+                    type: "subheader",
+                    value: "Sound Clips"
+                },
+                {
+                    type: "youtube-embed",
+                    src: "https://www.youtube.com/embed/jV0QXnevqTc?si=dqLZYang_pR3RR6I"
+                },
+                {
+                    type: "youtube-embed",
+                    src: "https://www.youtube.com/embed/eToQzAoUx6k?si=h2Xa4wI7lYrPjuSh"
+                },
+                {
+                    type: "download-links",
+                    downloadsList: [
+                        {
+                            name: "ZK_a350_1000_mod_v1.3.0_(Livery_Shake_Sounds_Front).tme",
+                            src: "https://drive.google.com/file/d/1pMTRmJxs3hOBxkbz4M6xEEyqBDO5gl4W/view?usp=sharing"
+                        },
+                        {
+                            name: `ZK_a350_1000_mod_v1.3.0_(xCabin_Livery_Shake_Sounds_Front).tme <span class="no-bold italic" style="color: red;">(removed cabin)</span>`,
+                            src: "https://drive.google.com/file/d/1M5nDFaUOwCpoyqDzWXGMXqnIxcm_oZD5/view?usp=sharing"
+                        },
+                    ]
+                }
+            ]
+        },
+        {
             id: 1225251,
             title: "B737ng/-500/Max (Sounds, Shake, & More) | Android Only",
             author: "ZK Aviation",
             datePublished: "December 25, 2025",
             lastUpdated: "March 22, 2026",
-            tags: ["b737-500", "b737-800", "b737-900", "b737 Max-9", "Sounds", "Camera", "Shake", "Wingtips", "Livery", "Boeing"],
+            tags: ["b737-500", "b737-800", "b737-900", "b737 Max-9", "Sounds", "Camera", "Shake", "EFB", "Wingtips", "Livery", "Boeing"],
             articleImage: "b737_tablet_2.jpg",
             content: [
                 {
@@ -405,168 +557,6 @@ function ModsData() {
             ]
         },
         {
-            id: 1225252,
-            title: "A350-1000 Mod (LiveryVulk, Shake, Sound, Front) | Android Only",
-            author: "ZK Aviation",
-            datePublished: "December 25, 2025",
-            lastUpdated: "February 8, 2026",
-            tags: ["A350-1000", "Sounds", "Camera", "Shake", "Cabin", "Livery", "Airbus"],
-            articleImage: "a350_1000_sounds_front_cabin_4.png",
-            content: [
-                {
-                    type: "subheader",
-                    value: "General Airbus A350 Features"
-                },
-                {
-                    type: "ul",
-                    list: [
-                        "Modified cockpit and cabin views",
-                        "Jumpseat view brought towards the front for a better view",
-                        "Camera movements on turns and touchdown",
-                        "Cabin + Cockpit shake and touchdown sounds added",
-                    ]
-                },
-                {
-                    type: "image-list",
-                    srcList: [
-                        "a350_1000_sounds_front_jumpseat.png",
-                        "a350_1000_sounds_front_cabin_1.png",
-                        "a350_1000_sounds_front_cabin_3.png",
-                        "a350_1000_sounds_front_cabin_6.png",
-                    ]
-                },
-                {
-                    type: "subheader",
-                    value: "Liveries (LiveryVulk) | VULKAN REQUIRED"
-                },
-                {
-                    type: "paragraph",
-                    value: "Liveries Added:"
-                },
-                {
-                    type: "ul",
-                    list: [
-                        "Delta 100",
-                        "Freighter",
-                        "Japan Airlines 1000",
-                        "Philippines",
-                        "Qantas Airbus (house)"
-                    ]
-                },
-                {
-                    type: "paragraph",
-                    value: `<span class="italic">Credits to YOLO.af for creating all these liveries. You can find him on the Aerofly Forum</span>`
-                },
-                {
-                    type: "image-list",
-                    srcList: [
-                        "a350_1000_liveryvulk_sounds_front_liv1.png",
-                        "a350_1000_liveryvulk_sounds_front_liv2.png",
-                    ]
-                },
-                {
-                    type: "paragraph",
-                    value: `<span class="italic">Note: Liveries <span class="bold">WILL NOT WORK PROPERLY without Vulkan</span>, and <span class="bold">IS NOT GUARANTEED</span> to work even with it. For devices not compatible with Vulkan liveries, separate files without "(LiveryVulk)" are provided.</span>`
-                },
-                {
-                    type: "subheader",
-                    value: "Sound Clips"
-                },
-                {
-                    type: "youtube-embed",
-                    src: "https://www.youtube.com/embed/jV0QXnevqTc?si=dqLZYang_pR3RR6I"
-                },
-                {
-                    type: "youtube-embed",
-                    src: "https://www.youtube.com/embed/eToQzAoUx6k?si=h2Xa4wI7lYrPjuSh"
-                },
-                {
-                    type: "download-links",
-                    downloadsList: [
-                        {
-                            name: "ZK_a350_1000_mod_v1.2.1_(Shake_Sounds_Front).tme",
-                            src: "https://drive.google.com/file/d/1S5l8aJ9jR0Rp9UDROENDytbhiOQWL8mV/view?usp=sharing"
-                        },
-                        {
-                            name: `ZK_a350_1000_mod_v1.2.1_(xCabin_Shake_Sounds_Front).tme <span class="no-bold italic" style="color: red;">(removed cabin)</span>`,
-                            src: "https://drive.google.com/file/d/1OMLc0F-C5aO76AquIgmOCscD1Q3f8bJA/view?usp=sharing"
-                        },
-                        {
-                            name: "ZK_a350_1000_mod_v1.2.1_(LiveryVulk_Shake_Sounds_Front).tme",
-                            src: "https://drive.google.com/file/d/1pMTRmJxs3hOBxkbz4M6xEEyqBDO5gl4W/view?usp=sharing"
-                        },
-                        {
-                            name: `ZK_a350_1000_mod_v1.2.1_(xCabin_LiveryVulk_Shake_Sounds_Front).tme <span class="no-bold italic" style="color: red;">(removed cabin)</span>`,
-                            src: "https://drive.google.com/file/d/1M5nDFaUOwCpoyqDzWXGMXqnIxcm_oZD5/view?usp=sharing"
-                        },
-                    ]
-                }
-            ]
-        },
-        {
-            id: 1225253,
-            title: "A319/320neo/321 Mod (Sound, Shake, Front) | Android Only",
-            author: "ZK Aviation",
-            datePublished: "December 25, 2025",
-            lastUpdated: "February 8, 2026",
-            tags: ["A320 Family", "A319", "A320neo", "A321", "Sounds", "Shake", "Camera", "Cabin", "Airbus"],
-            articleImage: "a320family_sounds_front_cabin_1.png",
-            content: [
-                {
-                    type: "subheader",
-                    value: "General Airbus A32x Features"
-                },
-                {
-                    type: "ul",
-                    list: [
-                        "Modified cockpit and cabin views",
-                        "Jumpseat view brought towards the front for a better view",
-                        "Camera movements on turns and touchdown",
-                        "Cabin + Cockpit shake and touchdown sounds added",
-                        `Engine rumble sounds <span class="italic">(not included for the neo version yet)</span>`
-                    ]
-                },
-                {
-                    type: "image-list",
-                    srcList: [
-                        "a320family_sounds_front_jumpseat.png",
-                        "a320family_sounds_front_cabin_2.png",
-                        "a320family_sounds_front_cabin_3.png",
-                        "a320family_sounds_front_cabin_6.png",
-                    ]
-                },
-                {
-                    type: "subheader",
-                    value: "Sound Clips"
-                },
-                {
-                    type: "youtube-embed",
-                    src: "https://www.youtube.com/embed/qFYC-UQMNJs?si=UyjFt7MfCGhFmHcP"
-                },
-                {
-                    type: "youtube-embed",
-                    src: "https://www.youtube.com/embed/3EDExTUFSTI?si=YQRQnJBmskkpyKRK"
-                },
-                {
-                    type: "download-links",
-                    downloadsList: [
-                        {
-                            name: "ZK_a319_mod_v1.1.2_(Shake_Sounds_Front).tme",
-                            src: "https://drive.google.com/file/d/1PtTHAolND92-PPczfJUYXm67ogE0-_2U/view?usp=sharing"
-                        },
-                        {
-                            name: "ZK_a320neo_mod_v1.1.1_(Shake_Sounds_Front).tme",
-                            src: "https://drive.google.com/file/d/1bCkv68A7q9TVUqa6MPjpXgKvW8QozpxG/view?usp=sharing"
-                        },
-                        {
-                            name: "ZK_a321_mod_v1.1.3_(Shake_Sounds_Front).tme",
-                            src: "https://drive.google.com/file/d/1QT3GSiACCyxpyrzhYkDWtKfKm0fFMEQr/view?usp=sharing"
-                        },
-                    ]
-                }
-            ]
-        },
-        {
             id: 1225254,
             title: "B787-9/-10 (Shake, Sounds, Front) | Android Only",
             author: "ZK Aviation",
@@ -650,8 +640,6 @@ function getModArticleIndex(start, end = -1) {
 
     return data;
 }
-
-
 
 
 
