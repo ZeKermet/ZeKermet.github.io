@@ -10,26 +10,26 @@
 
 #changelog-list-container #changelog-search {
     position: relative;
-    width: max-content;
-    height: max-content;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.3);
+    padding: 0 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 } 
 #changelog-list-container #changelog-search i {
-    position: absolute;
-    top: 50%;
-    left: 0px;
-    transform: translateY(-50%);
-    font-size: var(--font-size-h6);
-    color: var(--neutral-gray-dark);
+    font-size: var(--font-size-p);
+    color: var(--neutral-gray);
 }
 #changelog-list-container #changelog-search #searchUpdate {
-    padding: 4px 12px;
-    padding-left: 32px;
-    width: 320px;
-    font-size: var(--font-size-h6);
+    font-size: var(--font-size-p);
     outline: none;
     border: none;
-    border-bottom: 1px solid black;
     background: transparent;
+    width: 100%;
+    padding: 12px 0;
 }
 
 #changelog-list {
@@ -192,7 +192,7 @@ button.show-more-list {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
     #changelog-list .mod-title {
         font-size: var(--font-size-h6);
     }
