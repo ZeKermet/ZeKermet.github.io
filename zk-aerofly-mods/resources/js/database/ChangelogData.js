@@ -3,6 +3,23 @@ function ChangelogData() {
     return [
         {
             modID: 1225253,
+            updateSummary: "Airbus A321xlr Mod v1.2.0",
+            updateDate: "April 17, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                       "New A321xlr mod with the release of the aircraft"
+                    ]
+                },
+            ]
+        },
+        {
+            modID: 1225253,
             updateSummary: "Airbus A32x Mod v1.2.0 | Tablets",
             updateDate: "April 9, 2026",
             content: [

@@ -7,8 +7,8 @@ function ModsData() {
             title: "A319/320neo/321 Mod (Sound, Shake, Front) | Android Only",
             author: "ZK Aviation",
             datePublished: "December 25, 2025",
-            lastUpdated: "April 9, 2026",
-            tags: ["A320 Family", "A319", "A320neo", "A321", "Sounds", "Shake", "Camera", "Cabin", "EFB", "Airbus"],
+            lastUpdated: "April 17, 2026",
+            tags: ["A320 Family", "A319", "A320neo", "A321", "A321xlr", "Sounds", "Shake", "Camera", "Cabin", "EFB", "Airbus"],
             articleImage: "a320family_tabletimg_1.png",
             content: [
                 {
@@ -63,6 +63,10 @@ function ModsData() {
                         {
                             name: "ZK_a321_mod_v1.2.0_(Shake_Sounds_Front).tme",
                             src: "https://drive.google.com/file/d/1QT3GSiACCyxpyrzhYkDWtKfKm0fFMEQr/view?usp=sharing"
+                        },
+                        {
+                            name: "ZK_a321xlr_mod_v1.2.0_(Shake_Sounds_Front).tme",
+                            src: "https://drive.google.com/file/d/1czlRpG-GED-RbDrOrb9W5euy8G04tWqw/view?usp=sharing"
                         },
                     ]
                 }
