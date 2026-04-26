@@ -2,6 +2,146 @@
 function ChangelogData() {
     return [
         {
+            modID: 1225250,
+            updateSummary: "Airbus A380 Mod v1.2.2 | Emirates Engine Options",
+            updateDate: "April 26, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Added RR Trent 900 options for Emirates liveries",
+                        "Backend code update for cabin sounds",
+                    ]
+                },
+            ]
+        },
+        {
+            modID: 1225252,
+            updateSummary: "Airbus A350-1000 Mod v1.3.1 | Minor Liveries Check",
+            updateDate: "April 26, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                       "Philippines livery removed due to its official release by IPACS",
+                       "Qantas house & Delta 100 wings quality improved",
+                       "Backend code updates for cabin sounds"
+                    ]
+                },
+            ]
+        },
+        {
+            modID: 1225251,
+            updateSummary: "Boeing 737 Max-9 Mod v1.2.1 | OpenGL Ryanair",
+            updateDate: "April 26, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                       "Ryanair livery now works for OpenGL",
+                       "Backend code updates for cabin sounds"
+                    ]
+                },
+            ]
+        },
+        {
+            modID: 1225253,
+            updateSummary: "A319/320neo/321 Mod v1.2.1 | Backend Cabin Sounds Update",
+            updateDate: "April 26, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                       "Backend code update for cabin sounds"
+                    ]
+                },
+            ]
+        },
+        {
+            modID: 1229250,
+            updateSummary: "Boeing 777 Max-9 Mod v1.2.x | Backend Cabin Sounds Update",
+            updateDate: "April 26, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                       "Backend code update for cabin sounds"
+                    ]
+                },
+            ]
+        },
+        {
+            modID: 2208260,
+            updateSummary: "CRJ-900 Mod v1.0.1 | Backend Cabin Sounds Update",
+            updateDate: "April 26, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                       "Backend code update for cabin sounds"
+                    ]
+                },
+            ]
+        },
+        {
+            modID: 1229251,
+            updateSummary: "Boeing 747 Mod v1.2.3 | Backend Cabin Sounds Update",
+            updateDate: "April 26, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                       "Backend code update for cabin sounds"
+                    ]
+                },
+            ]
+        },
+        {
+            modID: 1225254,
+            updateSummary: "Boeing 787 Mod v1.2.2 | Backend Cabin Sounds Update",
+            updateDate: "April 26, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                       "Backend code update for cabin sounds"
+                    ]
+                },
+            ]
+        },
+        {
             modID: 1225253,
             updateSummary: "Airbus A321xlr Mod v1.2.0",
             updateDate: "April 17, 2026",
@@ -700,7 +840,7 @@ function ChangelogData() {
 function getUpdatesIndex(start, end = -1) {
     const data = [];
     const updatesDataCopy = ChangelogData();
-    if (end === -1 || end > updatesDataCopy.length) end = modsDataCopy.length - 1;
+    if (end === -1 || end > updatesDataCopy.length) end = updatesDataCopy.length - 1;
     for (let i=start; i <= end; i++) {
         data[data.length] = updatesDataCopy[i];
     }
