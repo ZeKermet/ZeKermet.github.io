@@ -1,7 +1,11 @@
 // ---------- PAGE SETUP ----------- 
 
+const increment = 9;
+let pageNum = 1;
+
 const modsData = ModsData();
-const changelogData = getUpdatesIndex(0, 9);
+const changelogData = getUpdatesIndex(0, increment);
+
 
 
 // ---------- PAGE ELEMENTS ----------- 
@@ -17,7 +21,18 @@ filterUpdates(updateSearch.value);
 
 updateSearch.addEventListener('input', () => {
     updatesList.innerHTML = "";
+    pageNum = 1;
+    showMoreBtn.style.display = "block";
     filterUpdates(updateSearch.value);
+});
+
+showMoreBtn.addEventListener('click', () => {
+    constructUpdate(getUpdatesIndex((increment*pageNum)+1, (increment*pageNum)+10));
+    if (ChangelogData().length < (increment*pageNum)+10) showMoreBtn.style.display = "none";
+    pageNum++;
+
+
+    // WIP CASE FOR SEARCH BAR AS WELL!!!
 });
 
 function filterUpdates(query) {

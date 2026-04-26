@@ -136,7 +136,15 @@
 }
 
 button.show-more-list {
-    display: none;
+    background: var(--secondary-color-light);
+    display: block;
+    margin: 0;
+    margin-top: -16px;
+    width: 700px;
+    max-width: 100%;
+}
+button.show-more-list:hover {
+    background: var(--secondary-color-medium);
 }
 
 
