@@ -2,6 +2,23 @@
 function ChangelogData() {
     return [
         {
+            modID: 1225253,
+            updateSummary: "A321 Mod v1.2.2 | Rear Window View Fix",
+            updateDate: "May 3, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                       "Brought the rear window views back to normal"
+                    ]
+                },
+            ]
+        },
+        {
             modID: 1225250,
             updateSummary: "Airbus A380 Mod v1.2.2 | Emirates Engine Options",
             updateDate: "April 26, 2026",

@@ -3,6 +3,76 @@ const databaseImagesPath = "./resources/js/database/images/";
 function ModsData() {
     return [
         {
+            id: 1225253,
+            title: "A319/320neo/321 Mod (Sound, Shake, Front) | Android Only",
+            author: "ZK Aviation",
+            datePublished: "December 25, 2025",
+            lastUpdated: "May 3, 2026",
+            tags: ["A320 Family", "A319", "A320neo", "A321", "A321xlr", "Sounds", "Shake", "Camera", "Cabin", "EFB", "Airbus"],
+            articleImage: "a320family_tabletimg_1.png",
+            content: [
+                {
+                    type: "subheader",
+                    value: "General Airbus A32x Features"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Modified cockpit and cabin views",
+                        "Jumpseat view brought towards the front for a better view",
+                        "Camera movements on turns and touchdown",
+                        "Cabin + Cockpit shake and touchdown sounds added",
+                        `Engine rumble sounds <span class="italic">(not included for the neo version yet)</span>`,
+                        `EFBs added for the pilot and copilot <span class="italic">(<span style="color: red;">Not yet functional</span>, model downloaded from <a class="extlink" href="https://sketchfab.com/3d-models/tablet-samsung-tab-a8-low-poly-025a44323269426da905c64c4ba2b335" target="#blank">this page</a>)</span>`,
+                    ]
+                },
+                {
+                    type: "image-list",
+                    srcList: [
+                        "a320family_tabletimg_2.jpg",
+                        "a320family_tabletimg_3.png",
+                        "a320family_sounds_front_jumpseat.png",
+                        "a320family_sounds_front_cabin_2.png",
+                        "a320family_sounds_front_cabin_3.png",
+                        "a320family_sounds_front_cabin_6.png",
+                    ]
+                },
+                {
+                    type: "subheader",
+                    value: "Sound Clips"
+                },
+                {
+                    type: "youtube-embed",
+                    src: "https://www.youtube.com/embed/qFYC-UQMNJs?si=UyjFt7MfCGhFmHcP"
+                },
+                {
+                    type: "youtube-embed",
+                    src: "https://www.youtube.com/embed/3EDExTUFSTI?si=YQRQnJBmskkpyKRK"
+                },
+                {
+                    type: "download-links",
+                    downloadsList: [
+                        {
+                            name: "ZK_a319_mod_v1.2.1_(Shake_Sounds_Front).tme",
+                            src: "https://drive.google.com/file/d/1PtTHAolND92-PPczfJUYXm67ogE0-_2U/view?usp=sharing"
+                        },
+                        {
+                            name: "ZK_a320neo_mod_v1.2.1_(Shake_Sounds_Front).tme",
+                            src: "https://drive.google.com/file/d/1bCkv68A7q9TVUqa6MPjpXgKvW8QozpxG/view?usp=sharing"
+                        },
+                        {
+                            name: "ZK_a321_mod_v1.2.2_(Shake_Sounds_Front).tme",
+                            src: "https://drive.google.com/file/d/1QT3GSiACCyxpyrzhYkDWtKfKm0fFMEQr/view?usp=sharing"
+                        },
+                        {
+                            name: "ZK_a321xlr_mod_v1.2.1_(Shake_Sounds_Front).tme",
+                            src: "https://drive.google.com/file/d/1czlRpG-GED-RbDrOrb9W5euy8G04tWqw/view?usp=sharing"
+                        },
+                    ]
+                }
+            ]
+        },
+        {
             id: 1225250,
             title: "A380 Mod (OldEmir, Shake, Sounds, Front) | Android Only",
             author: "ZK Aviation",
@@ -225,76 +295,6 @@ function ModsData() {
                         {
                             name: "ZK_b737_Max9_mod_v1.2.1_(Ryan_Shake_Sounds_Front).tme",
                             src: "https://drive.google.com/file/d/1L1ue7V8R7O5HVmVjwxJ5SlxD-HWAkfSN/view?usp=sharing"
-                        },
-                    ]
-                }
-            ]
-        },
-        {
-            id: 1225253,
-            title: "A319/320neo/321 Mod (Sound, Shake, Front) | Android Only",
-            author: "ZK Aviation",
-            datePublished: "December 25, 2025",
-            lastUpdated: "April 26, 2026",
-            tags: ["A320 Family", "A319", "A320neo", "A321", "A321xlr", "Sounds", "Shake", "Camera", "Cabin", "EFB", "Airbus"],
-            articleImage: "a320family_tabletimg_1.png",
-            content: [
-                {
-                    type: "subheader",
-                    value: "General Airbus A32x Features"
-                },
-                {
-                    type: "ul",
-                    list: [
-                        "Modified cockpit and cabin views",
-                        "Jumpseat view brought towards the front for a better view",
-                        "Camera movements on turns and touchdown",
-                        "Cabin + Cockpit shake and touchdown sounds added",
-                        `Engine rumble sounds <span class="italic">(not included for the neo version yet)</span>`,
-                        `EFBs added for the pilot and copilot <span class="italic">(<span style="color: red;">Not yet functional</span>, model downloaded from <a class="extlink" href="https://sketchfab.com/3d-models/tablet-samsung-tab-a8-low-poly-025a44323269426da905c64c4ba2b335" target="#blank">this page</a>)</span>`,
-                    ]
-                },
-                {
-                    type: "image-list",
-                    srcList: [
-                        "a320family_tabletimg_2.jpg",
-                        "a320family_tabletimg_3.png",
-                        "a320family_sounds_front_jumpseat.png",
-                        "a320family_sounds_front_cabin_2.png",
-                        "a320family_sounds_front_cabin_3.png",
-                        "a320family_sounds_front_cabin_6.png",
-                    ]
-                },
-                {
-                    type: "subheader",
-                    value: "Sound Clips"
-                },
-                {
-                    type: "youtube-embed",
-                    src: "https://www.youtube.com/embed/qFYC-UQMNJs?si=UyjFt7MfCGhFmHcP"
-                },
-                {
-                    type: "youtube-embed",
-                    src: "https://www.youtube.com/embed/3EDExTUFSTI?si=YQRQnJBmskkpyKRK"
-                },
-                {
-                    type: "download-links",
-                    downloadsList: [
-                        {
-                            name: "ZK_a319_mod_v1.2.1_(Shake_Sounds_Front).tme",
-                            src: "https://drive.google.com/file/d/1PtTHAolND92-PPczfJUYXm67ogE0-_2U/view?usp=sharing"
-                        },
-                        {
-                            name: "ZK_a320neo_mod_v1.2.1_(Shake_Sounds_Front).tme",
-                            src: "https://drive.google.com/file/d/1bCkv68A7q9TVUqa6MPjpXgKvW8QozpxG/view?usp=sharing"
-                        },
-                        {
-                            name: "ZK_a321_mod_v1.2.1_(Shake_Sounds_Front).tme",
-                            src: "https://drive.google.com/file/d/1QT3GSiACCyxpyrzhYkDWtKfKm0fFMEQr/view?usp=sharing"
-                        },
-                        {
-                            name: "ZK_a321xlr_mod_v1.2.1_(Shake_Sounds_Front).tme",
-                            src: "https://drive.google.com/file/d/1czlRpG-GED-RbDrOrb9W5euy8G04tWqw/view?usp=sharing"
                         },
                     ]
                 }
