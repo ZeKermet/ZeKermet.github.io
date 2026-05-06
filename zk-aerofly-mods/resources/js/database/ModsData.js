@@ -168,7 +168,7 @@ function ModsData() {
                 },
                 {
                     type: "paragraph",
-                    value: `<span class="italic">Credits to <a class="extlink" target="_blank" href="https://www.aerofly.com/community/index.php?user/67532-yolo-af/">YOLO.af</a> for creating all these liveries. You can find him on the Aerofly Forum</span>`
+                    value: `<span class="italic">Credits to <a class="extlink" target="_blank" href="https://www.aerofly.com/community/index.php?user/67532-yolo/">YOLO._</a> for creating all these liveries. You can find him on the Aerofly Forum</span>`
                 },
                 {
                     type: "subheader",
@@ -229,7 +229,7 @@ function ModsData() {
                     list: [
                         "Scimitar and Blended (regular) wingtips options added to some 737-800 and -900 liveries",
                         `EFBs added for the pilot and copilot <span class="italic">(<span style="color: red;">Not yet functional</span>, model downloaded from <a class="extlink" href="https://sketchfab.com/3d-models/tablet-pc-forktab-45d08742d2a44f088c7a5742c879fe15" target="#blank">this page</a>)</span>`,
-                        `Max-9 Ryanair livery for OpenGL & Vulkan <span class="italic">(Created by <a class="extlink" target="_blank" href="https://www.aerofly.com/community/index.php?user/67532-yolo-af/">YOLO.af</a> from the Aerofly FS Forum)</span>`,
+                        `Max-9 Ryanair livery for OpenGL & Vulkan <span class="italic">(Created by <a class="extlink" target="_blank" href="https://www.aerofly.com/community/index.php?user/67532-yolo/">YOLO._</a> from the Aerofly FS Forum)</span>`,
                     ]
                 },
                 {
