@@ -2,6 +2,97 @@
 function ChangelogData() {
     return [
         {
+            modID: 1225250,
+            updateSummary: "Airbus A380 Mod v1.3.0 | Realistic Engine and Rumble Sounds",
+            updateDate: "May 27, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Enhanced engine & rumble sounds (interior & exterior)"
+                    ]
+                },
+            ]
+        },
+        {
+            modID: 1225253,
+            updateSummary: "Airbus A320 Family Mod v1.2.3 | Variants Grouping",
+            updateDate: "May 27, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Variants grouped into one file",
+                        "Cabin & Outside passenger view options",
+                        "Restored rear wing views for the A321ceo's cabin view option"
+                    ]
+                },
+            ]
+        },
+        {
+            modID: 1225251,
+            updateSummary: "Boeing 737 Family Mod v1.2.2 | Variants Grouping + More",
+            updateDate: "May 27, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Variants grouped into one file",
+                        "Rebalanced cockpit shake sound",
+                        "Changed tablet model"
+                    ]
+                },
+            ]
+        },
+        {
+            modID: 1229250,
+            updateSummary: "Boeing 777 Family Mod v1.2.2 | Variants Grouping",
+            updateDate: "May 27, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Variants grouped into one file",
+                    ]
+                },
+            ]
+        },
+        {
+            modID: 1225254,
+            updateSummary: "Boeing 787 Family Mod v1.2.3 | Variants Grouping + More",
+            updateDate: "May 27, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Variants grouped into one file",
+                        "Modified Autopilot disconnect warning sound",
+                        "Cabin & Outside passenger view options"
+                    ]
+                },
+            ]
+        },
+        {
             modID: 1225253,
             updateSummary: "A321 Mod v1.2.2 | Rear Window View Fix",
             updateDate: "May 3, 2026",

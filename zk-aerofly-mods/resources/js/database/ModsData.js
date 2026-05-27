@@ -3,27 +3,77 @@ const databaseImagesPath = "./resources/js/database/images/";
 function ModsData() {
     return [
         {
-            id: 1225253,
-            title: "A319/320neo/321 Mod (Sound, Shake, Front) | Android Only",
+            id: 1225250,
+            title: "A380 Mod (OldEmir, Shake, Sounds, Front) | Android Only",
             author: "ZK Aviation",
             datePublished: "December 25, 2025",
-            lastUpdated: "May 3, 2026",
+            lastUpdated: "May 27, 2026",
+            tags: ["A380", "Camera", "Shake", "Sounds", "Engines", "Airbus"],
+            articleImage: "a380_oldemir_sounds_front_jumpseat.png",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Airbus A380 Features"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Modified cockpit and passenger views",
+                        "Jumpseat camera moved to the front for a better view (Img Above)",
+                        "Camera movements on turns and touchdown",
+                        `Realistic engine and rumble sounds (internal & external) | <a href="https://youtu.be/4f7B09BU0Pw?si=OzYFCLXgQRLVeqTh" class="extlink" target="#blank">Source 1</a>, <a href="https://www.youtube.com/watch?v=lRe-l6Zgk4w&t=126s" class="extlink" target="#blank">Source 2</a>`,
+                        "Cabin + Cockpit shake and touchdown sounds added",
+                        "Flaps sound altered to sound closer to the real one",
+                        "Wind sound changed for better quality and quietness",
+                        `Includes old mobile Emirates livery <span class="bold">(Works for OpenGL & Vulkan)</span>`
+                    ]
+                },
+                {
+                    type: "subheader",
+                    value: "Sound Clips"
+                },
+                {
+                    type: "youtube-embed",
+                    src: "https://www.youtube.com/embed/gtpHzT9cXMc?si=JlZoMEowxXypbY72"
+                },
+                {
+                    type: "youtube-embed",
+                    src: "https://www.youtube.com/embed/jFRuu3epUcU?si=HEL4mEa0EKhHLIqc"
+                },
+                {
+                    type: "download-links",
+                    downloadsList: [
+                        {
+                            name: "ZK_a380_mod_v1.3.0_(OldEmir_Shake_Sounds_Front).tme",
+                            src: "https://drive.google.com/file/d/1ohR7nm-ImjPiuZG4g-yFTpOl6D0J09sO/view?usp=sharing"
+                        },
+                        
+                    ]
+                }
+            ]
+        },
+        {
+            id: 1225253,
+            title: "A320 Family Mod (Sound, Shake, Front) | Android Only",
+            author: "ZK Aviation",
+            datePublished: "December 25, 2025",
+            lastUpdated: "May 27, 2026",
             tags: ["A320 Family", "A319", "A320neo", "A321", "A321xlr", "Sounds", "Shake", "Camera", "Cabin", "EFB", "Airbus"],
             articleImage: "a320family_tabletimg_1.png",
             content: [
                 {
                     type: "subheader",
-                    value: "General Airbus A32x Features"
+                    value: `General Airbus A32x Features <span class="italic no-bold" style="font-size: var(--font-size-h6);">(No A320ceo unfortunately)`
                 },
                 {
                     type: "ul",
                     list: [
-                        "Modified cockpit and cabin views",
-                        "Jumpseat view brought towards the front for a better view",
+                        "Modified cockpit views",
+                        "Cabin views option",
                         "Camera movements on turns and touchdown",
                         "Cabin + Cockpit shake and touchdown sounds added",
                         `Engine rumble sounds <span class="italic">(not included for the neo version yet)</span>`,
-                        `EFBs added for the pilot and copilot <span class="italic">(<span style="color: red;">Not yet functional</span>, model downloaded from <a class="extlink" href="https://sketchfab.com/3d-models/tablet-samsung-tab-a8-low-poly-025a44323269426da905c64c4ba2b335" target="#blank">this page</a>)</span>`,
+                        `EFBs added for the pilot and copilot <span class="italic">(<span style="color: red;">Not functional</span>, model downloaded from <a class="extlink" href="https://sketchfab.com/3d-models/tablet-samsung-tab-a8-low-poly-025a44323269426da905c64c4ba2b335" target="#blank">this page</a>)</span>`,
                     ]
                 },
                 {
@@ -53,49 +103,237 @@ function ModsData() {
                     type: "download-links",
                     downloadsList: [
                         {
-                            name: "ZK_a319_mod_v1.2.1_(Shake_Sounds_Front).tme",
-                            src: "https://drive.google.com/file/d/1PtTHAolND92-PPczfJUYXm67ogE0-_2U/view?usp=sharing"
+                            name: "ZK_a32xfamily_mod_v1.2.3_(Shake_Sounds).tme",
+                            src: "https://drive.google.com/file/d/1TW1S5QoGe5MeLxIRQhw3OIZvpmiB66fD/view?usp=sharing"
                         },
                         {
-                            name: "ZK_a320neo_mod_v1.2.1_(Shake_Sounds_Front).tme",
-                            src: "https://drive.google.com/file/d/1bCkv68A7q9TVUqa6MPjpXgKvW8QozpxG/view?usp=sharing"
-                        },
-                        {
-                            name: "ZK_a321_mod_v1.2.2_(Shake_Sounds_Front).tme",
-                            src: "https://drive.google.com/file/d/1QT3GSiACCyxpyrzhYkDWtKfKm0fFMEQr/view?usp=sharing"
-                        },
-                        {
-                            name: "ZK_a321xlr_mod_v1.2.1_(Shake_Sounds_Front).tme",
-                            src: "https://drive.google.com/file/d/1czlRpG-GED-RbDrOrb9W5euy8G04tWqw/view?usp=sharing"
+                            name: `ZK_a32xfamily_mod_v1.2.3_(Shake_Sounds_Cabin).tme <span class="italic no-bold" style="color: red;">(Cabin option)</span>`,
+                            src: "https://drive.google.com/file/d/1GG9X7G7jY8Wt_QmQ2bW1y0qzMTWymwkG/view?usp=sharing"
                         },
                     ]
                 }
             ]
         },
         {
-            id: 1225250,
-            title: "A380 Mod (OldEmir, Shake, Sounds, Front) | Android Only",
+            id: 1225251,
+            title: "B737 Family Mod (Sounds, Shake, & More) | Android Only",
             author: "ZK Aviation",
             datePublished: "December 25, 2025",
-            lastUpdated: "April 26, 2026",
-            tags: ["A380", "Camera", "Shake", "Sounds", "Airbus"],
-            articleImage: "a380_oldemir_sounds_front_jumpseat.png",
+            lastUpdated: "May 27, 2026",
+            tags: ["b737-500", "b737-800", "b737-900", "b737 Max-9", "Sounds", "Camera", "Shake", "EFB", "Wingtips", "Livery", "Boeing"],
+            articleImage: "b737max9_ryanvulk_front_sounds_2.png",
             content: [
                 {
                     type: "subheader",
-                    value: "Airbus A380 Features"
+                    value: "General Boeing 737 Features"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Modified cockpit and cabin views",
+                        "Jumpseat view brought towards the front for a better view",
+                        "Camera movements on turns and touchdown",
+                        "Cabin + Cockpit shake and touchdown sounds added",
+                        "Engine thrust and reverse rumble sounds enhanced"
+                    ]
+                },
+                {
+                    type: "subheader",
+                    value: "Boeing 737 New Gen features"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Scimitar and Blended (regular) wingtips options added to some 737-800 and -900 liveries",
+                        `EFBs added for the pilot and copilot <span class="italic">(<span style="color: red;">Not functional</span>, model downloaded from <a class="extlink" href="https://sketchfab.com/3d-models/tablet-samsung-tab-a8-low-poly-025a44323269426da905c64c4ba2b335" target="#blank">this page</a>)</span>`,
+                        `Max-9 Ryanair livery for OpenGL & Vulkan <span class="italic">(Created by <a class="extlink" target="_blank" href="https://www.aerofly.com/community/index.php?user/67532-yolo/">YOLO._</a> from the Aerofly FS Forum)</span>`,
+                        // former tablet: https://sketchfab.com/3d-models/tablet-pc-forktab-45d08742d2a44f088c7a5742c879fe15
+                    ]
+                },
+                {
+                    type: "image-list",
+                    srcList: [
+                        "b737_s_tablet_1.jpg",
+                        "b737_s_tablet_2.jpg",
+                        "b737max9_ryanvulk_front_sounds_1.png",
+                        "b737max9_ryanvulk_front_sounds_2.png",
+                        "b738_sound_front_wingtips_jumpseat.png",
+                        "b738_sound_front_wingtips_fiji_1.png",
+                        "b738_sound_front_wingtips_fiji_2.png",
+                        "b738_sound_front_wingtips_delta_1.png",
+                        "b738_sound_front_wingtips_delta_2.png"
+                    ]
+                },
+                {
+                    type: "subheader",
+                    value: "Boeing 737-500 Features"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Passenger views placed inside the cabin (see images below)",
+                    ]
+                },
+                {
+                    type: "image-list",
+                    srcList: [
+                        "b737_500_cockpit.png",
+                        "b737_500_cabin_1.png",
+                        "b737_500_cabin_2.png",
+                        "b737_500_cabin_3.png",
+                    ]
+                },
+                {
+                    type: "subheader",
+                    value: "Sound Clips"
+                },
+                {
+                    type: "youtube-embed",
+                    src: "https://www.youtube.com/embed/tE2uz9-Wves?si=6_hk4y9Jl91QgJoO"
+                },
+                {
+                    type: "youtube-embed",
+                    src: "https://www.youtube.com/embed/9phAH9ojtlo?si=TT2IVTaGZ-lvdsJj"
+                },
+                {
+                    type: "download-links",
+                    downloadsList: [
+                        {
+                            name: "ZK_b737family_mod_v1.2.2_(Sounds_Shake_Cabin).tme",
+                            src: "https://drive.google.com/file/d/1zd_9st5oA5sOkyLD8YuUcjaItBjNvHHr/view?usp=sharing"
+                        },
+                    ]
+                }
+            ]
+        },
+        {
+            id: 1229250,
+            title: "B777 Family Mod (Livery, Shake, Sounds, Camera) | Android Only",
+            author: "ZK Aviation",
+            datePublished: "December 29, 2025",
+            lastUpdated: "May 27, 2026",
+            tags: ["b777", "b777-300er", "b777-200f", "Camera", "Shake", "Sounds", "Livery", "Boeing"],
+            articleImage: "b777_lr_liv_3.jpg",
+            content: [
+                {
+                    type: "subheader",
+                    value: "General Boeing 777 Features"
                 },
                 {
                     type: "ul",
                     list: [
                         "Modified cockpit and passenger views",
-                        "Jumpseat camera moved to the front for a better view (Img Above)",
+                        "Jumpseat camera moved to the front for a better view",
                         "Camera movements on turns and touchdown",
                         "Cabin + Cockpit shake and touchdown sounds added",
-                        "Flaps sound has been changed to be closer to the real one",
-                        "Wind sound changed for better quality and quietness",
                         `Includes old mobile Emirates livery <span class="bold">(Works for OpenGL & Vulkan)</span>`
                     ]
+                },
+                {
+                    type: "image-list",
+                    srcList: [
+                        "b777_mod_jumpseat.png",
+                        "b777_mod_cabin_1.png",
+                        "b777_mod_cabin_2.png",
+                        "b777_mod_cabin_3.png"
+                    ]
+                },
+                {
+                    type: "subheader",
+                    value: "Boeing 777-200f Features"
+                },
+                {
+                    type: "paragraph",
+                    value: `777-300 liveries were imported over to make it seem like an "-200LR" variant. <span class="bold">All work for OpenGL & Vulkan</span>. Liveries include:`
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "American Airlines",
+                        "Swiss Airlines",
+                        "Air Canada",
+                        "KLM",
+                        `<span class="italic">...and 18 more</span>`
+                    ]
+                },
+                {
+                    type: "image-list",
+                    srcList: [
+                        "b777_lr_liv_3.jpg",
+                        "b777_lr_liv_1.jpg",
+                        "b777_lr_liv_2.jpg",
+                    ]
+                },
+                /*
+                {
+                    type: "paragraph",
+                    value: "For the 777-200f, the views were intentionally placed so you can see the interior"
+                },
+                {
+                    type: "image",
+                    src: "b777_mod_freight_interior.png"
+                },
+                */
+                {
+                    type: "subheader",
+                    value: "Sound Clip"
+                },
+                {
+                    type: "youtube-embed",
+                    src: "https://www.youtube.com/embed/20hkXFzpFxQ?si=eaLqbYdPuV7PD3dD"
+                },
+                {
+                    type: "download-links",
+                    downloadsList: [
+                        {
+                            name: "ZK_b777family_mod_v1.2.2_(LrLivery_Shake_Sounds_Front).tme",
+                            src: "https://drive.google.com/file/d/1W3RRbDvG94Pyfgm6bpD7O3H4GKhV8vIk/view?usp=sharing"
+                        },
+                        
+                    ]
+                }
+            ]
+        },
+        {
+            id: 1225254,
+            title: "B787 Family Mod (Camera, Shake, Sounds) | Android Only",
+            author: "ZK Aviation",
+            datePublished: "December 25, 2025",
+            lastUpdated: "May 27, 2026",
+            tags: ["b787", "b787-10", "b787-9", "Camera", "Shake", "Sounds", "Cabin", "Boeing"],
+            articleImage: "b787_mod_pilot.png",
+            content: [
+                {
+                    type: "subheader",
+                    value: "General Boeing 787 Features"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Lowered cockpit view height",
+                        "Jumpseat view pushed forward",
+                        "Cockpit + Cabin shake and touchdown sounds added",
+                        "Camera movements on turns and touchdown",
+                        `Cabin view as an option`,
+                        "Modified autopilot disengage warning sound"
+                    ]
+                },
+                {
+                    type: "image-list",
+                    srcList: [
+                        "b787_mod_jumpseat.png",
+                        "b787_mod_cabin_1.png",
+                        "b787_mod_cabin_4.png",
+                        "b787_mod_cabin_5.png",
+                    ]
+                },
+                {
+                    type: "paragraph",
+                    value: "Note: Because of the lowered view, the HUD will not display properly."
+                },
+                {
+                    type: "image",
+                    src: "b787_mod_cockpit_hud_issue.png"
                 },
                 {
                     type: "subheader",
@@ -103,16 +341,19 @@ function ModsData() {
                 },
                 {
                     type: "youtube-embed",
-                    src: "https://www.youtube.com/embed/SBiDF2V4dro?si=L5VclmQbwoyZodYU"
+                    src: "https://www.youtube.com/embed/gNBEEE3_Gvw?si=Tb0D15gGM2-xV8pZ"
                 },
                 {
                     type: "download-links",
                     downloadsList: [
                         {
-                            name: "ZK_a380_mod_v1.2.2_(OldEmir_Shake_Sounds_Front).tme",
-                            src: "https://drive.google.com/file/d/1Os2dZhGGwnEwALnnAo8_9bY1NAV6U329/view?usp=sharing"
+                            name: "ZK_b787family_mod_v1.2.3_(Shake_Sounds).tme",
+                            src: "https://drive.google.com/file/d/1EJXqkF_MatKIvOqFbOE9afpISVnolwCG/view?usp=sharing"
                         },
-                        
+                        {
+                            name: `ZK_b787family_mod_v1.2.3_(Shake_Sounds_Cabin).tme <span class="italic no-bold" style="color: red;">(Cabin option)</span>`,
+                            src: "https://drive.google.com/file/d/1wkh1LKxql1kzfRPvLyYddQUtkq1SmJkg/view?usp=sharing"
+                        },
                     ]
                 }
             ]
@@ -193,201 +434,6 @@ function ModsData() {
                             name: `ZK_a350_1000_mod_v1.3.1_(xCabin_Livery_Shake_Sounds_Front).tme <span class="no-bold italic" style="color: red;">(removed cabin)</span>`,
                             src: "https://drive.google.com/file/d/1M5nDFaUOwCpoyqDzWXGMXqnIxcm_oZD5/view?usp=sharing"
                         },
-                    ]
-                }
-            ]
-        },
-        {
-            id: 1225251,
-            title: "B737ng/-500/Max (Sounds, Shake, & More) | Android Only",
-            author: "ZK Aviation",
-            datePublished: "December 25, 2025",
-            lastUpdated: "April 26, 2026",
-            tags: ["b737-500", "b737-800", "b737-900", "b737 Max-9", "Sounds", "Camera", "Shake", "EFB", "Wingtips", "Livery", "Boeing"],
-            articleImage: "b737_tablet_2.jpg",
-            content: [
-                {
-                    type: "subheader",
-                    value: "General Boeing 737 Features"
-                },
-                {
-                    type: "ul",
-                    list: [
-                        "Modified cockpit and cabin views",
-                        "Jumpseat view brought towards the front for a better view",
-                        "Camera movements on turns and touchdown",
-                        "Cabin + Cockpit shake and touchdown sounds added",
-                        "Engine thrust and reverse rumble sounds enhanced"
-                    ]
-                },
-                {
-                    type: "subheader",
-                    value: "Boeing 737 New Gen features"
-                },
-                {
-                    type: "ul",
-                    list: [
-                        "Scimitar and Blended (regular) wingtips options added to some 737-800 and -900 liveries",
-                        `EFBs added for the pilot and copilot <span class="italic">(<span style="color: red;">Not yet functional</span>, model downloaded from <a class="extlink" href="https://sketchfab.com/3d-models/tablet-pc-forktab-45d08742d2a44f088c7a5742c879fe15" target="#blank">this page</a>)</span>`,
-                        `Max-9 Ryanair livery for OpenGL & Vulkan <span class="italic">(Created by <a class="extlink" target="_blank" href="https://www.aerofly.com/community/index.php?user/67532-yolo/">YOLO._</a> from the Aerofly FS Forum)</span>`,
-                    ]
-                },
-                {
-                    type: "image-list",
-                    srcList: [
-                        "b737_tablet_1.jpg",
-                        "b737_tablet_2.jpg",
-                        "b737max9_ryanvulk_front_sounds_1.png",
-                        "b737max9_ryanvulk_front_sounds_2.png",
-                        "b738_sound_front_wingtips_jumpseat.png",
-                        "b738_sound_front_wingtips_fiji_1.png",
-                        "b738_sound_front_wingtips_fiji_2.png",
-                        "b738_sound_front_wingtips_delta_1.png",
-                        "b738_sound_front_wingtips_delta_2.png"
-                    ]
-                },
-                {
-                    type: "subheader",
-                    value: "Boeing 737-500 Features"
-                },
-                {
-                    type: "ul",
-                    list: [
-                        "Passenger views placed inside the cabin (see images below)",
-                    ]
-                },
-                {
-                    type: "image-list",
-                    srcList: [
-                        "b737_500_cockpit.png",
-                        "b737_500_cabin_1.png",
-                        "b737_500_cabin_2.png",
-                        "b737_500_cabin_3.png",
-                    ]
-                },
-                {
-                    type: "subheader",
-                    value: "Sound Clips"
-                },
-                {
-                    type: "youtube-embed",
-                    src: "https://www.youtube.com/embed/tE2uz9-Wves?si=6_hk4y9Jl91QgJoO"
-                },
-                {
-                    type: "youtube-embed",
-                    src: "https://www.youtube.com/embed/9phAH9ojtlo?si=TT2IVTaGZ-lvdsJj"
-                },
-                {
-                    type: "download-links",
-                    downloadsList: [
-                        {
-                            name: "ZK_b737_500_mod_v1.2.1_(Sounds_Shake_Cabin).tme",
-                            src: "https://drive.google.com/file/d/1sDBrp_HOeB6_ZVigDto7clcNotRPT0uV/view?usp=sharing"
-                        },
-                        {
-                            name: "ZK_b737_800_mod_v1.2.1_(Sounds_Shake_Winglets_Front).tme",
-                            src: "https://drive.google.com/file/d/1jQs7UsVXAgsEbtOja8Rwr73D9mffrIFz/view?usp=sharing"
-                        },
-                        {
-                            name: "ZK_b737_900_mod_v1.2.1_(Sounds_Shake_Winglets_Front).tme",
-                            src: "https://drive.google.com/file/d/1A4Y-o3uBhtIkyoAS4j0rr57J-AH0uAvN/view?usp=sharing"
-                        },
-                        {
-                            name: "ZK_b737_Max9_mod_v1.2.1_(Ryan_Shake_Sounds_Front).tme",
-                            src: "https://drive.google.com/file/d/1L1ue7V8R7O5HVmVjwxJ5SlxD-HWAkfSN/view?usp=sharing"
-                        },
-                    ]
-                }
-            ]
-        },
-        {
-            id: 1229250,
-            title: "B777-300ER/-200f (Livery, Shake, Sounds, Front) | Android Only",
-            author: "ZK Aviation",
-            datePublished: "December 29, 2025",
-            lastUpdated: "April 26, 2026",
-            tags: ["b777", "b777-300er", "b777-200f", "Camera", "Shake", "Sounds", "Livery", "Boeing"],
-            articleImage: "b777_lr_liv_3.jpg",
-            content: [
-                {
-                    type: "subheader",
-                    value: "General Boeing 777 Features"
-                },
-                {
-                    type: "ul",
-                    list: [
-                        "Modified cockpit and passenger views",
-                        "Jumpseat camera moved to the front for a better view",
-                        "Camera movements on turns and touchdown",
-                        "Cabin + Cockpit shake and touchdown sounds added",
-                        `Includes old mobile Emirates livery <span class="bold">(Works for OpenGL & Vulkan)</span>`
-                    ]
-                },
-                {
-                    type: "image-list",
-                    srcList: [
-                        "b777_mod_jumpseat.png",
-                        "b777_mod_cabin_1.png",
-                        "b777_mod_cabin_2.png",
-                        "b777_mod_cabin_3.png"
-                    ]
-                },
-                {
-                    type: "subheader",
-                    value: "Boeing 777-200f Features"
-                },
-                {
-                    type: "paragraph",
-                    value: `777-300 liveries were imported over to make it seem like an "-200LR" variant. <span class="bold">All work for OpenGL & Vulkan</span>. Liveries include:`
-                },
-                {
-                    type: "ul",
-                    list: [
-                        "American Airlines",
-                        "Swiss Airlines",
-                        "Air Canada",
-                        "KLM",
-                        `<span class="italic">...and 18 more</span>`
-                    ]
-                },
-                {
-                    type: "image-list",
-                    srcList: [
-                        "b777_lr_liv_3.jpg",
-                        "b777_lr_liv_1.jpg",
-                        "b777_lr_liv_2.jpg",
-                    ]
-                },
-                /*
-                {
-                    type: "paragraph",
-                    value: "For the 777-200f, the views were intentionally placed so you can see the interior"
-                },
-                {
-                    type: "image",
-                    src: "b777_mod_freight_interior.png"
-                },
-                */
-                {
-                    type: "subheader",
-                    value: "Sound Clip"
-                },
-                {
-                    type: "youtube-embed",
-                    src: "https://www.youtube.com/embed/20hkXFzpFxQ?si=eaLqbYdPuV7PD3dD"
-                },
-                {
-                    type: "download-links",
-                    downloadsList: [
-                        {
-                            name: "ZK_b777_200f_mod_v1.2.2_(LrLivery_Shake_Sounds_Front).tme",
-                            src: "https://drive.google.com/file/d/1VGoISRnP_qelRDcuOicR3dfha14zmvgM/view?usp=sharing"
-                        },
-                        {
-                            name: "ZK_b777_300er_mod_v1.2.1_(OldEmir_Shake_Sounds_Front).tme",
-                            src: "https://drive.google.com/file/d/1NcGJnjFQYkXqOLxW4MWuhOFAwtobeuKt/view?usp=sharing"
-                        },
-                        
                     ]
                 }
             ]
@@ -545,69 +591,6 @@ function ModsData() {
                             src: "https://drive.google.com/file/d/1YdTqHZmHeCb-aNL_QdF79NmDHbmWrLSm/view?usp=sharing"
                         },
                         
-                    ]
-                }
-            ]
-        },
-        {
-            id: 1225254,
-            title: "B787-9/-10 (Shake, Sounds, Front) | Android Only",
-            author: "ZK Aviation",
-            datePublished: "December 25, 2025",
-            lastUpdated: "April 26, 2026",
-            tags: ["b787", "b787-10", "b787-9", "Camera", "Shake", "Sounds", "Cabin", "Boeing"],
-            articleImage: "b787_mod_pilot.png",
-            content: [
-                {
-                    type: "subheader",
-                    value: "General Boeing 787 Features"
-                },
-                {
-                    type: "ul",
-                    list: [
-                        "Lowered cockpit view height (nice!)",
-                        "Jumpseat view pushed forward",
-                        "Cockpit + Cabin shake and touchdown sounds added",
-                        "Camera movements on turns and touchdown",
-                        "Passenger views moved inside cabin",
-                    ]
-                },
-                {
-                    type: "image-list",
-                    srcList: [
-                        "b787_mod_jumpseat.png",
-                        "b787_mod_cabin_1.png",
-                        "b787_mod_cabin_4.png",
-                        "b787_mod_cabin_5.png",
-                    ]
-                },
-                {
-                    type: "paragraph",
-                    value: "Note: Because of the lowered view, the HUD will not display properly."
-                },
-                {
-                    type: "image",
-                    src: "b787_mod_cockpit_hud_issue.png"
-                },
-                {
-                    type: "subheader",
-                    value: "Sound Clip"
-                },
-                {
-                    type: "youtube-embed",
-                    src: "https://www.youtube.com/embed/gNBEEE3_Gvw?si=Tb0D15gGM2-xV8pZ"
-                },
-                {
-                    type: "download-links",
-                    downloadsList: [
-                        {
-                            name: "ZK_b787_9_mod_v1.2.2_(Shake_Sounds_Front).tme",
-                            src: "https://drive.google.com/file/d/1y-13vhibas0BNKa1pPKk0wkNf2NGK56K/view?usp=sharing"
-                        },
-                        {
-                            name: "ZK_b787_10_mod_v1.2.2_(Shake_Sounds_Front).tme",
-                            src: "https://drive.google.com/file/d/1ujACUG04i1vruSwEwhi2y_yT4LUG6DOY/view?usp=sharing"
-                        },
                     ]
                 }
             ]
