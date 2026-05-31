@@ -3,61 +3,11 @@ const databaseImagesPath = "./resources/js/database/images/";
 function ModsData() {
     return [
         {
-            id: 1225250,
-            title: "A380 Mod (OldEmir, Shake, Sounds, Front) | Android Only",
-            author: "ZK Aviation",
-            datePublished: "December 25, 2025",
-            lastUpdated: "May 27, 2026",
-            tags: ["A380", "Camera", "Shake", "Sounds", "Engines", "Airbus"],
-            articleImage: "a380_oldemir_sounds_front_jumpseat.png",
-            content: [
-                {
-                    type: "subheader",
-                    value: "Airbus A380 Features"
-                },
-                {
-                    type: "ul",
-                    list: [
-                        "Modified cockpit and passenger views",
-                        "Jumpseat camera moved to the front for a better view (Img Above)",
-                        "Camera movements on turns and touchdown",
-                        `Realistic engine and rumble sounds (internal & external) | <a href="https://youtu.be/4f7B09BU0Pw?si=OzYFCLXgQRLVeqTh" class="extlink" target="#blank">Source 1</a>, <a href="https://www.youtube.com/watch?v=lRe-l6Zgk4w&t=126s" class="extlink" target="#blank">Source 2</a>`,
-                        "Cabin + Cockpit shake and touchdown sounds added",
-                        "Flaps sound altered to sound closer to the real one",
-                        "Wind sound changed for better quality and quietness",
-                        `Includes old mobile Emirates livery <span class="bold">(Works for OpenGL & Vulkan)</span>`
-                    ]
-                },
-                {
-                    type: "subheader",
-                    value: "Sound Clips"
-                },
-                {
-                    type: "youtube-embed",
-                    src: "https://www.youtube.com/embed/gtpHzT9cXMc?si=JlZoMEowxXypbY72"
-                },
-                {
-                    type: "youtube-embed",
-                    src: "https://www.youtube.com/embed/jFRuu3epUcU?si=HEL4mEa0EKhHLIqc"
-                },
-                {
-                    type: "download-links",
-                    downloadsList: [
-                        {
-                            name: "ZK_a380_mod_v1.3.0_(OldEmir_Shake_Sounds_Front).tme",
-                            src: "https://drive.google.com/file/d/1ohR7nm-ImjPiuZG4g-yFTpOl6D0J09sO/view?usp=sharing"
-                        },
-                        
-                    ]
-                }
-            ]
-        },
-        {
             id: 1225253,
             title: "A320 Family Mod (Sound, Shake, Front) | Android Only",
             author: "ZK Aviation",
             datePublished: "December 25, 2025",
-            lastUpdated: "May 27, 2026",
+            lastUpdated: "May 31, 2026",
             tags: ["A320 Family", "A319", "A320neo", "A321", "A321xlr", "Sounds", "Shake", "Camera", "Cabin", "EFB", "Airbus"],
             articleImage: "a320family_tabletimg_1.png",
             content: [
@@ -103,13 +53,63 @@ function ModsData() {
                     type: "download-links",
                     downloadsList: [
                         {
-                            name: "ZK_a32xfamily_mod_v1.2.3_(Shake_Sounds).tme",
+                            name: "ZK_a32xfamily_mod_v1.2.4_(Shake_Sounds).tme",
                             src: "https://drive.google.com/file/d/1TW1S5QoGe5MeLxIRQhw3OIZvpmiB66fD/view?usp=sharing"
                         },
                         {
-                            name: `ZK_a32xfamily_mod_v1.2.3_(Shake_Sounds_Cabin).tme <span class="italic no-bold" style="color: red;">(Cabin option)</span>`,
+                            name: `ZK_a32xfamily_mod_v1.2.4_(Shake_Sounds_Cabin).tme <span class="italic no-bold" style="color: red;">(Cabin option)</span>`,
                             src: "https://drive.google.com/file/d/1GG9X7G7jY8Wt_QmQ2bW1y0qzMTWymwkG/view?usp=sharing"
                         },
+                    ]
+                }
+            ]
+        },
+        {
+            id: 1225250,
+            title: "A380 Mod (OldEmir, Shake, Sounds, Front) | Android Only",
+            author: "ZK Aviation",
+            datePublished: "December 25, 2025",
+            lastUpdated: "May 27, 2026",
+            tags: ["A380", "Camera", "Shake", "Sounds", "Engines", "Airbus"],
+            articleImage: "a380_oldemir_sounds_front_jumpseat.png",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Airbus A380 Features"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Modified cockpit and passenger views",
+                        "Jumpseat camera moved to the front for a better view (Img Above)",
+                        "Camera movements on turns and touchdown",
+                        `Realistic engine and rumble sounds (internal & external) | <a href="https://youtu.be/4f7B09BU0Pw?si=OzYFCLXgQRLVeqTh" class="extlink" target="#blank">Source 1</a>, <a href="https://www.youtube.com/watch?v=lRe-l6Zgk4w&t=126s" class="extlink" target="#blank">Source 2</a>`,
+                        "Cabin + Cockpit shake and touchdown sounds added",
+                        "Flaps sound altered to sound closer to the real one",
+                        "Wind sound changed for better quality and quietness",
+                        `Includes old mobile Emirates livery <span class="bold">(Works for OpenGL & Vulkan)</span>`
+                    ]
+                },
+                {
+                    type: "subheader",
+                    value: "Sound Clips"
+                },
+                {
+                    type: "youtube-embed",
+                    src: "https://www.youtube.com/embed/gtpHzT9cXMc?si=JlZoMEowxXypbY72"
+                },
+                {
+                    type: "youtube-embed",
+                    src: "https://www.youtube.com/embed/jFRuu3epUcU?si=HEL4mEa0EKhHLIqc"
+                },
+                {
+                    type: "download-links",
+                    downloadsList: [
+                        {
+                            name: "ZK_a380_mod_v1.3.0_(OldEmir_Shake_Sounds_Front).tme",
+                            src: "https://drive.google.com/file/d/1ohR7nm-ImjPiuZG4g-yFTpOl6D0J09sO/view?usp=sharing"
+                        },
+                        
                     ]
                 }
             ]

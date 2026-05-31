@@ -37,7 +37,7 @@ function ArticlesData() {
                 },
                 {
                     type: "paragraph",
-                    value: `For anything that was directly imported from the PC versions (liveries, models etc.), <span class="bold">THEY WILL NOT WORK PROPERLY without Vulkan</span>, and <span class="bold">IT IS NOT GUARANTEED</span> to work even with it. You may experience crashes, and this is due to device incompatibilities with vulkan and/or the PC content loaded on your device. Running textures on OpenGL will only result in a glitchy appearance that does not look pretty, unless you want your aircraft to look like it came straight out of Area 51.`
+                    value: `For anything that was directly imported from the PC versions (liveries, models etc.), <span class="bold">THEY WILL NOT WORK PROPERLY without Vulkan</span>, and <span class="bold">IT IS NOT GUARANTEED TO WORK</span> even with it. You may experience crashes, and this is due to device incompatibilities with vulkan and/or the PC content loaded on your device. Running textures on OpenGL will only result in a glitchy appearance that does not look pretty, unless you want your aircraft to look like it came straight out of Area 51.`
                 },
                 {
                     type: "paragraph",

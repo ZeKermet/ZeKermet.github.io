@@ -2,6 +2,23 @@
 function ChangelogData() {
     return [
         {
+            modID: 1225253,
+            updateSummary: "Airbus A320 Family Mod v1.2.4 | Minor EFB Fix",
+            updateDate: "May 31, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "EFB now moves with the cockpit window"
+                    ]
+                },
+            ]
+        },
+        {
             modID: 1225250,
             updateSummary: "Airbus A380 Mod v1.3.0 | Realistic Engine and Rumble Sounds",
             updateDate: "May 27, 2026",
@@ -14,25 +31,6 @@ function ChangelogData() {
                     type: "ul",
                     list: [
                         "Enhanced engine & rumble sounds (interior & exterior)"
-                    ]
-                },
-            ]
-        },
-        {
-            modID: 1225253,
-            updateSummary: "Airbus A320 Family Mod v1.2.3 | Variants Grouping",
-            updateDate: "May 27, 2026",
-            content: [
-                {
-                    type: "subheader",
-                    value: "Details:"
-                },
-                {
-                    type: "ul",
-                    list: [
-                        "Variants grouped into one file",
-                        "Cabin & Outside passenger view options",
-                        "Restored rear wing views for the A321ceo's cabin view option"
                     ]
                 },
             ]
