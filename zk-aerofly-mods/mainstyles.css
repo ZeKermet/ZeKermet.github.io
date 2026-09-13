@@ -219,9 +219,11 @@ button.show-more-list:hover {
     align-items: center;
     gap: 12px;
 } 
-#mods-list-container #mods-search i {
+#mods-list-container #mods-search .magnifying-glass {
     font-size: var(--font-size-p);
     color: var(--neutral-gray);
+    transform: rotate(-90deg);
+    cursor: default;
 }
 #mods-list-container #mods-search #searchMods {
     font-size: var(--font-size-p);
