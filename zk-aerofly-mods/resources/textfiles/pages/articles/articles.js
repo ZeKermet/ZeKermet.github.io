@@ -71,9 +71,9 @@ function constructArticles(data) {
                         ${tagsStr}
                     </div>
                     <div class="publish-info">
-                        <div class="author"><i class="fa-regular fa-user"></i> ${article.author}</div>
+                        <div class="author">By ${article.author}</div>
                         <div class="separator"></div>
-                        <div class="date-published"><i class="fa-regular fa-calendar"></i> ${article.datePublished}</div>
+                        <div class="date-published">${article.datePublished}</div>
                     </div>
 
                     <div class="article-update-date-container">

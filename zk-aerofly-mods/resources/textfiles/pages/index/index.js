@@ -71,9 +71,9 @@ function constructMods(data) {
                         ${tagsStr}
                     </div>
                     <div class="publish-info">
-                        <div class="author"><i class="fa-regular fa-user"></i> ${mod.author}</div>
+                        <div class="author">By ${mod.author}</div>
                         <div class="separator"></div>
-                        <div class="date-published"><i class="fa-regular fa-calendar"></i> ${mod.datePublished}</div>
+                        <div class="date-published">${mod.datePublished}</div>
                     </div>
                 </div>
                 <div class="mod-update-date-container">
