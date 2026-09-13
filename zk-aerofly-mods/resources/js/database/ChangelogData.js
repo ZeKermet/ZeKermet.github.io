@@ -2,6 +2,78 @@
 function ChangelogData() {
     return [
         {
+            modID: 1229251,
+            updateSummary: "Boeing 747-400 Mod v1.3.0 | Engine Sounds",
+            updateDate: "September 13, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Realistic engine & rumble sounds",
+                        "Added startup sounds",
+                        `Separated vulkan livery content from the main mod pack <span class="italic non-bold" style="color: red;">(delete any zk_747 mods and download the updated ones)</span>`
+                    ]
+                },
+            ]
+        },
+        {
+            modID: 1225251,
+            updateSummary: "Boeing 737 family Mod v1.3.0 | Engine Rumble Update",
+            updateDate: "September 13, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Stronger rumble sounds on high thrust and reverse"
+                    ]
+                },
+            ]
+        },
+        {
+            modID: 1225250,
+            updateSummary: "Airbus A380 Mod v1.4.0 | Minor Changes",
+            updateDate: "September 13, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Increased gear tilt",
+                        "Minor external high thrust sound update",
+                        "Lowered cockpit fan sound"
+                    ]
+                },
+            ]
+        },
+        {
+            modID: 1229250,
+            updateSummary: "Boeing 777 Family Mod v1.2.3 | Minor Takeoff Roll Sound Update",
+            updateDate: "September 13, 2026",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Details:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Lowered takeoff wheel roll sound"
+                    ]
+                },
+            ]
+        },
+        {
             modID: 1225253,
             updateSummary: "Airbus A320 Family Mod v1.2.4 | Minor EFB Fix",
             updateDate: "May 31, 2026",

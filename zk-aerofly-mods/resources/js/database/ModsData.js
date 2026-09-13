@@ -3,92 +3,88 @@ const databaseImagesPath = "./resources/js/database/images/";
 function ModsData() {
     return [
         {
-            id: 1225253,
-            title: "A320 Family Mod (Sound, Shake, Front) | Android Only",
+            id: 1229251,
+            title: "B747-400 (Livery, Shake, Sounds, Front) | Android Only",
             author: "ZK Aviation",
-            datePublished: "December 25, 2025",
-            lastUpdated: "May 31, 2026",
-            tags: ["A320 Family", "A319", "A320neo", "A321", "A321xlr", "Sounds", "Shake", "Camera", "Cabin", "EFB", "Airbus"],
-            articleImage: "a320family_tabletimg_1.png",
+            datePublished: "December 29, 2025",
+            lastUpdated: "September 13, 2026",
+            tags: ["b747-400", "Camera", "Shake", "Sounds", "Livery", "Boeing"],
+            articleImage: "b747_mod_livery_ryanair.png",
             content: [
                 {
                     type: "subheader",
-                    value: `General Airbus A32x Features <span class="italic no-bold" style="font-size: var(--font-size-h6);">(No A320ceo unfortunately)`
-                },
-                {
-                    type: "ul",
-                    list: [
-                        "Modified cockpit views",
-                        "Cabin views option",
-                        "Camera movements on turns and touchdown",
-                        "Cabin + Cockpit shake and touchdown sounds added",
-                        `Engine rumble sounds <span class="italic">(not included for the neo version yet)</span>`,
-                        `EFBs added for the pilot and copilot <span class="italic">(<span style="color: red;">Not functional</span>, model downloaded from <a class="extlink" href="https://sketchfab.com/3d-models/tablet-samsung-tab-a8-low-poly-025a44323269426da905c64c4ba2b335" target="#blank">this page</a>)</span>`,
-                    ]
-                },
-                {
-                    type: "image-list",
-                    srcList: [
-                        "a320family_tabletimg_2.jpg",
-                        "a320family_tabletimg_3.png",
-                        "a320family_sounds_front_jumpseat.png",
-                        "a320family_sounds_front_cabin_2.png",
-                        "a320family_sounds_front_cabin_3.png",
-                        "a320family_sounds_front_cabin_6.png",
-                    ]
-                },
-                {
-                    type: "subheader",
-                    value: "Sound Clips"
-                },
-                {
-                    type: "youtube-embed",
-                    src: "https://www.youtube.com/embed/qFYC-UQMNJs?si=UyjFt7MfCGhFmHcP"
-                },
-                {
-                    type: "youtube-embed",
-                    src: "https://www.youtube.com/embed/3EDExTUFSTI?si=YQRQnJBmskkpyKRK"
-                },
-                {
-                    type: "download-links",
-                    downloadsList: [
-                        {
-                            name: "ZK_a32xfamily_mod_v1.2.4_(Shake_Sounds).tme",
-                            src: "https://drive.google.com/file/d/1TW1S5QoGe5MeLxIRQhw3OIZvpmiB66fD/view?usp=sharing"
-                        },
-                        {
-                            name: `ZK_a32xfamily_mod_v1.2.4_(Shake_Sounds_Cabin).tme <span class="italic no-bold" style="color: red;">(Cabin option)</span>`,
-                            src: "https://drive.google.com/file/d/1GG9X7G7jY8Wt_QmQ2bW1y0qzMTWymwkG/view?usp=sharing"
-                        },
-                    ]
-                }
-            ]
-        },
-        {
-            id: 1225250,
-            title: "A380 Mod (OldEmir, Shake, Sounds, Front) | Android Only",
-            author: "ZK Aviation",
-            datePublished: "December 25, 2025",
-            lastUpdated: "May 27, 2026",
-            tags: ["A380", "Camera", "Shake", "Sounds", "Engines", "Airbus"],
-            articleImage: "a380_oldemir_sounds_front_jumpseat.png",
-            content: [
-                {
-                    type: "subheader",
-                    value: "Airbus A380 Features"
+                    value: "Boeing 747-400 Features"
                 },
                 {
                     type: "ul",
                     list: [
                         "Modified cockpit and passenger views",
-                        "Jumpseat camera moved to the front for a better view (Img Above)",
+                        "Jumpseat camera moved to the front for a better view",
                         "Camera movements on turns and touchdown",
-                        `Realistic engine and rumble sounds (internal & external) | <a href="https://youtu.be/4f7B09BU0Pw?si=OzYFCLXgQRLVeqTh" class="extlink" target="#blank">Source 1</a>, <a href="https://www.youtube.com/watch?v=lRe-l6Zgk4w&t=126s" class="extlink" target="#blank">Source 2</a>`,
                         "Cabin + Cockpit shake and touchdown sounds added",
-                        "Flaps sound altered to sound closer to the real one",
-                        "Wind sound changed for better quality and quietness",
-                        `Includes old mobile Emirates livery <span class="bold">(Works for OpenGL & Vulkan)</span>`
+                        "Realistic engine sounds & rumble",
+                        `Includes old mobile Lufthansa livery <span class="bold">(Works for OpenGL & Vulkan)</span>`
                     ]
+                },
+                {
+                    type: "image-list",
+                    srcList: [
+                        "b747_mod_jumpseat.png",
+                        "b747_mod_cabin_1.png",
+                        "b747_mod_cabin_2.png",
+                        "b747_mod_cabin_3.png",
+                        "b747_mod_livery_old_lufthansa.png",
+                    ]
+                },
+                {
+                    type: "subheader",
+                    value: "Vulkan Livery Pack | VULKAN REQUIRED"
+                },
+                {
+                    type: "paragraph",
+                    value: "Liveries Added:"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Aero Argentinas",
+                        "Air Force One",
+                        "Atlas Air",
+                        "BOAC",
+                        "Condor",
+                        "Evergreen",
+                        "Iberia",
+                        "Modern KLM",
+                        "NWA",
+                        "Pan Am",
+                        "Pokemon (lol???)",
+                        "Qantas",
+                        `<span class="bold">Ryanair (?????)</span>`,
+                        "Star Alliance",
+                        "Swiss Air",
+                        "Swiss Old",
+                        "TWA Retro",
+                        "United Airlines (1985)",
+                        "Virgin Atlantic"
+                    ]
+                },
+                {
+                    type: "paragraph",
+                    value: `<span class="italic">All liveries were downloaded from <a class="extlink" target="_blank" href="https://www.aerofly.com/community/index.php?user/195-higgy/">Higgy's</a> former site, http://flight-sim.org/filebase. You can find him on the Aerofly forum</span>`
+                },
+                {
+                    type: "image-list",
+                    srcList: [
+                        "b747_mod_livery_ryanair.png",
+                        "b747_mod_livery_1.png",
+                        "b747_mod_livery_2.png",
+                        "b747_mod_livery_3.png",
+                        "b747_mod_livery_4.png",
+                    ]
+                },
+                {
+                    type: "paragraph",
+                    value: `<span class="italic">Note: Liveries <span class="bold">WILL NOT WORK PROPERLY without Vulkan</span>, and <span class="bold">IS NOT GUARANTEED</span> to work even with it. For devices not compatible with Vulkan liveries, a separate file "(OldLufth)" is provided. It contains the old lufthansa livery that works for both OpenGL and Vulkan.</span>`
                 },
                 {
                     type: "subheader",
@@ -96,18 +92,22 @@ function ModsData() {
                 },
                 {
                     type: "youtube-embed",
-                    src: "https://www.youtube.com/embed/gtpHzT9cXMc?si=JlZoMEowxXypbY72"
+                    src: "https://www.youtube.com/embed/Rv3jfrRTC6Y?si=x3B7Y6NOqHk2dt4u"
                 },
                 {
                     type: "youtube-embed",
-                    src: "https://www.youtube.com/embed/jFRuu3epUcU?si=HEL4mEa0EKhHLIqc"
+                    src: "https://www.youtube.com/embed/p-z-MXsaWs0?si=Unu3W3kR2Ls8yOV_"
                 },
                 {
                     type: "download-links",
                     downloadsList: [
                         {
-                            name: "ZK_a380_mod_v1.3.0_(OldEmir_Shake_Sounds_Front).tme",
-                            src: "https://drive.google.com/file/d/1ohR7nm-ImjPiuZG4g-yFTpOl6D0J09sO/view?usp=sharing"
+                            name: "ZK_b747_400_mod_v1.3.0.tme",
+                            src: "https://drive.google.com/file/d/1-n_yd5GIBC3xfuGl29EUo1xos1884idl/view?usp=sharing"
+                        },
+                        {
+                            name: `ZK_b747_400_VulkLiveryPack_v1.0.0.tme <span class="italic no-bold" style="color: red;">(Vulkan Liveries)</span>`,
+                            src: "https://drive.google.com/file/d/1sZ14hhyEgI8JaA2CojkDqq9UNy2w7RLS/view?usp=sharing"
                         },
                         
                     ]
@@ -119,7 +119,7 @@ function ModsData() {
             title: "B737 Family Mod (Sounds, Shake, & More) | Android Only",
             author: "ZK Aviation",
             datePublished: "December 25, 2025",
-            lastUpdated: "May 27, 2026",
+            lastUpdated: "September 13, 2026",
             tags: ["b737-500", "b737-800", "b737-900", "b737 Max-9", "Sounds", "Camera", "Shake", "EFB", "Wingtips", "Livery", "Boeing"],
             articleImage: "b737max9_ryanvulk_front_sounds_2.png",
             content: [
@@ -189,19 +189,70 @@ function ModsData() {
                 },
                 {
                     type: "youtube-embed",
-                    src: "https://www.youtube.com/embed/tE2uz9-Wves?si=6_hk4y9Jl91QgJoO"
+                    src: "https://www.youtube.com/embed/CLfkYaz5rto?si=HuzI8Q6_ucaDeYix"
                 },
                 {
                     type: "youtube-embed",
-                    src: "https://www.youtube.com/embed/9phAH9ojtlo?si=TT2IVTaGZ-lvdsJj"
+                    src: "https://www.youtube.com/embed/yLkogQMdCTw?si=ex--uWG-lv3XNaot"
                 },
                 {
                     type: "download-links",
                     downloadsList: [
                         {
-                            name: "ZK_b737family_mod_v1.2.2_(Sounds_Shake_Cabin).tme",
-                            src: "https://drive.google.com/file/d/1zd_9st5oA5sOkyLD8YuUcjaItBjNvHHr/view?usp=sharing"
+                            name: "ZK_b737family_mod_v1.3.0.tme",
+                            src: "https://drive.google.com/file/d/1hg3olaNiCpNvCR82q7mERnphGExcC92C/view?usp=sharing"
                         },
+                    ]
+                }
+            ]
+        },
+        {
+            id: 1225250,
+            title: "A380 Mod (OldEmir, Shake, Sounds, Front) | Android Only",
+            author: "ZK Aviation",
+            datePublished: "December 25, 2025",
+            lastUpdated: "September 13, 2026",
+            tags: ["A380", "Camera", "Shake", "Sounds", "Engines", "Airbus"],
+            articleImage: "a380_oldemir_sounds_front_jumpseat.png",
+            content: [
+                {
+                    type: "subheader",
+                    value: "Airbus A380 Features"
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Modified cockpit and passenger views",
+                        "Jumpseat camera moved to the front for a better view (Img Above)",
+                        "Camera movements on turns and touchdown",
+                        `Realistic engine and rumble sounds (internal & external) | <a href="https://youtu.be/4f7B09BU0Pw?si=OzYFCLXgQRLVeqTh" class="extlink" target="#blank">Source 1</a>, <a href="https://www.youtube.com/watch?v=lRe-l6Zgk4w&t=126s" class="extlink" target="#blank">Source 2</a>`,
+                        "Cabin + Cockpit shake and touchdown sounds added",
+                        "Flaps sound altered to sound closer to the real one",
+                        "Wind sound changed for better quality and quietness",
+                        "Extra gear tilt",
+                        `Includes old mobile Emirates livery <span class="bold">(Works for OpenGL & Vulkan)</span>`
+                    ]
+                },
+                {
+                    type: "subheader",
+                    value: "Sound Clips"
+                },
+                {
+                    type: "youtube-embed",
+                    src: "https://www.youtube.com/embed/gtpHzT9cXMc?si=JlZoMEowxXypbY72"
+                },
+                {
+                    type: "youtube-embed",
+                    src: "https://www.youtube.com/embed/jFRuu3epUcU?si=HEL4mEa0EKhHLIqc"
+                },
+                {
+                    type: "download-links",
+                    downloadsList: [
+                        {
+                            name: "ZK_a380_mod_v1.4.0.tme",
+                            src: "https://drive.google.com/file/d/1MwvBmzjsNMFuGnjqVnHYrQEZVPG-D5fo/view?usp=sharing"
+                        },
+                        
                     ]
                 }
             ]
@@ -211,7 +262,7 @@ function ModsData() {
             title: "B777 Family Mod (Livery, Shake, Sounds, Camera) | Android Only",
             author: "ZK Aviation",
             datePublished: "December 29, 2025",
-            lastUpdated: "May 27, 2026",
+            lastUpdated: "September 13, 2026",
             tags: ["b777", "b777-300er", "b777-200f", "Camera", "Shake", "Sounds", "Livery", "Boeing"],
             articleImage: "b777_lr_liv_3.jpg",
             content: [
@@ -286,10 +337,72 @@ function ModsData() {
                     type: "download-links",
                     downloadsList: [
                         {
-                            name: "ZK_b777family_mod_v1.2.2_(LrLivery_Shake_Sounds_Front).tme",
-                            src: "https://drive.google.com/file/d/1W3RRbDvG94Pyfgm6bpD7O3H4GKhV8vIk/view?usp=sharing"
+                            name: "ZK_b777family_mod_v1.2.3.tme",
+                            src: "https://drive.google.com/file/d/1aYNzT5_tsow_e9qp6ewMwShX9u4hTXPV/view?usp=sharing"
                         },
                         
+                    ]
+                }
+            ]
+        },
+        {
+            id: 1225253,
+            title: "A320 Family Mod (Sound, Shake, Front) | Android Only",
+            author: "ZK Aviation",
+            datePublished: "December 25, 2025",
+            lastUpdated: "May 31, 2026",
+            tags: ["A320 Family", "A319", "A320neo", "A321", "A321xlr", "Sounds", "Shake", "Camera", "Cabin", "EFB", "Airbus"],
+            articleImage: "a320family_tabletimg_1.png",
+            content: [
+                {
+                    type: "subheader",
+                    value: `General Airbus A32x Features <span class="italic no-bold" style="font-size: var(--font-size-h6);">(No A320ceo unfortunately)`
+                },
+                {
+                    type: "ul",
+                    list: [
+                        "Modified cockpit views",
+                        "Cabin views option",
+                        "Camera movements on turns and touchdown",
+                        "Cabin + Cockpit shake and touchdown sounds added",
+                        `Engine rumble sounds <span class="italic">(not included for the neo version yet)</span>`,
+                        `EFBs added for the pilot and copilot <span class="italic">(<span style="color: red;">Not functional</span>, model downloaded from <a class="extlink" href="https://sketchfab.com/3d-models/tablet-samsung-tab-a8-low-poly-025a44323269426da905c64c4ba2b335" target="#blank">this page</a>)</span>`,
+                    ]
+                },
+                {
+                    type: "image-list",
+                    srcList: [
+                        "a320family_tabletimg_2.jpg",
+                        "a320family_tabletimg_3.png",
+                        "a320family_sounds_front_jumpseat.png",
+                        "a320family_sounds_front_cabin_2.png",
+                        "a320family_sounds_front_cabin_3.png",
+                        "a320family_sounds_front_cabin_6.png",
+                    ]
+                },
+                {
+                    type: "subheader",
+                    value: "Sound Clips"
+                },
+                {
+                    type: "youtube-embed",
+                    src: "https://www.youtube.com/embed/qFYC-UQMNJs?si=UyjFt7MfCGhFmHcP"
+                },
+                {
+                    type: "youtube-embed",
+                    src: "https://www.youtube.com/embed/3EDExTUFSTI?si=YQRQnJBmskkpyKRK"
+                },
+                {
+                    type: "download-links",
+                    downloadsList: [
+                        {
+                            name: "ZK_a32xfamily_mod_v1.2.4_(Shake_Sounds).tme",
+                            src: "https://drive.google.com/file/d/1TW1S5QoGe5MeLxIRQhw3OIZvpmiB66fD/view?usp=sharing"
+                        },
+                        {
+                            name: `ZK_a32xfamily_mod_v1.2.4_(Shake_Sounds_Cabin).tme <span class="italic no-bold" style="color: red;">(Cabin option)</span>`,
+                            src: "https://drive.google.com/file/d/1GG9X7G7jY8Wt_QmQ2bW1y0qzMTWymwkG/view?usp=sharing"
+                        },
                     ]
                 }
             ]
@@ -482,113 +595,6 @@ function ModsData() {
                         {
                             name: "ZK_crj900_mod_v1.0.1_(Shake_Sounds).tme",
                             src: "https://drive.google.com/file/d/1qJKhkkq4PXemoQQqn3HTdgNoiQmjugbl/view?usp=sharing"
-                        },
-                        
-                    ]
-                }
-            ]
-        },
-        {
-            id: 1229251,
-            title: "B747-400 (Livery, Shake, Sounds, Front) | Android Only",
-            author: "ZK Aviation",
-            datePublished: "December 29, 2025",
-            lastUpdated: "April 26, 2026",
-            tags: ["b747-400", "Camera", "Shake", "Sounds", "Livery", "Boeing"],
-            articleImage: "b747_mod_livery_ryanair.png",
-            content: [
-                {
-                    type: "subheader",
-                    value: "Boeing 747-400 Features"
-                },
-                {
-                    type: "ul",
-                    list: [
-                        "Modified cockpit and passenger views",
-                        "Jumpseat camera moved to the front for a better view",
-                        "Camera movements on turns and touchdown",
-                        "Cabin + Cockpit shake and touchdown sounds added",
-                        `Includes old mobile Lufthansa livery <span class="bold">(Works for OpenGL & Vulkan)</span>`
-                    ]
-                },
-                {
-                    type: "image-list",
-                    srcList: [
-                        "b747_mod_jumpseat.png",
-                        "b747_mod_cabin_1.png",
-                        "b747_mod_cabin_2.png",
-                        "b747_mod_cabin_3.png",
-                        "b747_mod_livery_old_lufthansa.png",
-                    ]
-                },
-                {
-                    type: "subheader",
-                    value: "Liveries Added (LiveryVulk, Front) | VULKAN REQUIRED"
-                },
-                {
-                    type: "paragraph",
-                    value: "Liveries Added:"
-                },
-                {
-                    type: "ul",
-                    list: [
-                        "Aero Argentinas",
-                        "Air Force One",
-                        "Atlas Air",
-                        "BOAC",
-                        "Condor",
-                        "Evergreen",
-                        "Iberia",
-                        "Modern KLM",
-                        "NWA",
-                        "Pan Am",
-                        "Pokemon (lol???)",
-                        "Qantas",
-                        `<span class="bold">Ryanair (?????)</span>`,
-                        "Star Alliance",
-                        "Swiss Air",
-                        "Swiss Old",
-                        "TWA Retro",
-                        "United Airlines (1985)",
-                        "Virgin Atlantic"
-                    ]
-                },
-                {
-                    type: "paragraph",
-                    value: `<span class="italic">All liveries were downloaded from <a class="extlink" target="_blank" href="https://www.aerofly.com/community/index.php?user/195-higgy/">Higgy's</a> former site, http://flight-sim.org/filebase. You can find him on the Aerofly forum</span>`
-                },
-                {
-                    type: "image-list",
-                    srcList: [
-                        "b747_mod_livery_ryanair.png",
-                        "b747_mod_livery_1.png",
-                        "b747_mod_livery_2.png",
-                        "b747_mod_livery_3.png",
-                        "b747_mod_livery_4.png",
-                    ]
-                },
-                {
-                    type: "paragraph",
-                    value: `<span class="italic">Note: Liveries <span class="bold">WILL NOT WORK PROPERLY without Vulkan</span>, and <span class="bold">IS NOT GUARANTEED</span> to work even with it. For devices not compatible with Vulkan liveries, a separate file "(OldLufth)" is provided. It contains the old lufthansa livery that works for both OpenGL and Vulkan.</span>`
-                },
-                {
-                    type: "subheader",
-                    value: "Sound Clip"
-                },
-                {
-                    type: "youtube-embed",
-                    src: "https://www.youtube.com/embed/6-AI5wDc4K0?si=6BgSYFTTKZDSJB7o"
-                },
-                {
-                    type: "download-links",
-                    downloadsList: [
-                        {
-                            name: "ZK_b747_400_mod_v1.2.3_(OldLufth_Shake_Sounds_Front).tme",
-                            src: "https://drive.google.com/file/d/1sKy0xj4VBdc2eXtmgnKgBIVut4dGKb1-/view?usp=sharing"
-                        },
-                        {
-                            name: "ZK_b747_400_mod_v1.2.3_(LiveryVulk_Shake_Sounds_Front).tme",
-                            src: "https://drive.google.com/file/d/1YdTqHZmHeCb-aNL_QdF79NmDHbmWrLSm/view?usp=sharing"
                         },
                         
                     ]
