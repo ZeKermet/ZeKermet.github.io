@@ -84,7 +84,7 @@ function ModsData() {
                 },
                 {
                     type: "paragraph",
-                    value: `<span class="italic">Note: Liveries <span class="bold">WILL NOT WORK PROPERLY without Vulkan</span>, and <span class="bold">IS NOT GUARANTEED</span> to work even with it.</span>`
+                    value: `<span class="italic">Note: Liveries <span class="bold">WILL NOT WORK PROPERLY</span> without Vulkan, and <span class="bold">IS NOT GUARANTEED</span> to work even with it.</span>`
                 },
                 {
                     type: "subheader",
