@@ -84,7 +84,7 @@ function ModsData() {
                 },
                 {
                     type: "paragraph",
-                    value: `<span class="italic">Note: Liveries <span class="bold">WILL NOT WORK PROPERLY without Vulkan</span>, and <span class="bold">IS NOT GUARANTEED</span> to work even with it. For devices not compatible with Vulkan liveries, a separate file "(OldLufth)" is provided. It contains the old lufthansa livery that works for both OpenGL and Vulkan.</span>`
+                    value: `<span class="italic">Note: Liveries <span class="bold">WILL NOT WORK PROPERLY without Vulkan</span>, and <span class="bold">IS NOT GUARANTEED</span> to work even with it.</span>`
                 },
                 {
                     type: "subheader",
